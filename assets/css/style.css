@@ -1,0 +1,593 @@
+body {
+    font-family: 'inter';
+    color: rgb(0, 0, 0);
+  }
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  #header {
+    background: white;
+    z-index: 997;
+    padding: 0.3em 0;
+    box-shadow: 0px 4px 17px rgba(215, 215, 215, 0.25);
+  }
+  #header .logo {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-family: 'inter';
+  }
+  #header .logo a {
+    color: #fff;
+  }
+  
+  
+  
+  
+  /*--------------------------------------------------------------
+  # Book a table button Menu
+  --------------------------------------------------------------*/
+  .primaryButton {
+    background: #3F3F3F;
+    color: #fff;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .primaryButton:hover {
+    color: #fff;
+    background: #3F3F3F;
+    box-shadow: 10px 10px 24px rgba(62, 63, 65, 0.18);
+  }
+  .primaryButton:active {
+    color: #fff;
+    background: #202020;
+    box-shadow: 10px 10px 24px rgba(62, 63, 65, 0.18);
+  }
+  @media (max-width: 992px) {
+    .primaryButton {
+      margin: 0 15px 0 0;
+      padding: 8px 20px;
+    }
+  }
+  
+  
+  
+  
+  /*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+  
+  
+  /* Desktop Navigation */
+  
+  .navbar {
+    margin-left: 2em;
+    padding: 0;
+  }
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  .navbar li {
+    position: relative;
+  }
+  .navbar a, .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0.2em;
+    color: #828282;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'inter';
+    border-bottom: 3px solid #ffffff;
+  }
+  .navbar a i, .navbar a:focus i {
+    font-size: 16px;
+    line-height: 0;
+    margin-left: 5px;
+  }
+  .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+    border-bottom: 3px solid #0074E4;
+    color: #0074E4;
+  }
+  
+   
+  /* Mobile Navigation */
+  
+  .mobile-nav-toggle {
+    color: #0074E4;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    line-height: 0;
+  }
+  
+  @media (max-width: 991px) {
+    .mobile-nav-toggle {
+      display: block;
+    }
+  
+    .navbar ul {
+      display: none;
+    }
+  }
+  .navbar-mobile {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.815);
+    z-index: 999;
+  }
+  .navbar-mobile .mobile-nav-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .navbar-mobile ul {
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px 0;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+  }
+  .navbar-mobile a, .navbar-mobile a:focus {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #828282;
+  }
+  .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+    color: #0074E4;
+  }
+  .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
+    margin: 15px;
+  }
+  
+  
+  
+  
+  /*--------------------------------------------------------------
+  # Hero Section
+  --------------------------------------------------------------*/
+  #hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../images/hero-section/bg.png") top center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+  }
+  .heroh1{
+    font-family: 'inter';
+  }
+  #hero .container {
+    padding-top: 110px;
+  }
+  
+  @media (max-width: 992px) {
+    #hero .container {
+      padding-top: 98px;
+      padding-left: 2em;
+    }
+    #hero-content {
+      padding: 2em;
+      text-align: left;
+    }
+  }
+  #hero h1 {
+    margin: 0;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+  }
+  #hero h1 span {
+    color: #0074E4;
+  }
+  #hero h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+  }
+  #hero h3 span {
+    color: #0074E4;
+  }
+  #hero h2 {
+    width: 676px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;  
+  }
+  #hero h2 span {
+    color: #0074E4;
+    font-weight: 600;
+  }
+  #hero .btns {
+    margin-top: 30px;
+  }
+  #hero .btn-connect, #hero .btn-book {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #0074E4;
+    position: static;
+    width: 170px;
+    height: 51px;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  #hero .btn-book {
+    margin-left: 15px;
+  }
+  
+  @media (min-width: 1024px) {
+    #hero {
+      background-attachment: fixed;
+    }
+  }
+  
+  @media (max-height: 500px) {
+    #hero {
+      background-attachment: fixed;
+    }
+    #hero {
+      height: auto;
+    }
+    #hero .container {
+      padding-top: 130px;
+      padding-bottom: 60px;
+    }
+  }
+  @media (max-width: 768px) {
+    #hero {
+      background-attachment: fixed;
+    }
+    #hero h1 {
+      font-size: 42px;
+      line-height: 120%;
+      font-weight: 500;
+      letter-spacing: -0.04em;
+    }
+    #hero h3 {
+      font-size: 56px;
+      line-height: 56px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+    #hero h1 span{
+      font-size: 43px;
+    }
+    #hero h2 {
+      margin-top: 1em;
+      width: 320px;
+      font-size: 18px;
+      line-height: 160%;
+      letter-spacing: 0.01em;
+    }
+  }
+  
+  
+  
+  
+  /*--------------------------------------------------------------
+  # Sections General
+  --------------------------------------------------------------*/
+  section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  .section-title p span{
+    color: #0074E4;
+    font-size: 56px;
+    font-weight: bold;
+    letter-spacing: -0.02em;
+    font-family: 'inter' !important;
+  }
+  .section-title {
+    padding-bottom: 40px;
+  }
+  .section-title p {
+    margin: 0;
+    font-size: 56px;
+    font-weight: bold;
+    letter-spacing: -0.02em;
+    font-family: 'inter' !important;
+    color: #3F3F3F;;
+  }
+  
+  
+  
+  
+  /*--------------------------------------------------------------
+  # Section-two
+  --------------------------------------------------------------*/
+  .Section-two {
+    background: url("../images/homeTwoBg.svg") top center;
+    background-size: cover;
+    position: relative;
+    height: 90vh;
+    background-position: 80% 0%;
+  }
+  .box {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .Section-two .box {
+    border-radius: 15px;
+    padding: 50px 50px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.055);
+    transition: all ease-in-out 0.01s;
+    background: #FFFFFF;
+  }
+  .Section-two .box h5 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    position: static;
+    width: 8em;
+    height: 34px;
+    left: 0px;
+    top: 0px;
+    color: #0074E4;
+    background-color: #C5E2FF;
+    border-radius: 5px;
+    margin: 0px 10px;
+  }
+  .Section-two .box h4 {
+    font-family: 'inter';
+    font-size: 48px;
+    font-weight: 700;
+    padding: 0;
+    margin: 20px 10px;
+    color: #3F3F3F;
+    line-height: 110%;
+  }
+  .Section-two .box p {
+    width: 31.1em;
+    color: #747474;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    margin: 0px 10px;
+    padding: 0;
+  }
+  .Section-two .box:hover {
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.082);
+  }
+  @media (max-width: 768px) {
+    .Section-two .box {
+      padding: 15px;
+    }
+    .Section-two .box h5 {
+      margin-top: 10px;
+    }
+    .Section-two .box h4 {
+      width: 270px;
+      font-size: 32px;
+      font-weight: 700;
+    }
+    .Section-two .box p {
+      width: 270px;
+      font-size: 16px;
+      line-height: 160%;
+      letter-spacing: 0.01em;
+    }
+  }
+  @media (max-width: 992px) {
+    .Section-two .box {
+      padding: 15px;
+    }
+    .Section-two .box h4 {
+      width: 270px;
+      font-size: 32px;
+      font-weight: 700;
+    }
+    .Section-two .box p {
+      width: 270px;
+      font-size: 16px;
+      line-height: 160%;
+      letter-spacing: 0.01em;
+    }
+  }
+  @media (max-width: 1024px) {
+    .Section-two .box {
+      padding: 15px;
+    }
+    .Section-two .box h4 {
+      width: 270px;
+      font-size: 32px;
+      font-weight: 700;
+    }
+    .Section-two .box p {
+      width: 270px;
+      font-size: 16px;
+      line-height: 160%;
+      letter-spacing: 0.01em;
+    }
+  }
+  
+  
+  
+  
+  /*--------------------------------------------------------------
+  # Section-three                                                  
+  --------------------------------------------------------------*/
+  .Section-three h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40.2424px;
+    line-height: 49px;
+    color: #0074E4;
+  }
+  .Section-three span h1{
+    padding-block: 1em;
+    padding-inline: 0.5em;
+    border-radius: 50%;
+    border: solid 3px #0074E4;
+    display: inline-block; 
+    position: relative;
+  }
+  
+  
+  
+  
+  /*--------------------------------------------------------------
+  # Section-four
+  --------------------------------------------------------------*/
+  .Section-four {
+    background: url("../images/section-four-bg.svg") top center;
+    background-size: cover;
+    position: relative;
+    height: 300vh;
+  }
+  .Section-four p {
+    margin-top: 1.3em;
+  }
+  .card-main {
+    padding-inline: 4.5em;
+  }
+  .card {
+    color: white;
+    background-color: #0076e400;
+    margin-bottom: 1.5em;
+    width: 310px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    padding: 2em;
+    border: 1.5px solid white;
+    border-radius: 5px;
+  }
+  .card:hover {
+    background: rgba(0, 116, 228, 0.3);
+    border: none;
+  }
+  .card-heading {
+    display: flex;
+    align-items: center;
+  }
+  .card-heading span {
+    padding: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+  }
+  .card h6 {
+    width: 250px;
+    margin: 0;
+    margin-top: 1em;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%; 
+    letter-spacing: 0.01em;  
+  }
+  @media (min-width : 577px)
+  {
+    .hide-card {
+      display: none;
+    }
+  }
+  @media (max-width : 576px)
+  {
+    .mobile-card-container > .row {
+      overflow-x: auto;
+    }
+  }
+  @media (max-width: 992px) {
+    .Section-four p {
+      margin-top: 1em;
+      line-height: 70%;
+    }
+    .Section-four p span {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      text-align: center;
+      letter-spacing: -0.02em;
+    }
+    .card {
+      background: rgba(0, 116, 228, 0.3);
+      border: none;
+    }
+    .card-main {
+      padding-inline: 1em;
+    }
+    .Section-four h5 {
+      font-size: 16px;
+      line-height: 160%;
+      /* or 26px */
+      
+      text-align: center;
+      letter-spacing: 0.01em;  
+    }
+  }
+  .Section-four h5 {
+    margin-top: 20px;
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    line-height: 160%;
+  }
+ 
+  
+  
+  
+  /*--------------------------------------------------------------
+  # Section-five
+  --------------------------------------------------------------*/
+  .Section-five {
+    background: url("../images/section-five/bg.svg") top center;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    mix-blend-mode: multiply;
+  }
+  
