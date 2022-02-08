@@ -541,6 +541,9 @@ section {
   }
 }
 @media (max-width: 992px) {
+  .Section-four {
+    background-position: 10% 0%;
+  }
   .Section-four p {
     margin-top: 1em;
     line-height: 70%;
@@ -562,8 +565,6 @@ section {
   .Section-four h5 {
     font-size: 16px;
     line-height: 160%;
-    /* or 26px */
-    
     text-align: center;
     letter-spacing: 0.01em;  
   }
@@ -576,14 +577,49 @@ section {
   letter-spacing: 0.01em;
   line-height: 160%;
 }
-
+.cardOne {
+  width: 100%;
+  height: auto;
+  border: none;
+  background: rgba(250, 250, 250, 0.04);
+  backdrop-filter: blur(19px);
+  border-radius: 20px;  
+}
+.cardOne:hover {
+  background: rgba(250, 250, 250, 0.04);
+}
+.card-inner {
+  padding: 2.5em;
+  height: 8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  background: rgba(4, 32, 58, 0.295);
+  background-blend-mode: multiply;
+  border: 2px solid #0074E4;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.card-inner span {
+  padding: 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+.card-inner:hover {
+  background: rgba(4, 32, 58, 0.295);
+  background-blend-mode: multiply;
+  border: 2px solid #0074E4;
+}
 
 
 
 /*--------------------------------------------------------------
 # Section-five
 --------------------------------------------------------------*/
-.Section-five {
+.Section-six {
   background: url("../images/section-five/bg.svg") top center;
   background-size: cover;
   position: relative;
