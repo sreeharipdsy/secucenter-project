@@ -474,7 +474,7 @@ section {
   background: url("../images/section-four-bg.svg") top center;
   background-size: cover;
   position: relative;
-  height: 100%;
+  height: 100% ;
 }
 .Section-four p {
   margin-top: 1.3em;
@@ -490,7 +490,6 @@ section {
   height: 280px;
   display: flex;
   flex-direction: column;
- 
   align-items: flex-start;
   padding: 2em;
   border: 1.5px solid white;
@@ -566,7 +565,7 @@ section {
 .Section-four h5 {
   margin-top: 20px;
   color: white;
-  font-weight: 300;
+  font-weight: 100;
   font-size: 18px;
   letter-spacing: 0.01em;
   line-height: 160%;
@@ -578,17 +577,20 @@ section {
 /*--------------------------------------------------------------
 # Section-four-portion-two
 --------------------------------------------------------------*/
+.section-four-P2 {
+  background: #129e84;
+}
 .box {
   padding: 2em;
   width: auto;
   height: auto;
   border: none;
-  background: rgba(250, 250, 250, 0.04);
+  background: #060B25;
   backdrop-filter: blur(19px);
   border-radius: 20px;  
 }
 .box:hover {
-  background: rgba(250, 250, 250, 0.04);
+  background: #060B25;
 }
 .card-inner {
   padding: 1.5em;
@@ -596,7 +598,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(4, 28, 51, 0.39);
+  background: #060B25;
   background-blend-mode: multiply;
   border: 2px solid #0074E4;
   box-sizing: border-box;
@@ -779,5 +781,88 @@ section {
   .section-five-parent p {
     font-size: 14px;
     width: auto;
+  }
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Section-six
+--------------------------------------------------------------*/
+.container-six {
+  margin-inline: 8em;
+}
+#Section-six {
+  background: url("../images/section-six/background.svg") top center;
+  background-size: cover;
+  position: relative;
+  height: 100% ;
+}
+#Section-six .section-title {
+  margin-bottom: -1.5em;
+}
+.Section-six h5 {
+  padding-top: -1em;
+  position: static;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #747474;
+}
+.card-s6-parent {
+  padding-inline: 1em;
+}
+.card-s6 {
+  padding: 2em;
+  height: auto;
+  width: auto max-content;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #FFFFFF;
+  border: 2px solid #EBEBEB;
+  box-sizing: border-box;
+  border-radius: 10px;    
+  margin-bottom: 1em;
+}
+.card-s6:hover {
+  background: #ECF6FF;
+  border: 2px solid #BDE0FF;
+  box-sizing: border-box;
+}
+.card-heading-s6 {
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: -0.01em; 
+  color: #0074E4;
+  margin-bottom: 0.7em;
+}
+.card-heading-s6 span {
+  margin-left: 0.5em;
+}
+.card-s6-parent h6 {
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.01em; 
+  color: #747474;  
+  margin-bottom: 1.5em;
+}
+@media (max-width: 992px) {
+  .container-six {
+    margin-inline: 4em;
+  }  
+  .card-s6 {
+    background: #ECF6FF;
+    border: 2px solid #BDE0FF;
+    box-sizing: border-box;
+  }
+  .container-six > .row {
+    overflow-x: auto;
   }
 }
