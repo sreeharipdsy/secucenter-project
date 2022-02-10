@@ -341,7 +341,7 @@ section {
   background: url("../images/homeTwoBg.svg") top center;
   background-size: cover;
   position: relative;
-  height: 90vh;
+  height: 100%;
   background-position: 80% 0%;
 }
 .box {
@@ -480,7 +480,7 @@ section {
   background: url("../images/section-four-bg.svg") top center;
   background-size: cover;
   position: relative;
-  height: 300vh;
+  height: 100%;
 }
 .Section-four p {
   margin-top: 1.3em;
@@ -496,7 +496,7 @@ section {
   height: 280px;
   display: flex;
   flex-direction: column;
-  justify-content: left;
+ 
   align-items: flex-start;
   padding: 2em;
   border: 1.5px solid white;
@@ -523,7 +523,7 @@ section {
   margin-top: 1em;
   font-family: 'Inter';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 200;
   font-size: 16px;
   line-height: 160%; 
   letter-spacing: 0.01em;  
@@ -577,32 +577,41 @@ section {
   letter-spacing: 0.01em;
   line-height: 160%;
 }
-.cardOne {
-  width: 100%;
+
+
+
+
+/*--------------------------------------------------------------
+# Section-four-portion-two
+--------------------------------------------------------------*/
+.box {
+  padding: 2em;
+  width: auto;
   height: auto;
   border: none;
   background: rgba(250, 250, 250, 0.04);
   backdrop-filter: blur(19px);
   border-radius: 20px;  
 }
-.cardOne:hover {
+.box:hover {
   background: rgba(250, 250, 250, 0.04);
 }
 .card-inner {
-  padding: 2.5em;
-  height: 8em;
+  padding: 1.5em;
+  height: 6em;
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  align-items: flex-start;
-  background: rgba(4, 32, 58, 0.295);
+  align-items: center;
+  background: rgba(4, 28, 51, 0.39);
   background-blend-mode: multiply;
   border: 2px solid #0074E4;
   box-sizing: border-box;
   border-radius: 10px;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
 }
 .card-inner span {
-  padding: 10px;
+  margin-left: 1em;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -613,16 +622,91 @@ section {
   background-blend-mode: multiply;
   border: 2px solid #0074E4;
 }
+.card-block-one {
+  padding-left: 12em;
+}
+.card-block-two {
+  padding-left: 8em;
+}
+.card-block-three {
+  padding-left: 4em;
+}
+.card-description-one {
+  color: #FFFFFF;
+  margin-top: -5.5em;
+  width: 30em;
+  float: right;
+  margin-right: 2em;
+}
+.card-description-two {
+  color: #FFFFFF;
+  margin-top: -6.5em;
+  width: 30em;
+  float: right;
+  margin-right: 6em;
+}
+.card-description-three {
+  color: #FFFFFF;
+  margin-top: -5.5em;
+  width: 30em;
+  float: right;
+  margin-right: 10em;
+}
+.box h6 {
+  font-weight: 200;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+}
+@media (max-width: 992px) {
+  .box {
+    backdrop-filter: blur(10px);
+  }
+  .box .card {
+    width: auto;
+  }
+  .card-block-one, .card-block-two, .card-block-three{
+    padding-left: 0;
+  }
+  .card-description-one {
+    margin-top: auto;
+    width: 17.5em;
+    float: none;
+  }
+  .card-description-two {
+    margin-top: auto;
+    width: 17.5em;
+    float: none;
+  }
+  .card-description-three {
+    margin-top: auto;
+    width: 17.5em;
+    float: none;
+  }
+}
+
 
 
 
 /*--------------------------------------------------------------
 # Section-five
 --------------------------------------------------------------*/
-.Section-six {
+.Section-five {
   background: url("../images/section-five/bg.svg") top center;
   background-size: cover;
   position: relative;
   height: 100vh;
   mix-blend-mode: multiply;
+}
+@media (max-width: 992px) {
+  .Section-five {
+    background-position: 10% 0%;
+  }
+  .section-title span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px !important;
+    line-height: 120% ;
+    letter-spacing: -0.02em ;  
+  }
 }
