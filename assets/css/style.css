@@ -684,12 +684,11 @@ section {
 /*--------------------------------------------------------------
 # Section-five
 --------------------------------------------------------------*/
-.Section-five {
+#Section-five {
   background: url("../images/section-five/bg.svg") top center;
   background-size: cover;
   position: relative;
-  height: 100vh;
-  mix-blend-mode: multiply;
+  height: 100% ;
 }
 @media (max-width: 992px) {
   .Section-five {
@@ -702,5 +701,83 @@ section {
     font-size: 36px !important;
     line-height: 120% ;
     letter-spacing: -0.02em ;  
+  }
+}
+#section-five-left, #section-five-right {
+  float: left;
+  width: 50%;
+  padding: 1em;
+}
+.card-inner-S5-left, .card-inner-S5-right{
+  padding: 2em;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 17px rgba(215, 215, 215, 0.25);
+  border-radius: 10px;  
+  height: 24em;
+  width: 28em;
+  margin: 0 auto; 
+  float: none;
+  margin-bottom: 10px; 
+}
+.card-inner-S5-left:hover + .section-five-left {
+  background: #0074E4;
+}
+.section-five-parent h5 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 130%; 
+  letter-spacing: -0.01em;
+  margin-bottom: 0.75em;
+  color: #0074E4;
+}
+.section-five-parent p {
+  width: 365px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  margin-bottom: 1.5em;
+  color: #747474;
+}
+.section-five-parent button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px;
+  position: static;
+  border: 1px solid #0074E4;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #0074E4;   
+  background: none;     
+}
+.section-five-parent button:hover {
+  background: #DAEDFF;  
+}
+.card-inner-S5-left {
+  margin-right: 0.5em;
+}
+.card-inner-S5-right {
+  margin-left: 0.5em;
+}
+@media (max-width: 992px) {
+  #section-five-left, #section-five-right {
+    float: none;
+    width: 100%;
+    padding: 1em;
+  }
+  .card-inner-S5-left, .card-inner-S5-right {
+    height: auto;
+    width: auto;
+    margin: auto;
+    padding: 1em;
+  }
+  .section-five-parent p {
+    font-size: 14px;
+    width: auto;
   }
 }
