@@ -306,7 +306,7 @@ section {
   padding: 60px 0;
   overflow: hidden;
 }
-.section-title p span{
+.section-title p span { 
   color: #0074E4;
   font-size: 56px;
   font-weight: bold;
@@ -323,6 +323,14 @@ section {
   letter-spacing: -0.02em;
   font-family: 'inter' !important;
   color: #3F3F3F;;
+}
+@media (max-width: 992px) {
+  .section-title p {
+    font-size: 36px !important;
+  }
+  .section-title span {
+    font-size: 36px !important;
+  }
 }
 
 
@@ -578,9 +586,9 @@ section {
 # Section-four-portion-two
 --------------------------------------------------------------*/
 .section-four-P2 {
-  background: #129e84;
+  background: #16bb9d;
 }
-.box {
+.box-two {
   padding: 2em;
   width: auto;
   height: auto;
@@ -589,7 +597,7 @@ section {
   backdrop-filter: blur(19px);
   border-radius: 20px;  
 }
-.box:hover {
+.box-two:hover {
   background: #060B25;
 }
 .card-inner {
@@ -660,6 +668,9 @@ section {
   .box .card {
     width: auto;
   }
+  .card-inner {
+    width: auto;
+  }
   .card-block-one, .card-block-two, .card-block-three{
     padding-left: 0;
   }
@@ -692,11 +703,24 @@ section {
   position: relative;
   height: 100% ;
 }
+.section-title-P2 p {
+  margin: 0;
+  margin-bottom: 0.25em;
+  font-size: 56px;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  font-family: 'inter' !important;
+  color: #3F3F3F;;
+}
 @media (max-width: 992px) {
   .Section-five {
     background-position: 10% 0%;
   }
-  .section-title span {
+  .section-title-P2 p {
+    line-height: 0;
+    margin-bottom: 0.5em;
+  }
+  .section-title-P2 span {
     font-family: 'Inter';
     font-style: normal;
     font-weight: bold;
@@ -817,8 +841,8 @@ section {
 }
 .card-s6 {
   padding: 2em;
-  height: auto;
-  width: auto max-content;
+  height: 13em;
+  width: auto ;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -855,7 +879,7 @@ section {
 }
 @media (max-width: 992px) {
   .container-six {
-    margin-inline: 4em;
+    margin-inline: 0.5em;
   }  
   .card-s6 {
     background: #ECF6FF;
@@ -865,4 +889,24 @@ section {
   .container-six > .row {
     overflow-x: auto;
   }
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Section-seven
+--------------------------------------------------------------*/
+.Section-seven {
+  background: url("../images/section-seven/background.svg") top center;
+  background-size: cover;
+  position: relative;
+  height: 80vh ;
+}
+.container-seven {
+  background: url("../images/section-seven/Rectangle.svg") top center;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  margin-top: 4em;
 }
