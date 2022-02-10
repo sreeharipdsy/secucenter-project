@@ -264,9 +264,6 @@ a:hover {
 
 @media (max-height: 500px) {
   #hero {
-    background-attachment: fixed;
-  }
-  #hero {
     height: auto;
   }
   #hero .container {
@@ -275,9 +272,6 @@ a:hover {
   }
 }
 @media (max-width: 768px) {
-  #hero {
-    background-attachment: fixed;
-  }
   #hero h1 {
     font-size: 42px;
     line-height: 120%;
