@@ -1,12 +1,18 @@
+
+
+//section-three
+function picture() { 
+  var pic = "assets/images/soc main.svg"
+  document.getElementById('img-section-3').src = pic.replace('90x90', '225x225');
+  document.getElementById('img-section-3').style.display='block';
+}
+
+  
+//section-seven
 document.getElementById("target-me").open = true;
-
-// Fetch all the details element.
 const details = document.querySelectorAll("details");
-
-// Add the onclick listeners.
 details.forEach((targetDetail) => {
   targetDetail.addEventListener("click", () => {
-    // Close all the details that are not targetDetail.
     details.forEach((detail) => {
       if (detail !== targetDetail) {
         detail.removeAttribute("open");

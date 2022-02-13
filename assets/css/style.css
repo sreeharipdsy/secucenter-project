@@ -236,7 +236,7 @@ a:hover {
 #hero .btns {
   margin-top: 30px;
 }
-#hero .btn-connect, #hero .btn-book {
+#hero .btn-connect {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -252,10 +252,7 @@ a:hover {
   color: white;
 }
 
-#hero .btn-book {
-  margin-left: 15px;
-}
-
+ 
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -455,22 +452,42 @@ section {
 /*--------------------------------------------------------------
 # Section-three                                                  
 --------------------------------------------------------------*/
-.Section-three h1 {
+.Section-three img {
+  width: -webkit-fill-available;
+}
+.Section-three button {
+  position: absolute;
+  top: 50%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   font-family: 'Inter';
   font-style: normal;
   font-weight: bold;
   font-size: 40.2424px;
   line-height: 49px;
+  text-align: center;
+  background-color: #FFFFFF;
   color: #0074E4;
-}
-.Section-three span h1{
   padding-block: 1em;
   padding-inline: 0.5em;
   border-radius: 50%;
   border: solid 3px #0074E4;
-  display: inline-block; 
-  position: relative;
 }
+.Section-three button:hover {
+  box-shadow: #94b9dd24 0px 0px 0px 25px, #0074e40d 0px 0px 0px 50px;
+}
+.container3 {
+  padding-bottom: 5em;
+  position: relative;
+  width: 100%;
+}
+
+.container3 img {
+  width: 100%;
+  height: auto;
+}
+
 
 
 
@@ -513,6 +530,7 @@ section {
 }
 .card-heading span {
   padding: 10px;
+  color: #ffffff;
   font-family: 'Inter';
   font-style: normal;
   font-weight: bold;
@@ -542,6 +560,9 @@ section {
   }
 }
 @media (max-width: 992px) {
+  .Section-four .row {
+    --bs-gutter-x: -1.5em;
+  }
   .Section-four {
     background-position: 10% 0%;
   }
@@ -561,7 +582,7 @@ section {
     border: none;
   }
   .card-main {
-    padding-inline: 1em;
+    padding: 0%;
   }
   .Section-four h5 {
     font-size: 16px;
@@ -1186,6 +1207,7 @@ summary::-webkit-details-marker {
     float: none;
   }
   .description-footer {
+    text-align: center;
     padding: 2em;
     padding-top: 5em;
   }
