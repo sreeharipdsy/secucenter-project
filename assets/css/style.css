@@ -121,7 +121,6 @@ a:hover {
   .mobile-nav-toggle {
     display: block;
   }
-
   .navbar ul {
     display: none;
   }
@@ -129,11 +128,11 @@ a:hover {
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
-  top: 0;
-  right: 0;
+  top: 0.5em;
+  right: -0.5em;
   left: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.815);
+ 
   z-index: 999;
 }
 .navbar-mobile .mobile-nav-toggle {
@@ -144,21 +143,24 @@ a:hover {
 .navbar-mobile ul {
   display: block;
   position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
+  top: 4.4em;
+  right: 0;
+  bottom: 0;
+  left: 3em;
   padding: 10px 0;
-  border-radius: 6px;
-  background-color: rgb(255, 255, 255);
+  border-radius: 0;
+  background-color: #0074E4;
 }
 .navbar-mobile a, .navbar-mobile a:focus {
-  padding: 10px 20px;
+  padding-top: 1.75em;
+  padding-left: 3em;
   font-size: 15px;
-  color: #828282;
+  color: #FFFFFF;
+  border-bottom: none !important;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #0074E4;
+  border-bottom: none !important;
+  color: #ffffff9e !important;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -487,7 +489,16 @@ section {
   width: 100%;
   height: auto;
 }
-
+@media (max-width: 992px) {
+  .Section-three button {
+    box-shadow: #94b9dd24 0px 0px 0px 20px, #0074e40d 0px 0px 0px 40px;
+    font-size: 1em;
+    line-height: 20px;
+    padding-block: 1.5em;
+    padding-inline: 1em;
+    border: solid 2px #0074E4;
+  }
+}
 
 
 
