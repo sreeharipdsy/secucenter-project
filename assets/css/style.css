@@ -933,11 +933,20 @@ section {
   background: url("../images/section-seven/background.svg") top center;
   background-size: cover;
   position: relative;
-  height: 120vh;
+  height: 110%;
   padding: 0;
 }
+.container-S7 {
+  padding-bottom: 1em;
+}
+.Section-seven img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;  
+}
 .box-S7 {
-  margin-top: 8em !important;
+  margin-top: 7em !important;
   margin: auto;
   background: #FFFFFF;
   height: auto;
@@ -1016,12 +1025,15 @@ summary::-webkit-details-marker {
 	display: none;
 }
 @media (max-width: 992px) {
+  .box-S7 {
+    margin-top: 1em !important;
+  }
   .box-inner-S7 {
     padding: 1.2em;
     margin: auto;
   }
   .Section-seven {
-    height: 115vh;
+    height: 100%;
   }
   .summary-title {
     font-size: 16px;
@@ -1214,25 +1226,36 @@ summary::-webkit-details-marker {
     margin-right: auto;
     width: 40%;
   }
+  .social-icons {
+    display: flex;
+    width: 18em;
+    justify-content: center;
+  }
   .social-icons-float {
     float: none;
   }
   .description-footer {
     text-align: center;
     padding: 2em;
-    padding-top: 5em;
+    padding-top: 4em;
   }
   .social {
     text-align: center;
-    padding-block: 4em;
+    padding-block: 3em;
   }
   .social img {
     padding-inline: 1em;
     width: 62px;
   }
   .footer-links {
+    margin-top: -2em;
+    margin-bottom: 5em;
     justify-content: center;
     display: flex;
+  }
+  .footer-links a {
+    width: 7em;
+    text-align: center;
   }
 }
 
