@@ -57,7 +57,7 @@
 
 //section-three
 function picture() { 
-  var pic = "assets/images/soc main.svg"
+  var pic = "assets/images/section-three/soc-main.svg"
   document.getElementById('img-section-3').src = pic.replace('90x90', '225x225');
   document.getElementById('img-section-3').style.display='block';
 }
