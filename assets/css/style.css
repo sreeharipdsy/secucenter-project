@@ -991,6 +991,7 @@ details {
   padding-right: 4em;
   font-family: 'Inter';
   font-style: normal;
+  color: #3F3F3F;
   font-weight: normal;
   font-size: 16px;
   line-height: 160%;
@@ -1187,6 +1188,9 @@ summary::-webkit-details-marker {
 }
 .social-icons {
   padding: 0.75em;
+}
+.social-icons span {
+  color: #3F3F3F;
 }
 .social-icons-float {
   float: left;
