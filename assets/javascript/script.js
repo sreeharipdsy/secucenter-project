@@ -61,6 +61,8 @@ function picture() {
   document.getElementById('img-section-3').src = pic.replace('90x90', '225x225');
   document.getElementById('img-section-3').style.display='block';
 }
+
+
 //section-seven
 document.getElementById("target-me").open = true;
 const details = document.querySelectorAll("details");
@@ -73,3 +75,7 @@ details.forEach((targetDetail) => {
     });
   });
 });
+//image-changer
+function ImgChanger(i) {
+  document.getElementById("outcomes-img").setAttribute("src", `assets/images/section-seven/img-S7/image-${i}/img-${i}.svg`);
+}
