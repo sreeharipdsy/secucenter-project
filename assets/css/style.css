@@ -69,7 +69,6 @@ a:hover {
 
 
 /* Desktop Navigation */
-
 .navbar {
   margin-left: 2em;
   padding: 0;
@@ -106,9 +105,7 @@ a:hover {
   color: #0074E4;
 }
 
- 
 /* Mobile Navigation */
-
 .mobile-nav-toggle {
   color: #0074E4;
   font-size: 30px;
@@ -116,7 +113,6 @@ a:hover {
   display: none;
   line-height: 0;
 }
-
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
@@ -245,15 +241,20 @@ a:hover {
   align-items: center;
   background: #0074E4;
   position: static;
-  width: 170px;
+  max-width: 190px;
+  width: auto;
   height: 51px;
   font-weight: 600;
   font-size: 18px;
-  padding: 12px 24px;
+  padding: 14px 21px;
   border-radius: 5px;
   color: white;
 }
-
+#hero .btn-connect img {
+  padding-left: 0.5em;
+}
+a>div { display: none; }
+a:hover>div { display: block; }
  
 @media (min-width: 1024px) {
   #hero {
@@ -507,7 +508,7 @@ section {
 # Section-four
 --------------------------------------------------------------*/
 .Section-four {
-  background: url("../images/section-four-bg.svg") top center;
+  background: url("../images/section-four/background.svg") top center;
   background-size: cover;
   position: relative;
   height: 100% ;
@@ -737,7 +738,8 @@ section {
 }
 .section-title-P2 p {
   margin: 0;
-  margin-bottom: 0.25em;
+  margin-top: 1em !important;
+  margin-bottom: 0.5em;
   font-size: 56px;
   font-weight: bold;
   letter-spacing: -0.02em;
@@ -937,7 +939,7 @@ section {
   padding: 0;
 }
 .container-S7 {
-  padding-bottom: 1em;
+  padding-bottom: 3em;
 }
 .Section-seven img {
   display: block;
@@ -977,13 +979,12 @@ details {
   font-weight: bold;
   font-size: 24px;
   line-height: 130%;
-  color: #0074E4;
   letter-spacing: -0.01em;  
 }
 .summary-title:hover {
   color: #0074E4;
 } 
-.summary-title:active {
+.summary-title:focus {
   color: #0074E4;
 }
 .summary-content {
