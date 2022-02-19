@@ -70,7 +70,7 @@ a:hover {
 
 /* Desktop Navigation */
 .navbar {
-  margin-left: 2em;
+  margin-left: 10em;
   padding: 0;
 }
 .navbar ul {
@@ -114,6 +114,9 @@ a:hover {
   line-height: 0;
 }
 @media (max-width: 991px) {
+  .navbar {
+    margin-left: 2em;
+  }
   .mobile-nav-toggle {
     display: block;
   }
@@ -134,7 +137,8 @@ a:hover {
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
   top: 15px;
-  right: 15px;
+  font-size: 2em;
+  right: 30px;
 }
 .navbar-mobile ul {
   display: block;
@@ -146,10 +150,11 @@ a:hover {
   padding: 10px 0;
   border-radius: 0;
   background-color: #0074E4;
+  box-shadow: -21px 4px 32px rgba(8, 96, 181, 0.23);
 }
 .navbar-mobile a, .navbar-mobile a:focus {
-  padding-top: 1.75em;
-  padding-left: 3em;
+  padding-top: 1.25em;
+  padding-left: 2.5em;
   font-size: 15px;
   color: #FFFFFF;
   border-bottom: none !important;
@@ -171,7 +176,7 @@ a:hover {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../images/hero-section/bg.png") top center;
+  background: url("../images/page-1 (Home)/section-1 (header)/bg.png") top center;
   background-size: cover;
   position: relative;
   padding: 0;
@@ -211,6 +216,7 @@ a:hover {
   font-style: normal;
   font-weight: bold;
   font-size: 72px;
+  line-height: 110%;
   letter-spacing: -0.02em;
   color: #FFFFFF;
 }
@@ -279,7 +285,7 @@ a:hover>div { display: block; }
     letter-spacing: -0.04em;
   }
   #hero h3 {
-    font-size: 56px;
+    font-size: 50px;
     line-height: 56px;
     font-weight: 600;
     letter-spacing: -0.02em;
@@ -340,7 +346,7 @@ section {
 # Section-two
 --------------------------------------------------------------*/
 .Section-two {
-  background: url("../images/homeTwoBg.svg") top center;
+  background: url("../images/page-1 (Home)/section-2/background.svg") top center;
   background-size: cover;
   position: relative;
   height: 100%;
@@ -508,7 +514,7 @@ section {
 # Section-four
 --------------------------------------------------------------*/
 .Section-four {
-  background: url("../images/section-four/background.svg") top center;
+  background: url("../images/page-1 (Home)/section-4/background.svg") top center;
   background-size: cover;
   position: relative;
   height: 100% ;
@@ -633,6 +639,10 @@ section {
 .box-two:hover {
   background: #060B25;
 }
+.box-two h6 {
+  font-weight: 200;
+  line-height: 150%;
+}
 .card-inner {
   padding: 1.5em;
   height: 6em;
@@ -671,21 +681,21 @@ section {
 .card-description-one {
   color: #FFFFFF;
   margin-top: -5.5em;
-  width: 30em;
+  width: 31em;
   float: right;
   margin-right: 2em;
 }
 .card-description-two {
   color: #FFFFFF;
-  margin-top: -6.5em;
-  width: 30em;
+  margin-top: -5.5em;
+  width: 31em;
   float: right;
   margin-right: 6em;
 }
 .card-description-three {
   color: #FFFFFF;
   margin-top: -5.5em;
-  width: 30em;
+  width: 31em;
   float: right;
   margin-right: 10em;
 }
@@ -731,7 +741,7 @@ section {
 # Section-five
 --------------------------------------------------------------*/
 #Section-five {
-  background: url("../images/section-five/bg.svg") top center;
+  background: url("../images/page-1 (Home)/section-5/background.svg") top center;
   background-size: cover;
   position: relative;
   height: 100% ;
@@ -852,7 +862,7 @@ section {
   margin-inline: 8em;
 }
 #Section-six {
-  background: url("../images/section-six/background.svg") top center;
+  background: url("../images/page-1 (Home)/section-6/background.svg") top center;
   background-size: cover;
   position: relative;
   height: 100% ;
@@ -932,7 +942,7 @@ section {
 # Section-seven
 --------------------------------------------------------------*/
 .Section-seven {
-  background: url("../images/section-seven/background.svg") top center;
+  background: url("../images/page-1 (Home)/section-7/background.svg") top center;
   background-size: cover;
   position: relative;
   height: 110%;
@@ -1123,7 +1133,7 @@ summary::-webkit-details-marker {
   background: #FCFCFC;
 }
 .container-S9 {
-  background: url("../images/section-nine/bg.svg") top center;
+  background: url("../images/page-1 (Home)/section-9/background.svg") top center;
   background-size: cover;
   position: relative;
   height: 338px;

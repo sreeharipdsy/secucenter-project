@@ -57,7 +57,7 @@
 
 //section-three
 function picture() { 
-  var pic = "assets/images/section-three/soc-main.svg"
+  var pic = "assets/images/page-1 (Home)/section-3/soc-main.svg"
   document.getElementById('img-section-3').src = pic.replace('90x90', '225x225');
   document.getElementById('img-section-3').style.display='block';
 }
@@ -77,5 +77,5 @@ details.forEach((targetDetail) => {
 });
 //image-changer
 function ImgChanger(i) {
-  document.getElementById("outcomes-img").setAttribute("src", `assets/images/section-seven/img-S7/image-${i}/img-${i}.svg`);
+  document.getElementById("outcomes-img").setAttribute("src", `assets/images/page-1 (Home)/section-7/img-S7/image-${i}/img-${i}.svg`);
 }
