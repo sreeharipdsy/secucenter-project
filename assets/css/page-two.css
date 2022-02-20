@@ -826,6 +826,10 @@ a:hover>div { display: block; }
     font-size: 16px;
     margin-bottom: 2em;
   }
+  .Section-seven .list img {
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+  }
   .Section-seven .heading h6 {
     font-size: 32px;
     padding-bottom: 1.5em;
