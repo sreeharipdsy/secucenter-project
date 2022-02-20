@@ -433,6 +433,9 @@ a:hover>div { display: block; }
   #Section-one {
     background-image: none;
   }
+  .Section-one-content {
+    padding-left: 1.5em;
+  }
   #Section-one h3 {
     font-size: 48px;
     line-height: 56px;
@@ -494,6 +497,7 @@ a:hover>div { display: block; }
 @media (max-width: 991px) {
   .S2-left {
     padding-block: 5em;
+    padding-inline: 1.5em;
   }
   .S2-left .description p {
     width: auto;
@@ -527,6 +531,9 @@ a:hover>div { display: block; }
 --------------------------------------------------------------*/
 .Section-three {
   background-color: #FCFCFC;
+}
+.Section-three .container {
+  padding-bottom: 7em;
 }
 .Section-three .title-S-3 h1 {
   margin-top: 2em;
@@ -576,6 +583,9 @@ a:hover>div { display: block; }
   color: #FFFFFF;
 }
 @media (max-width: 991px) {
+  .Section-three .container {
+    padding-bottom: 3em;
+  }
   .Section-three .box .img-1 {
     display: none;
   }
@@ -612,7 +622,220 @@ a:hover>div { display: block; }
 
 
 
+/*--------------------------------------------------------------
+# Section-four
+--------------------------------------------------------------*/
+.Section-four {
+  width: 100%;
+  height: auto;
+  background: url("../images/page-2 (SOC as a Staffing)/section-4/bg.svg") top center;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+.Section-four .container {
+  padding-top: 8em;
+  padding-bottom: 4em;
+}
+.Section-four .heading h6 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #3F3F3F;
+}
+.Section-four .heading h6 span {
+  color: #0074E4;
+}
+.Section-four .heading p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #747474;
+}
+.Section-four img {
+  width: -webkit-fill-available;
+}
+@media (max-width: 991px) {
+  .Section-four .heading h6 {
+    font-size: 36px;
+  }
+  .Section-four .heading p {
+    font-size: 16px;
+    width: 80%;
+    padding-top: 1em;
+    padding-bottom: 4em;
+  }
+  .Section-four .heading {
+    padding: 1em;
+  }
+}
 
+
+
+
+
+/*--------------------------------------------------------------
+# Section-six
+--------------------------------------------------------------*/
+.Section-six {
+  width: 100%;
+  height: auto;
+  background: url("../images/page-2 (SOC as a Staffing)/section-6/bg.svg") top center;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+.Section-six .container {
+  padding-block: 7em;
+}
+.Section-six .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Section-six .title img {
+  padding-right: 0.5em;
+}
+.Section-six h6 {
+  font-family: 'inter';
+  color: #FFFFFF;
+  margin-bottom: 0%;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 120%;
+}
+.Section-six .description p {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-family: 'inter';
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  padding-inline: 15em;
+  padding-top: 1em;
+}
+.Section-six .container-inner {
+  padding-top: 4em;
+  padding-inline: 10em;
+}
+.Section-six .container-inner h6 {
+  padding-top: 1em;
+  padding-inline: 2em;
+  font-family: 'inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.Section-six .container-inner img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 992px) {
+  .Section-six .description p {
+    padding-inline: 0;
+  }
+  .Section-six .container-inner {
+    padding-inline: 2em;
+  }
+  .Section-six h6 {
+    font-size: 32px;
+  }
+  .Section-six .description p {
+    font-size: 16px;
+  }
+  .Section-six .container-inner img {
+    width: 80%;
+  }
+  .Section-six .container-inner h6 {
+    padding-inline: 0;
+    padding-bottom: 3em;
+  }
+  .Section-six .container {
+    padding-bottom: 5em;
+  }
+}
+
+
+
+
+ 
+/*--------------------------------------------------------------
+# section-seven
+--------------------------------------------------------------*/
+.Section-seven {
+  background: #FCFCFC;
+}
+.Section-seven .container {
+  padding-top: 7em;
+  padding-bottom: 1em;
+}
+.Section-seven .heading h6 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #3F3F3F;
+  padding-bottom: 1em;
+}
+.Section-seven .heading h6 span {
+  color: #0074E4;
+}
+.Section-seven .list {
+  margin-bottom: 1.75em;
+}
+.Section-seven .list img {
+  float: left;
+  margin-right: 1.25em;
+  padding: 0.25em;
+  background: #FFFFFF;
+  box-shadow: 5px 5px 12px rgba(136, 135, 135, 0.12);
+  border-radius: 5px;
+}
+.Section-seven .list p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #747474;  
+}
+.Section-seven .right-S7 img {
+  padding-block: 3em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .Section-seven .left-S7 {
+    padding: 2em;
+  }
+  .Section-seven .right-S7 img {
+    display: none;
+  }
+  .Section-seven .list p {
+    font-size: 16px;
+    margin-bottom: 2em;
+  }
+  .Section-seven .heading h6 {
+    font-size: 32px;
+    padding-bottom: 1.5em;
+  }
+}
+
+
+
+
+ 
 /*--------------------------------------------------------------
 # Section-eight
 --------------------------------------------------------------*/
@@ -623,7 +846,8 @@ a:hover>div { display: block; }
   background: url("../images/page-1 (Home)/section-9/background.svg") top center;
   background-size: cover;
   position: relative;
-  height: 338px;
+  height: auto;
+  padding-bottom: 3em !important;
   padding: 0;
   margin-top: 6em;
   margin-bottom: 4em;
@@ -655,13 +879,26 @@ a:hover>div { display: block; }
   line-height: 150%;
   color: #0074E4;   
 }
+.Section-eight button div {
+  float: right;
+}
+.Section-eight button img {
+  padding-left: 0.5em;
+  height: 1em;
+}
+button>div { display: none; }
+button:hover>div { display: block; }
+ 
 @media (max-width: 992px) {
   .Section-eight h2 {
     font-size: 32px;
+    padding: 0.5em;
+    padding-top: 1.25em;
   }
   .Section-eight button {
     padding-block: 0.5em;
     margin-top: 0.5em;
+    margin-bottom: 0.75em;
   }
 }
 
@@ -669,7 +906,7 @@ a:hover>div { display: block; }
 
 
 
- 
+
 /*--------------------------------------------------------------
 # footer
 --------------------------------------------------------------*/
