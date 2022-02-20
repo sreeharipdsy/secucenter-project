@@ -511,6 +511,10 @@ a:hover>div { display: block; }
     width: 100%;
     padding-top: 0%;
   }
+  .S2-right {
+    background: linear-gradient(99deg, rgba(13, 45, 77, 0.86) -88.6%, #0074E4 102.86%);
+    height: 7em;
+  }
 }
 
 
@@ -576,11 +580,11 @@ a:hover>div { display: block; }
     display: none;
   }
   .Section-three .box .img-2 {
-    margin-top: 3em;
+    padding-top: 3em;
     display: block; 
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 90%;
   }
   .Section-three .title-S-3 p {
     padding-inline: 0;
@@ -589,11 +593,83 @@ a:hover>div { display: block; }
     padding-top: 3em;
     font-size: 15px;
   }
+  .Section-three .title-S-3 h1 {
+    font-size: 36px;
+  }
+  .Section-three .container {
+    padding-top: 10em;
+  }
+  .Section-three .title-S-3 p {
+    font-size: 16px;
+  }
+  .Section-three .box {
+    border: none;
+    margin-bottom: 5em;
+  }
 }
 
 
 
 
+
+
+/*--------------------------------------------------------------
+# Section-eight
+--------------------------------------------------------------*/
+.Section-eight {
+  background: #FCFCFC;
+}
+.container-S8 {
+  background: url("../images/page-1 (Home)/section-9/background.svg") top center;
+  background-size: cover;
+  position: relative;
+  height: 338px;
+  padding: 0;
+  margin-top: 6em;
+  margin-bottom: 4em;
+}
+.Section-eight h2 {
+  padding-inline: 2em;
+  padding-top: 1.5em;
+  padding-bottom: 0.25em;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;  
+}
+.Section-eight button {
+  padding: 0.75em;
+  padding-inline: 1.5em;
+  text-align: center;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 5px; 
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 150%;
+  color: #0074E4;   
+}
+@media (max-width: 992px) {
+  .Section-eight h2 {
+    font-size: 32px;
+  }
+  .Section-eight button {
+    padding-block: 0.5em;
+    margin-top: 0.5em;
+  }
+}
+
+
+
+
+
+ 
 /*--------------------------------------------------------------
 # footer
 --------------------------------------------------------------*/
