@@ -70,7 +70,7 @@ a:hover {
 
 /* Desktop Navigation */
 .navbar {
-  margin-left: 10em;
+  margin-left: 2em;
   padding: 0;
 }
 .navbar-2 {
@@ -121,6 +121,9 @@ a:hover {
   .mobile-nav-toggle {
     display: block;
   }
+  .navbar {
+    margin-left: 0% !important;
+  }
   .navbar ul {
     display: none;
   }
@@ -167,176 +170,6 @@ a:hover {
 }
 
 
-
-
-body {
-    font-family: 'inter';
-    color: rgb(0, 0, 0);
-}
-a {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-}
-
-
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
-#header {
-  background: white;
-  z-index: 997;
-  padding: 1em;
-  box-shadow: 0px 4px 17px rgba(215, 215, 215, 0.25);
-}
-#header .logo {
-  margin: 0;
-  padding: 0;
-  font-weight: 500;
-  font-family: 'inter';
-}
-#header .logo a {
-  color: #fff;
-}
-
-
-
-
-/*--------------------------------------------------------------
-# Connect Us Button
---------------------------------------------------------------*/
-.primaryButton {
-  background: #3F3F3F;
-  color: #fff;
-  border-radius: 5px;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: 600;
-}
-.primaryButton:hover {
-  color: #fff;
-  background: #3F3F3F;
-  box-shadow: 10px 10px 24px rgba(62, 63, 65, 0.18);
-}
-.primaryButton:active {
-  color: #fff;
-  background: #202020;
-  box-shadow: 10px 10px 24px rgba(62, 63, 65, 0.18);
-}
-@media (max-width: 992px) {
-  .primaryButton {
-    margin: 0 15px 0 0;
-    padding: 8px 20px;
-  }
-}
-
-
-
-
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-
-
-/* Desktop Navigation */
-.navbar {
-  margin-left: 2em;
-  padding: 0;
-}
-.navbar ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style: none;
-  align-items: center;
-}
-.navbar li {
-  position: relative;
-}
-.navbar a, .navbar a:focus {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 0.2em;
-  color: #828282;
-  white-space: nowrap;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: 'inter';
-  border-bottom: 2px solid #ffffff;
-}
-.navbar a i, .navbar a:focus i {
-  font-size: 16px;
-  line-height: 0;
-  margin-left: 5px;
-}
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  border-bottom: 2px solid #0074E4;
-  color: #0074E4;
-}
-
-/* Mobile Navigation */
-.mobile-nav-toggle {
-  color: #0074E4;
-  font-size: 30px;
-  cursor: pointer;
-  display: none;
-  line-height: 0;
-}
-@media (max-width: 991px) {
-  .mobile-nav-toggle {
-    display: block;
-  }
-  .navbar-2 {
-    margin-left: 0% !important;
-  }
-  .navbar ul {
-    display: none;
-  }
-}
-.navbar-mobile {
-  position: fixed;
-  overflow: hidden;
-  top: 0.5em;
-  right: -0.5em;
-  left: 0;
-  bottom: 0;
- 
-  z-index: 999;
-}
-.navbar-mobile .mobile-nav-toggle {
-  position: absolute;
-  top: 15px;
-  font-size: 2em;
-  right: 30px;
-}
-.navbar-mobile ul {
-  display: block;
-  position: absolute;
-  top: 4.4em;
-  right: 0;
-  bottom: 0;
-  left: 3em;
-  padding: 10px 0;
-  border-radius: 0;
-  background-color: #0074E4;
-  box-shadow: -21px 4px 32px rgba(8, 96, 181, 0.23);
-}
-.navbar-mobile a, .navbar-mobile a:focus {
-  padding-top: 1.25em;
-  padding-left: 2.5em;
-  font-size: 15px;
-  color: #FFFFFF;
-  border-bottom: none !important;
-}
-.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  border-bottom: none !important;
-  color: #ffffff9e !important;
-}
-.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
-  margin: 15px;
-}
 
 
 
@@ -635,10 +468,10 @@ a:hover>div { display: block; }
 }
 .Section-four .container {
   padding-top: 8em;
-  padding-bottom: 4em;
+  padding-bottom: 8em;
 }
 .Section-four .heading h6 {
-  font-family: Inter;
+  font-family: 'Inter';
   font-style: normal;
   font-weight: bold;
   font-size: 56px;
@@ -650,7 +483,7 @@ a:hover>div { display: block; }
   color: #0074E4;
 }
 .Section-four .heading p {
-  font-family: Inter;
+  font-family: 'Inter';
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -732,14 +565,14 @@ a:hover>div { display: block; }
 .fa-arrow-right {
   margin-right: 5em;
 }
-i {
+.first i {
   background-color: #F5FAFF;
   color: #828282;
   padding-block: 0.5em;
   padding-inline: 1.5em;
   margin-bottom: 1.5em;
 }
-i:hover {
+.first i:hover {
   background-color: #d0e7fd;
   border-radius: 3px;
 }
@@ -759,13 +592,14 @@ i:hover {
 .Section-six {
   width: 100%;
   height: auto;
-  background: url("../images/page-2 (SOC as a Staffing)/section-6/bg.svg") top center;
+  background: url("../images/page-2 (SOC as a Staffing)/section-6/background.svg") top center;
   background-size: cover;
   position: relative;
   padding: 0;
 }
 .Section-six .container {
   padding-block: 7em;
+  padding-bottom: 6em;
 }
 .Section-six .title {
   display: flex;
@@ -798,7 +632,6 @@ i:hover {
 }
 .Section-six .container-inner h6 {
   padding-top: 1em;
-  padding-inline: 2em;
   font-family: 'inter';
   font-style: normal;
   font-weight: 400;
@@ -811,6 +644,16 @@ i:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.Section-six .card {
+  padding: 1em;
+  height: 15.5em;
+  background: #ffffff00;
+  border: none;
+}
+.Section-six .card:hover {
+  background-color: #0d3d97;
+  border-radius: 5px;
 }
 @media (max-width: 992px) {
   .Section-six .description p {

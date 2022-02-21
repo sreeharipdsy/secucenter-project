@@ -1,0 +1,344 @@
+  
+body {
+    font-family: 'inter';
+    color: rgb(0, 0, 0);
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: white;
+  z-index: 997;
+  padding: 1em;
+  box-shadow: 0px 4px 17px rgba(215, 215, 215, 0.25);
+}
+#header .logo {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-family: 'inter';
+}
+#header .logo a {
+  color: #fff;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Connect Us Button
+--------------------------------------------------------------*/
+.primaryButton {
+  background: #3F3F3F;
+  color: #fff;
+  border-radius: 5px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.primaryButton:hover {
+  color: #fff;
+  background: #3F3F3F;
+  box-shadow: 10px 10px 24px rgba(62, 63, 65, 0.18);
+}
+.primaryButton:active {
+  color: #fff;
+  background: #202020;
+  box-shadow: 10px 10px 24px rgba(62, 63, 65, 0.18);
+}
+@media (max-width: 992px) {
+  .primaryButton {
+    margin: 0 15px 0 0;
+    padding: 8px 20px;
+  }
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+
+/* Desktop Navigation */
+.navbar {
+  margin-left: 10em;
+  padding: 0;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar li {
+  position: relative;
+}
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 0.2em;
+  color: #828282;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'inter';
+  border-bottom: 2px solid #ffffff;
+}
+.navbar a i, .navbar a:focus i {
+  font-size: 16px;
+  line-height: 0;
+  margin-left: 5px;
+}
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  border-bottom: 2px solid #0074E4;
+  color: #0074E4;
+}
+
+/* Mobile Navigation */
+.mobile-nav-toggle {
+  color: #0074E4;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+}
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+  .navbar {
+    margin-left: 0% !important;
+  }
+  .navbar ul {
+    display: none;
+  }
+}
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0.5em;
+  right: -0.5em;
+  left: 0;
+  bottom: 0;
+ 
+  z-index: 999;
+}
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  font-size: 2em;
+  right: 30px;
+}
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 4.4em;
+  right: 0;
+  bottom: 0;
+  left: 3em;
+  padding: 10px 0;
+  border-radius: 0;
+  background-color: #0074E4;
+  box-shadow: -21px 4px 32px rgba(8, 96, 181, 0.23);
+}
+.navbar-mobile a, .navbar-mobile a:focus {
+  padding-top: 1.25em;
+  padding-left: 2.5em;
+  font-size: 15px;
+  color: #FFFFFF;
+  border-bottom: none !important;
+}
+.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+  border-bottom: none !important;
+  color: #ffffff9e !important;
+}
+.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
+  margin: 15px;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#Section-one {
+  width: 100%;
+  height: 100%;
+  background: url("../images/page-5 (Contact us)/section-1/background.svg") top center;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+#Section-one .container {
+  padding-top: 100px;
+}
+.Section-one .container-inner {
+  margin: auto;
+  padding-block: 4em;
+}
+.Section-one h1 {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 0.5em;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;  
+}
+.Section-one p {
+  width: 80%;
+  margin: auto;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;  
+}
+@media (max-width: 992px) {
+  .Section-one h1 {
+    font-size: 42px;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+  }
+  .Section-one p {
+    text-align: left;
+    margin: 0;
+    padding-top: 1em;
+    width: auto;
+  }
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# footer
+--------------------------------------------------------------*/
+.footer {
+  background-color: #FCFCFC;
+  padding-bottom: 0 !important;
+  padding-top: 5em;
+}
+.logo-footer {
+  float: left;
+}
+.description-footer {
+  padding-top: 0.5em;
+  padding-left: 12em;
+}
+.description-footer img {
+  padding-right: 1em;
+}
+.social-icons {
+  padding: 0.75em;
+}
+.social-icons span {
+  color: #3F3F3F;
+}
+.social-icons-float {
+  float: left;
+}
+.footer-links {
+  margin-top: -1em;
+  margin-bottom: 3em;
+}
+.footer-links a {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%; 
+  letter-spacing: 0.01em; 
+  color: #3F3F3F;  
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-links li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.footer-links a:hover {
+  color: #0074E4;
+}
+.footer hr {
+  border: 1px solid #0074E4;
+}
+@media (max-width: 992px) {
+  .logo-footer {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  .social-icons {
+    display: flex;
+    width: 18em;
+    justify-content: center;
+  }
+  .social-icons-float {
+    float: none;
+  }
+  .description-footer {
+    text-align: center;
+    padding: 2em;
+    padding-top: 4em;
+  }
+  .social {
+    text-align: center;
+    padding-block: 3em;
+  }
+  .social img {
+    padding-inline: 1em;
+    width: 62px;
+  }
+  .footer-links {
+    margin-top: -2em;
+    margin-bottom: 5em;
+    justify-content: center;
+    display: flex;
+  }
+  .footer-links a {
+    width: 7em;
+    text-align: center;
+  }
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Copyright
+--------------------------------------------------------------*/
+.Copyright {
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+}

@@ -1,173 +1,3 @@
-body {
-  font-family: 'inter';
-  color: rgb(0, 0, 0);
-}
-a {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-}
-
-
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
-#header {
-  background: white;
-  z-index: 997;
-  padding: 1em;
-  box-shadow: 0px 4px 17px rgba(215, 215, 215, 0.25);
-}
-#header .logo {
-  margin: 0;
-  padding: 0;
-  font-weight: 500;
-  font-family: 'inter';
-}
-#header .logo a {
-  color: #fff;
-}
-
-
-
-
-/*--------------------------------------------------------------
-# Connect Us Button
---------------------------------------------------------------*/
-.primaryButton {
-  background: #3F3F3F;
-  color: #fff;
-  border-radius: 5px;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: 600;
-}
-.primaryButton:hover {
-  color: #fff;
-  background: #3F3F3F;
-  box-shadow: 10px 10px 24px rgba(62, 63, 65, 0.18);
-}
-.primaryButton:active {
-  color: #fff;
-  background: #202020;
-  box-shadow: 10px 10px 24px rgba(62, 63, 65, 0.18);
-}
-@media (max-width: 992px) {
-  .primaryButton {
-    margin: 0 15px 0 0;
-    padding: 8px 20px;
-  }
-}
-
-
-
-
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-
-
-/* Desktop Navigation */
-.navbar {
-  margin-left: 10em;
-  padding: 0;
-}
-.navbar-2 {
-  margin-left: 10em !important;
-  padding: 0 !important;
-}
-.navbar ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style: none;
-  align-items: center;
-}
-.navbar li {
-  position: relative;
-}
-.navbar a, .navbar a:focus {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 0.2em;
-  color: #828282;
-  white-space: nowrap;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: 'inter';
-  border-bottom: 2px solid #ffffff;
-}
-.navbar a i, .navbar a:focus i {
-  font-size: 16px;
-  line-height: 0;
-  margin-left: 5px;
-}
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  border-bottom: 2px solid #0074E4;
-  color: #0074E4;
-}
-
-/* Mobile Navigation */
-.mobile-nav-toggle {
-  color: #0074E4;
-  font-size: 30px;
-  cursor: pointer;
-  display: none;
-  line-height: 0;
-}
-@media (max-width: 991px) {
-  .mobile-nav-toggle {
-    display: block;
-  }
-  .navbar ul {
-    display: none;
-  }
-}
-.navbar-mobile {
-  position: fixed;
-  overflow: hidden;
-  top: 0.5em;
-  right: -0.5em;
-  left: 0;
-  bottom: 0;
- 
-  z-index: 999;
-}
-.navbar-mobile .mobile-nav-toggle {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
-.navbar-mobile ul {
-  display: block;
-  position: absolute;
-  top: 4.4em;
-  right: 0;
-  bottom: 0;
-  left: 3em;
-  padding: 10px 0;
-  border-radius: 0;
-  background-color: #0074E4;
-}
-.navbar-mobile a, .navbar-mobile a:focus {
-  padding-top: 1.75em;
-  padding-left: 3em;
-  font-size: 15px;
-  color: #FFFFFF;
-  border-bottom: none !important;
-}
-.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  border-bottom: none !important;
-  color: #ffffff9e !important;
-}
-.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
-  margin: 15px;
-}
-
-
-
 
 body {
     font-family: 'inter';
@@ -241,7 +71,7 @@ a:hover {
 
 /* Desktop Navigation */
 .navbar {
-  margin-left: 2em;
+  margin-left: 10em;
   padding: 0;
 }
 .navbar ul {
@@ -559,6 +389,7 @@ a:hover>div { display: block; }
   }
   .Section-three .container {
     margin-top: 10em;
+    padding-inline: 1.5em;
   }
   .Section-three .heading h6 {
     font-size: 36px;
@@ -568,6 +399,255 @@ a:hover>div { display: block; }
     font-size: 12px;
   }
 }
+
+
+
+
+
+/*--------------------------------------------------------------
+# Section-four
+--------------------------------------------------------------*/
+.Section-four .container {
+  padding-block: 4em;
+}
+.Section-four .title h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #3F3F3F;
+}
+.Section-four .title p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #747474;
+  margin-top: 1em;
+  padding-inline: 10em;
+}
+@media (max-width: 992px) {
+  .Section-four .title h1 {
+    font-size: 36px;
+  }
+  .Section-four .title p {
+    padding: 0;
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Section-five
+--------------------------------------------------------------*/
+.Section-five {
+  background: #060B25;
+}
+.Section-five .container {
+  padding-block: 5em;
+  padding-bottom: 2.5em;
+}
+.Section-five .heading .title h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: -0.01em; 
+  color: #19C4A5;
+}
+.Section-five .heading .description p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  letter-spacing: 0.01em;  
+  color: #FFFFFF;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3em;
+}
+.Section-five details {
+  margin: 1rem auto;
+  width: 35em;
+  max-width: calc(100% - 2rem);
+  position: relative;
+  border-radius: 6px;
+  background-color: #09144A;
+  color: #ffffff;
+  transition: background-color 0.5s;
+}
+.Section-five details > :last-child {
+  background: #E3FFFA;
+  margin-bottom: 1rem;
+  border-radius: 0px 0px 5px 5px;
+  padding: 1em;
+}
+.Section-five details::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+  opacity: 0.15;
+  box-shadow: 0 0.25em 0.5em #263238;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  z-index: -1;
+}
+.Section-five details[open] {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%; 
+  letter-spacing: 0.01em; 
+  color: #3F3F3F;
+  background: #19C4A5;
+  border-radius: 5px;
+}
+.Section-five details[open]::before {
+  opacity: 0.6;
+}
+.Section-five summary {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130%; 
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+  padding-block: 0.8em;
+  padding-left: 1em;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.Section-five summary::before, summary::after {
+  width: 0.75em;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  content: "";
+  background-color: currentColor;
+  text-align: right;
+  transform: translateY(-50%);
+  transition: transform 0.2s ease-in-out;
+}
+.Section-five summary::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+.Section-five [open] summary::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+.Section-five summary::-webkit-details-marker {
+  display: none;
+}
+.Section-five p {
+  margin: 0 0 1em;
+  line-height: 1.5;
+}
+.Section-five ul {
+  margin: 0 0 1em;
+  padding: 0 0 0 1em;
+}
+.Section-five li:not(:last-child) {
+  margin-bottom: 0.5em;
+}
+.Section-five .img-1 {
+  display: block;
+  margin: auto;
+  height: 90%;
+}
+
+@media (max-width: 992px) {
+  .Section-five .container {
+    padding-inline: 1em;
+  }
+  .Section-five .heading .title h1 {
+    font-size: 18px;
+  }
+  .Section-five .heading .description p {
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 1em;
+  }
+  .Section-five .img-1 {
+    display: block;
+    margin-top: 3em !important;
+    margin-bottom: 1em !important;
+    margin: auto;
+    height: 12em;
+  }
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Section-six
+--------------------------------------------------------------*/
+.Section-six {
+  width: 100%;
+  height: auto;
+  background: url("../images/page-3 (SOC as a Service)/section-6/background.svg") top center;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+.Section-six .container {
+  padding-top: 8em;
+}
+.Section-six .title h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;  
+}
+.Section-six .title h1 span {
+  color: #060B25;
+}
+.Section-six .icons {
+  padding-top: 4em;
+  padding-bottom: 3em;
+}
+@media (max-width: 992px) {
+  .Section-six .container {
+    padding-top: 5em;
+    padding-bottom: 3em;
+  }
+  .Section-six .title h1 {
+    font-size: 32px;
+  }
+  .Section-six .icons {
+    padding-inline: 1em;
+    padding-top: 3em;
+  }
+  .Section-six .icons img {
+    height: 6em;
+  }
+}
+
 
 
 
@@ -622,6 +702,9 @@ a:hover>div { display: block; }
   color: #747474;  
 }
 @media (max-width: 992px) {
+  .Section-seven .container {
+    padding-inline: 1.5em;
+  }
   .Section-seven .left-S7 {
     padding: 2em;
   }

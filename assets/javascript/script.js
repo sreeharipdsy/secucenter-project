@@ -63,7 +63,7 @@ function picture() {
 }
 
 
-//section-seven
+//section-seven-page-1 & section-five-page-3 
 document.getElementById("target-me").open = true;
 const details = document.querySelectorAll("details");
 details.forEach((targetDetail) => {
@@ -78,4 +78,11 @@ details.forEach((targetDetail) => {
 //image-changer
 function ImgChanger(i) {
   document.getElementById("outcomes-img").setAttribute("src", `assets/images/page-1 (Home)/section-7/img-S7/image-${i}/img-${i}.svg`);
+}
+
+
+
+//section-five-page-3-desktop
+function ImgChangerTwo(i) {
+    document.getElementById("outcomes-img-two").setAttribute("src", `assets/images/page-3 (SOC as a Service)/section-5/desktop/image-${i}.svg`);
 }
