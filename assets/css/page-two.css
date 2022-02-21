@@ -680,6 +680,79 @@ a:hover>div { display: block; }
 
 
 
+
+/*--------------------------------------------------------------
+# Section-five
+--------------------------------------------------------------*/
+.first .container {
+  margin-block: 2em;
+}
+#demo {
+  background: #F5FAFF;
+  border-radius: 10px;
+}
+.carousel-caption h1 {
+  position: initial;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;  
+  text-align: left;
+  color: #3F3F3F;
+  padding-bottom: 0.5em;
+}
+.carousel-caption span {
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px 6px rgba(221, 221, 221, 0.25);
+  border-radius: 20px;  
+  padding-inline: 0.6em;
+  padding-block: 0.25em;
+  margin-right: 0.5em;
+}
+.carousel-caption {
+  position: initial;
+  color: rgba(78, 77, 77, 0.856);
+  text-align: left;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 2em;
+  padding-top: 2.5em;
+  padding-right: 2em;
+  padding-bottom: 5em;
+}
+.carousel-control-prev, .carousel-control-next {
+  top: inherit;
+}
+.fa-arrow-left {
+  margin-left: 5em;
+}
+.fa-arrow-right {
+  margin-right: 5em;
+}
+i {
+  background-color: #F5FAFF;
+  color: #828282;
+  padding-block: 0.5em;
+  padding-inline: 1.5em;
+  margin-bottom: 1.5em;
+}
+i:hover {
+  background-color: #d0e7fd;
+  border-radius: 3px;
+}
+.carousel-control-prev {
+  justify-content: flex-start
+}
+.carousel-control-next {
+  justify-content: flex-end
+}
+
+
+
+
 /*--------------------------------------------------------------
 # Section-six
 --------------------------------------------------------------*/
