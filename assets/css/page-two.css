@@ -660,7 +660,11 @@ a:hover>div { display: block; }
     padding-inline: 0;
   }
   .Section-six .container-inner {
-    padding-inline: 2em;
+    padding-inline: 1em;
+  }
+  .Section-six .card {
+    margin-top: 1em;
+    height: 11.5em;
   }
   .Section-six h6 {
     font-size: 32px;
@@ -673,7 +677,7 @@ a:hover>div { display: block; }
   }
   .Section-six .container-inner h6 {
     padding-inline: 0;
-    padding-bottom: 3em;
+    padding-bottom: 2em;
   }
   .Section-six .container {
     padding-bottom: 5em;

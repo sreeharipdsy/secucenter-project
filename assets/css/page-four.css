@@ -166,3 +166,184 @@ a:hover {
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
 }
+
+
+
+/*--------------------------------------------------------------
+# Section-three
+--------------------------------------------------------------*/
+.Section-three {
+  background: #FCFCFC;
+}
+.container-S3 {
+  background: url("../images/page-1 (Home)/section-9/background.svg") top center;
+  background-size: cover;
+  position: relative;
+  height: auto;
+  padding-bottom: 3em !important;
+  padding: 0;
+  margin-top: 6em;
+  margin-bottom: 4em;
+}
+.Section-three h2 {
+  padding-inline: 2em;
+  padding-top: 1.5em;
+  padding-bottom: 0.25em;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;  
+}
+.Section-three button {
+  padding: 0.75em;
+  padding-inline: 1.5em;
+  text-align: center;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 5px; 
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 150%;
+  color: #0074E4;   
+}
+.Section-three button div {
+  float: right;
+}
+.Section-three button img {
+  padding-left: 0.5em;
+  height: 1em;
+}
+button>div { display: none; }
+button:hover>div { display: block; }
+
+@media (max-width: 992px) {
+  .Section-three h2 {
+    font-size: 32px;
+    padding: 0.5em;
+    padding-top: 1.25em;
+  }
+  .Section-three button {
+    padding-block: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.75em;
+  }
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# footer
+--------------------------------------------------------------*/
+.footer {
+  background-color: #FCFCFC;
+  padding-bottom: 0 !important;
+  padding-top: 7em;
+}
+.logo-footer {
+  float: left;
+}
+.description-footer {
+  padding-top: 0.5em;
+  padding-left: 12em;
+}
+.description-footer img {
+  padding-right: 1em;
+}
+.social-icons {
+  padding: 0.75em;
+}
+.social-icons span {
+  color: #3F3F3F;
+}
+.social-icons-float {
+  float: left;
+}
+.footer-links {
+  margin-top: -1em;
+  margin-bottom: 3em;
+}
+.footer-links a {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%; 
+  letter-spacing: 0.01em; 
+  color: #3F3F3F;  
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-links li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.footer-links a:hover {
+  color: #0074E4;
+}
+.footer hr {
+  border: 1px solid #0074E4;
+}
+@media (max-width: 992px) {
+  .logo-footer {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  .social-icons {
+    display: flex;
+    width: 18em;
+    justify-content: center;
+  }
+  .social-icons-float {
+    float: none;
+  }
+  .description-footer {
+    text-align: center;
+    padding: 2em;
+    padding-top: 4em;
+  }
+  .social {
+    text-align: center;
+    padding-block: 3em;
+  }
+  .social img {
+    padding-inline: 1em;
+    width: 62px;
+  }
+  .footer-links {
+    margin-top: -2em;
+    margin-bottom: 5em;
+    justify-content: center;
+    display: flex;
+  }
+  .footer-links a {
+    width: 7em;
+    text-align: center;
+  }
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Copyright
+--------------------------------------------------------------*/
+.Copyright {
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+}
