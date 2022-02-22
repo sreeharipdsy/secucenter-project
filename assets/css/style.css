@@ -983,7 +983,7 @@ details {
 	margin: auto; 
 	position: relative;
 }
-.summary-title {
+.box-inner-S7 summary span {
   font-family: 'Inter';
   font-style: normal;
   font-weight: bold;
@@ -991,12 +991,9 @@ details {
   line-height: 130%;
   letter-spacing: -0.01em;  
 }
-.summary-title:hover {
+.box-inner-S7 summary span:hover {
   color: #0074E4;
 } 
-.summary-title:focus {
-  color: #0074E4;
-}
 .summary-content {
 	padding-left: 1em;
   padding-right: 4em;

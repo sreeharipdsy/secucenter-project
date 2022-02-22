@@ -235,6 +235,31 @@ a:hover {
 
 
 
+
+/*--------------------------------------------------------------
+# Section-two
+--------------------------------------------------------------*/
+.Section-two {
+  width: 100%;
+  height: auto;
+  background: url("../images/page-5 (Contact us)/section-1/bg.svg") top center;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+.Section-two .container {
+  background: white;
+  margin-block: 5em;
+  height: 100vh;
+  border-radius: 20px;
+  margin-inline: 15em;
+}
+
+
+
+
+
+
 /*--------------------------------------------------------------
 # footer
 --------------------------------------------------------------*/
