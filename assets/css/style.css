@@ -1044,7 +1044,7 @@ summary::-webkit-details-marker {
   .Section-seven {
     height: 100%;
   }
-  .summary-title {
+  .box-inner-S7 summary span {
     font-size: 16px;
   }
   .summary-content {
