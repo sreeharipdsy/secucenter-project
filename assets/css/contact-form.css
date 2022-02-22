@@ -279,12 +279,12 @@ a:hover {
   border-radius: 5px;
 }
 .contact-form input:hover, .contact-form textarea:hover, .contact-form select:hover {
-  background: #0076e41c;
+  background: #E4F2FF;
 }
 .contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus {
   box-shadow: none;
-  border: 2px double #0074E4;
-  background: #0076e41c;
+  border: 1.5px double #0074E4;
+  background: #E4F2FF;
 } 
 .form-control {
   margin-bottom: 1em;
@@ -319,11 +319,9 @@ a:hover {
     margin-inline: 1em;
     padding-bottom: 3em;
   }
-  .contact-form input, .contact-form select {
-    height: 3em;
-  }
   .contact-form button {
-    padding-inline: 6.25em;
+    width: -webkit-fill-available;
+    margin-inline: 0.75em;
   }
 }
 

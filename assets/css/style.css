@@ -1005,6 +1005,9 @@ details {
   line-height: 160%;
   letter-spacing: 0.01em;
 }
+.Section-seven details[open]>summary {
+  color: #0074E4;
+}
 summary {
 	list-style: none;
 	padding: 1rem;	
