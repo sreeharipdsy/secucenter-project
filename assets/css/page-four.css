@@ -202,6 +202,9 @@ a:hover {
   color: #0074E4;
 }
 @media (max-width: 992px) {
+  .Section-one {
+    background-position: 77% 0% !important; 
+  }
   .Section-one h1 {
     font-size: 48px;
     text-align: left;
