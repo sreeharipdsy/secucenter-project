@@ -734,6 +734,8 @@ a:hover>div { display: block; }
 .container-S8 {
   background: url("../images/page-1 (Home)/section-9/background.svg") top center;
   background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
   position: relative;
   height: auto;
   padding-bottom: 3em !important;

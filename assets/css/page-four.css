@@ -179,7 +179,7 @@ a:hover {
 #Section-one {
   width: 100%;
   height: 70vh;
-  background: url("../images/page-1 (Home)/section-2/background.svg") top center;
+  background: url("../images/page-4 (Technology)/section-1/background.svg") top center;
   background-size: cover;
   position: relative;
   padding-top: 5em !important;
@@ -203,7 +203,7 @@ a:hover {
 }
 @media (max-width: 992px) {
   .Section-one {
-    background-position: 77% 0% !important; 
+    background-position: 87% 0% !important; 
   }
   .Section-one h1 {
     font-size: 48px;
@@ -300,6 +300,9 @@ a:hover {
   .Section-two .container-inner > .row {
     overflow-x: auto;
   }
+  .right .col-12 {
+    width: 70%;
+  }
   .box {
     margin-bottom: 0.75em;
   }
@@ -319,6 +322,8 @@ a:hover {
 .container-S3 {
   background: url("../images/page-1 (Home)/section-9/background.svg") top center;
   background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
   position: relative;
   height: auto;
   padding-bottom: 3em !important;

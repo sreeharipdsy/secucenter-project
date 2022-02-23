@@ -540,7 +540,7 @@ section {
 }
 .card:hover {
   background: rgba(0, 116, 228, 0.3);
-  border: 1.5px solid rgba(0, 116, 228, 0.3);
+  border: 1.5px solid #ffffff00;
   transition: 0.5s;
 }
 .card-heading {
@@ -566,16 +566,17 @@ section {
   line-height: 160%; 
   letter-spacing: 0.01em;  
 }
-@media (min-width : 577px)
-{
-  .hide-card {
-    display: none;
-  }
-}
+
 @media (max-width : 576px)
 {
-  .mobile-card-container > .row {
+  .Section-four .container > .row {
     overflow-x: auto;
+  }
+  .Section-four .mobile-card-container {
+    justify-content: unset !important;
+  }
+  .Section-four .mobile-card-container .col-12 {
+    width: 90%;
   }
 }
 @media (max-width: 992px) {
@@ -936,6 +937,12 @@ section {
   .container-six > .row {
     overflow-x: auto;
   }
+  .Section-six .mobile-card-container {
+    justify-content: unset !important;
+  }
+  .Section-six .mobile-card-container .col-12 {
+    width: 90%;
+  }
 }
 
 
@@ -1136,6 +1143,8 @@ summary::-webkit-details-marker {
 .container-S9 {
   background: url("../images/page-1 (Home)/section-9/background.svg") top center;
   background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
   position: relative;
   height: 338px;
   padding: 0;
@@ -1187,6 +1196,7 @@ button:hover>div { display: block; }
 @media (max-width: 992px) {
   .Section-nine h2 {
     font-size: 32px;
+    padding-inline: 0.25em;
   }
   .Section-nine button {
     padding-block: 0.5em;
