@@ -580,9 +580,6 @@ section {
   }
 }
 @media (max-width: 992px) {
-  .Section-four .row {
-    --bs-gutter-x: -1.5em;
-  }
   .Section-four {
     background-position: 10% 0%;
   }
