@@ -540,7 +540,8 @@ section {
 }
 .card:hover {
   background: rgba(0, 116, 228, 0.3);
-  border: none;
+  border: 1.5px solid rgba(0, 116, 228, 0.3);
+  transition: 0.5s;
 }
 .card-heading {
   display: flex;
@@ -826,7 +827,8 @@ section {
   background: none;     
 }
 .section-five-parent button:hover {
-  background: #DAEDFF;  
+  background: #DAEDFF;
+  transition: 0.5s;  
 }
 .card-inner-S5-left {
   margin-right: 0.5em;
@@ -900,6 +902,7 @@ section {
 .card-s6:hover {
   background: #ECF6FF;
   border: 2px solid #BDE0FF;
+  transition: 0.5s;
   box-sizing: border-box;
 }
 .card-heading-s6 {
@@ -990,9 +993,6 @@ details {
   font-size: 24px;
   line-height: 130%;
   letter-spacing: -0.01em;  
-}
-.box-inner-S7 summary span:hover {
-  color: #0074E4;
 } 
 .summary-content {
 	padding-left: 1em;
@@ -1007,6 +1007,7 @@ details {
 }
 .Section-seven details[open]>summary {
   color: #0074E4;
+  transition: 0.5s;
 }
 summary {
 	list-style: none;
@@ -1159,13 +1160,30 @@ summary::-webkit-details-marker {
   background: #FFFFFF;
   border: none;
   border-radius: 5px; 
-  font-family: Inter;
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-size: 23px;
   line-height: 150%;
   color: #0074E4;   
 }
+.Section-nine button a:hover {
+  color: #0074E4;
+}
+.Section-nine button:focus {
+  background: linear-gradient(0deg, #D8EBFE, #D8EBFE), #FFFFFF;
+  box-shadow: 10px 10px 24px rgba(73, 90, 107, 0.23);
+}
+.Section-nine button div {
+  float: right;
+}
+.Section-nine button img {
+  padding-left: 0.5em;
+  height: 1.25em;
+  padding-bottom: 5px;
+}
+button>div { display: none; }
+button:hover>div { display: block; }
 @media (max-width: 992px) {
   .Section-nine h2 {
     font-size: 32px;

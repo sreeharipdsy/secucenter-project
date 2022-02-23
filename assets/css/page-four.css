@@ -297,6 +297,9 @@ a:hover {
   .Section-two .container {
     padding-inline: 1.5em;
   }
+  .Section-two .container-inner > .row {
+    overflow-x: auto;
+  }
   .box {
     margin-bottom: 0.75em;
   }

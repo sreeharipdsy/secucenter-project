@@ -261,7 +261,7 @@ a:hover>div { display: block; }
 }
 @media (max-width: 992px) {
   #Section-one {
-    background: linear-gradient(300deg, #0074e46e 8.46%, rgba(255, 255, 255, 0) 77.54%);
+    background: linear-gradient(37deg, #0074e43d 8.46%, rgba(255, 255, 255, 0) 100.54%);
   }
   .Section-one-content {
     padding-left: 1.5em;
