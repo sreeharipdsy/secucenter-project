@@ -185,7 +185,6 @@ a:hover {
 }
 @media (max-width: 992px) {
   #Section-one .container {
-    padding-top: 98px;
     padding-left: 1em;
   }
   #Section-one-content {
@@ -322,6 +321,9 @@ a:hover>div { display: block; }
   padding-block: 6em;
 }
 @media (max-width: 991px) {
+  .Section-two {
+    background: linear-gradient(64.38deg, #0074E4 -25.6%, rgba(13, 45, 77, 0.86) 102.86%);
+  }
   .S2-left {
     padding-block: 5em;
     padding-inline: 1.5em;
@@ -343,7 +345,7 @@ a:hover>div { display: block; }
     padding-top: 0%;
   }
   .S2-right {
-    background: linear-gradient(99deg, rgba(13, 45, 77, 0.86) -88.6%, #0074E4 102.86%);
+    background: linear-gradient(99deg, rgba(13, 45, 77, 0) -88.6%, #0076e400 102.86%);
     height: 7em;
   }
 }

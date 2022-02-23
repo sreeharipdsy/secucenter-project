@@ -575,10 +575,9 @@ section {
   .Section-four .mobile-card-container {
     justify-content: unset !important;
     margin-left: 0em;
-    margin-right: -1.5em;
   }
   .Section-four .mobile-card-container .col-12 {
-    width: 80%;
+    width: 90%;
   }
   .card:hover {
     border: none;
