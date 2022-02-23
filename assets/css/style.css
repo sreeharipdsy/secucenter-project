@@ -577,7 +577,7 @@ section {
     margin-left: 0em;
   }
   .Section-four .mobile-card-container .col-12 {
-    width: 90%;
+    width: auto;
   }
   .card:hover {
     border: none;
@@ -722,17 +722,17 @@ section {
   }
   .card-description-one {
     margin-top: auto;
-    width: 17.5em;
+    width: auto;
     float: none;
   }
   .card-description-two {
     margin-top: auto;
-    width: 17.5em;
+    width: auto;
     float: none;
   }
   .card-description-three {
     margin-top: auto;
-    width: 17.5em;
+    width: auto;
     float: none;
   }
 }
@@ -886,6 +886,8 @@ section {
 }
 .card-s6-parent {
   padding-inline: 1em;
+  margin-left: auto;
+  margin-right: auto !important;
 }
 .card-s6 {
   padding: 2em;
@@ -943,7 +945,6 @@ section {
   }
   .Section-six .mobile-card-container .col-12 {
     width: 90%;
-    margin-right: -1em;
   }
 }
 
@@ -1228,6 +1229,7 @@ button:hover>div { display: block; }
   padding-right: 1em;
 }
 .social-icons {
+  margin: auto;
   padding: 0.75em;
 }
 .social-icons span {
@@ -1269,7 +1271,7 @@ button:hover>div { display: block; }
     float: none;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: fit-content;
   }
   .social-icons {
     display: flex;
