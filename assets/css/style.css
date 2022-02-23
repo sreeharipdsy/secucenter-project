@@ -574,9 +574,14 @@ section {
   }
   .Section-four .mobile-card-container {
     justify-content: unset !important;
+    margin-left: 0em;
+    margin-right: -1.5em;
   }
   .Section-four .mobile-card-container .col-12 {
-    width: 90%;
+    width: 80%;
+  }
+  .card:hover {
+    border: none;
   }
 }
 @media (max-width: 992px) {
@@ -939,6 +944,7 @@ section {
   }
   .Section-six .mobile-card-container .col-12 {
     width: 90%;
+    margin-right: -1em;
   }
 }
 

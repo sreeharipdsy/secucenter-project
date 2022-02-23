@@ -180,15 +180,12 @@ a:hover {
 #Section-one {
   width: 100%;
   height: 96vh;
-  background: url("../images/page-2 (SOC as a Staffing)/section-1/background.svg") top center;
+  background: url("../images/page-2 (SOC as a Staffing)/section-1/background.png") top center;
   background-size: cover;
   position: relative;
   padding: 0;
+  margin-top: 2.6em;
 }
-#Section-one .container {
-  padding-top: 110px;
-}
-
 @media (max-width: 992px) {
   #Section-one .container {
     padding-top: 98px;
@@ -293,7 +290,7 @@ a:hover>div { display: block; }
 # Section-two
 --------------------------------------------------------------*/
 .Section-two {
-  background: linear-gradient(99deg, rgba(13, 45, 77, 0.86) -10.6%, #0074E4 102.86%);
+  background: linear-gradient(90deg, rgb(12 47 82 / 100%) -17.6%, #0f62af 60.86%, #ffffff 40.86%);
 }
 .S2-left {
   padding-block: 7em;

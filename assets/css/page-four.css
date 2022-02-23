@@ -302,6 +302,7 @@ a:hover {
   }
   .right .col-12 {
     width: 70%;
+    margin-right: -1em;
   }
   .box {
     margin-bottom: 0.75em;
