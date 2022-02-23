@@ -720,18 +720,9 @@ section {
   .card-block-one, .card-block-two, .card-block-three{
     padding-left: 0;
   }
-  .card-description-one {
-    margin-top: auto;
-    width: auto;
-    float: none;
-  }
-  .card-description-two {
-    margin-top: auto;
-    width: auto;
-    float: none;
-  }
-  .card-description-three {
-    margin-top: auto;
+  .card-description-one, .card-description-two, .card-description-three {
+    margin: auto;
+    margin-right: 1em;
     width: auto;
     float: none;
   }
