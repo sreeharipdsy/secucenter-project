@@ -86,3 +86,26 @@ function ImgChanger(i) {
 function ImgChangerTwo(i) {
     document.getElementById("outcomes-img-two").setAttribute("src", `assets/images/page-3 (SOC as a Service)/section-5/desktop/image-${i}.svg`);
 }
+
+
+
+//section-five--page-2
+
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("carousel-caption");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}

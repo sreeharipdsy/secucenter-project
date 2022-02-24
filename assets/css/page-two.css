@@ -516,12 +516,75 @@ a:hover>div { display: block; }
 /*--------------------------------------------------------------
 # Section-five
 --------------------------------------------------------------*/
+.Section-five .container {
+  margin-top: 6em;
+  margin-bottom: 3em;
+}
+.Section-five .container-inner {
+  background: #EFF2FF;
+  border-radius: 20px;
+  margin-block: 4em;
+}
+.first {
+  background: #FFFFFF;
+  border-radius: 10px;  
+  margin: 3em;
+  width: -webkit-fill-available;
+}
 .first .container {
   margin-block: 2em;
+  float: left;
+}
+.first .inner-content {
+  margin-block: 2em;
+  margin-bottom: 3em;
+}
+.first .inner-content h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  color: #3F3F3F;
+}
+.first .inner-content p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #747474;
+}
+.Section-five h6 {
+  text-align: center;
+  color: #3F3F3F;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+}
+.Section-five h6 span {
+  color: #0074E4;
+}
+.slideshow-container {
+  position: relative;
 }
 #demo {
   background: #F5FAFF;
   border-radius: 10px;
+  height: 18em;
+  margin-left: 1em;
+  margin-bottom: 2em;
+  border: 3px solid #0076e400;
+  transition: 1s;
+}
+#demo:hover {
+  border: 3px solid #0074E4;
+  transition: 1s;
 }
 .carousel-caption h1 {
   position: initial;
@@ -538,8 +601,8 @@ a:hover>div { display: block; }
   background-color: #FFFFFF;
   box-shadow: 2px 2px 6px rgba(221, 221, 221, 0.25);
   border-radius: 20px;  
-  padding-inline: 0.6em;
-  padding-block: 0.25em;
+  padding-inline: 0.8em;
+  padding-block: 0.5em;
   margin-right: 0.5em;
 }
 .carousel-caption {
@@ -559,10 +622,10 @@ a:hover>div { display: block; }
   top: inherit;
 }
 .fa-arrow-left {
-  margin-left: 5em;
+  margin-left: 4em;
 }
 .fa-arrow-right {
-  margin-right: 5em;
+  margin-right: 4em;
 }
 .first i {
   background-color: #F5FAFF;
@@ -572,6 +635,7 @@ a:hover>div { display: block; }
   margin-bottom: 1.5em;
 }
 .first i:hover {
+  transition: 0.5s;
   background-color: #d0e7fd;
   border-radius: 3px;
 }
@@ -581,6 +645,49 @@ a:hover>div { display: block; }
 .carousel-control-next {
   justify-content: flex-end
 }
+.Section-five .description h2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #3F3F3F;  
+  padding-inline: 2em;
+  padding-bottom: 3em;
+}
+@media (max-width: 992px) {
+  .first {
+    margin-top: 3em;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-inline: 1em;
+    width: fit-content;
+  }
+  .first .container {
+    margin-block: 2em;
+    padding: 0;
+    float: left;
+    text-align: center;
+  }
+  .first .inner-content h1 {
+    font-size: 18px;
+    margin-bottom: 0.5em;
+  }
+  .first .inner-content p {
+    font-size: 14px;
+  }
+  #demo {
+    margin-left: 0;
+    margin-bottom: 1em;
+  }
+  .Section-five .description h2 {
+    font-size: 14px;
+    padding-inline: 1em;
+  }
+}
+
 
 
 

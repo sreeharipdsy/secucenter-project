@@ -137,37 +137,55 @@
     <!-- Section-five -->
     <section class="Section-five d-flex">
       <div class="container position-relative">
+        <div class="title">
+          <h6><span>SOC</span> as a Staffing in Action</h6>
+        </div>
         <div class="row container-inner">
-          <div class="first col-lg-4 col-12">
-            <div class="container">
-              <div id="demo" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="carousel-caption">
-                      <h1><span>1</span> Manage</h1>
-                      <p>The incident watcher will monitor incidents at various touchpoints, analyze alerts, and categorize them to identify real and false alerts effectively.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="carousel-caption">
-                      <p>If Shai Reznik's TDD videos don't convince you to add automated testing your code, I don't know what will.This was the very best explanation of frameworks for brginners that I've ever seen.</p>
-                      <div id="image-caption">Cromption Greves</div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="carousel-caption">
-                      <p>If Shai Reznik's TDD videos don't convince you to add automated testing your code, I don't know what will.This was the very best explanation of frameworks for brginners that I've ever seen.</p>
-                      <div id="image-caption">Harry Mon</div>
-                    </div>
-                  </div>
-                </div> 
-                <a class="carousel-control-prev" href="#demo" data-slide="prev"> <i class='fas fa-arrow-left'></i> </a> 
-                <a class="carousel-control-next" href="#demo" data-slide="next"> <i class='fas fa-arrow-right'></i> </a>
+          <div class="first">
+            <div class="container col-lg-4">
+              <div class="col-12 inner-content">
+                <h1>Quality Assurance</h1>
+                <p>Completion and response time, first-time fix rate, client service level compliance, etc. are meticulously checked and conveyed to MSPs through a detailed QA report.</p>
               </div>
+              <div id="demo" class="slideshow-container">
+                <div id="carousel-caption" class="carousel-caption" >
+                  <h1><span>1</span> Manage</h1>
+                  <p>The incident watcher will monitor incidents at various touchpoints, analyze alerts, and categorize them to identify real and false alerts effectively.</p>
+                </div>          
+                <div id="carousel-caption" class="carousel-caption">
+                  <h1><span>2</span> Detect</h1>
+                  <p> If suspicious alerts are identified, tickets are raised to investigate the incident to understand the severity and accordingly inform the  MSPs.</p>
+                </div>
+                <div id="carousel-caption" class="carousel-caption">
+                  <h1><span>3</span> Respond</h1>
+                  <p>Mitigation suggestions will be communicated to the MSPs through detailed reports and the ticket will be closed upon receiving approval from the MSPs.</p>
+                </div>
+                <a class="carousel-control-prev" onclick="plusSlides(-1)"><i class='fas fa-arrow-left'></i> </a>
+                <a class="carousel-control-next" onclick="plusSlides(1)"> <i class='fas fa-arrow-right'></i> </a>
+              </div>       
+              <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("carousel-caption");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                }
+              </script>
             </div>
           </div>
           <div class=" col-lg-3 col-12"></div>
-          <div class=" col-lg-3 col-12"></div>
+          <div class="description">
+            <h2>We adhere to the 3 main stages of SOC - manage, detect and respond - through well-defined processes which will be managed by staff from various tiers depending on the intensity of the function. The entire process then undergoes quality assurance to ensure everything is communicated to the MSPs at the right time in the best way.</h2>
+          </div>
         </div>
       </div>
     </section>
