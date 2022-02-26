@@ -104,9 +104,22 @@ a:hover {
   line-height: 0;
   margin-left: 5px;
 }
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  border-bottom: 2px solid #0074E4;
-  color: #0074E4;
+.navbar > ul > li > a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -1px;
+  left: 0;
+  background-color: #0074E4;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
+  visibility: visible;
+  width: 95%;
+  margin-left: 3px;
 }
 
 /* Mobile Navigation */
@@ -135,13 +148,13 @@ a:hover {
   right: -0.5em;
   left: 0;
   bottom: 0;
- 
   z-index: 999;
 }
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
   top: 15px;
-  right: 15px;
+  font-size: 2em;
+  right: 30px;
 }
 .navbar-mobile ul {
   display: block;
@@ -662,11 +675,16 @@ a:hover>div { display: block; }
   margin-top: 0.5em;
 }
 @media (max-width: 992px) {
+  .Section-five h6 {
+    font-size: 36px;
+    margin-inline: 1em;
+  }
   .first {
     margin-top: 3em;
     background: #FFFFFF;
     border-radius: 10px;
     margin-inline: 1em;
+    height: 60em;
   }
   .first .container {
     margin-block: 2em;
@@ -693,9 +711,6 @@ a:hover>div { display: block; }
     margin: auto;
     display: block;
     height: 43%;
-  }
-  .container-2 {
-    
   }
 }
 

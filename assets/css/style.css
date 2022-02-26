@@ -100,9 +100,22 @@ a:hover {
   line-height: 0;
   margin-left: 5px;
 }
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  border-bottom: 2px solid #0074E4;
-  color: #0074E4;
+.navbar > ul > li > a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -1px;
+  left: 0;
+  background-color: #0074E4;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
+  visibility: visible;
+  width: 95%;
+  margin-left: 3px;
 }
 
 /* Mobile Navigation */
@@ -176,10 +189,19 @@ a:hover {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../images/page-1 (Home)/section-1 (header)/bg.png") top center;
-  background-size: cover;
+  background: url("../images/page-1 (Home)/section-1 (header)/bg.png") center center;
+  background-size: 110% 110%;
   position: relative;
+  animation: shrink 3s infinite alternate;
   padding: 0;
+}
+@keyframes shrink {
+  0% {
+    background-size: 110% 110%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
 }
 .heroh1{
   font-family: 'inter';
@@ -198,7 +220,7 @@ a:hover {
     text-align: left;
   }
 }
-#hero h1 {
+.hero-content a {
   margin: 0;
   font-family: "Inter";
   font-style: normal;
@@ -207,9 +229,6 @@ a:hover {
   line-height: 120%;
   letter-spacing: -0.04em;
   color: #FFFFFF;
-}
-#hero h1 span {
-  color: #0074E4;
 }
 #hero h3 {
   font-family: 'Inter';
@@ -262,11 +281,6 @@ a:hover {
 a>div { display: none; }
 a:hover>div { display: block; }
  
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
-  }
-}
 
 @media (max-height: 500px) {
   #hero {
@@ -278,6 +292,9 @@ a:hover>div { display: block; }
   }
 }
 @media (max-width: 768px) {
+  #hero {
+    background-size: cover;
+  }
   #hero h1 {
     font-size: 42px;
     line-height: 120%;
@@ -751,6 +768,15 @@ section {
   background-blend-mode: multiply;
   border: 2px solid #0074E4;
 }
+.hidden {
+  opacity: 0;
+}
+.card-one, .card-two, .card-three {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
 .card-block-one {
   padding-left: 12em;
 }
@@ -854,13 +880,12 @@ section {
 .card-inner-S5-left, .card-inner-S5-right{
   padding: 2em;
   background: #FFFFFF;
-  box-shadow: 0px 4px 17px rgba(215, 215, 215, 0.25);
-  border-radius: 10px;  
-  height: 24em;
-  width: 28em;
-  margin: 0 auto; 
+  box-shadow: 0px 4px 17px rgb(215 215 215 / 50%);
+  border-radius: 10px;
+  width: 30em;
+  margin: 0 auto;
   float: none;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 .card-inner-S5-left:hover + .section-five-left {
   background: #0074E4;
@@ -869,6 +894,7 @@ section {
   font-weight: bold;
   font-size: 24px;
   line-height: 130%; 
+  font-family: 'inter';
   letter-spacing: -0.01em;
   margin-bottom: 0.75em;
   color: #0074E4;
