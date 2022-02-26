@@ -130,6 +130,8 @@ details.forEach((targetDetail) => {
     });
   });
 });
+
+
 //image-changer
 function ImgChanger(i) {
   document.getElementById("outcomes-img").setAttribute("src", `assets/images/page-1 (Home)/section-7/img-S7/image-${i}/img-${i}.svg`);

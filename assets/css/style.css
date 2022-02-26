@@ -215,7 +215,7 @@ a:hover {
 
 @media (max-width: 992px) {
   #hero .container {
-    padding-top: 98px;
+    padding-top: 4em;
     padding-left: 2em;
   }
   #hero-content {
@@ -1077,6 +1077,14 @@ section {
   margin-right: auto;
   width: 75%;  
   transition:   1s ease-in-out;
+  opacity: 1;
+}
+.Section-seven img::after {
+  opacity: 1;
+  transition: opacity 1s ease-out;
+  -moz-transition: opacity 1s ease-out;
+  -webkit-transition: opacity 1s ease-out;
+  -o-transition: opacity 1s ease-out;
 }
 .box-S7 {
   margin-top: 7em !important;
