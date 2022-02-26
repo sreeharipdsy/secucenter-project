@@ -95,6 +95,9 @@ a:hover {
   font-family: 'inter';
   border-bottom: 2px solid #ffffff;
 }
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: #0074E4;
+}
 .navbar a i, .navbar a:focus i {
   font-size: 16px;
   line-height: 0;
@@ -229,6 +232,14 @@ a:hover {
   line-height: 120%;
   letter-spacing: -0.04em;
   color: #FFFFFF;
+}
+.hero-content h1 span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 120%;
+  letter-spacing: -0.04em;
 }
 #hero h3 {
   font-family: 'Inter';
@@ -633,11 +644,11 @@ section {
   padding: 2em;
   border: 1.5px solid white;
   border-radius: 5px;
+  transition: 1s;
 }
 .card:hover {
   background: rgba(0, 116, 228, 0.3);
   border: 1.5px solid #ffffff00;
-  transition: 0.5s;
 }
 .card-heading {
   display: flex;
@@ -922,11 +933,11 @@ section {
   font-size: 14px;
   line-height: 17px;
   color: #0074E4;   
-  background: none;     
+  background: none;   
+  transition: 0.5s;    
 }
 .section-five-parent button:hover {
   background: #DAEDFF;
-  transition: 0.5s;  
 }
 .card-inner-S5-left {
   margin-right: 0.5em;
@@ -998,11 +1009,11 @@ section {
   box-sizing: border-box;
   border-radius: 10px;    
   margin-bottom: 1em;
+  transition: 1s;
 }
 .card-s6:hover {
   background: #ECF6FF;
   border: 2px solid #BDE0FF;
-  transition: 0.5s;
   box-sizing: border-box;
 }
 .card-heading-s6 {
@@ -1065,6 +1076,7 @@ section {
   margin-left: auto;
   margin-right: auto;
   width: 75%;  
+  transition:   1s ease-in-out;
 }
 .box-S7 {
   margin-top: 7em !important;
@@ -1111,9 +1123,23 @@ details {
   line-height: 160%;
   letter-spacing: 0.01em;
 }
+.Section-seven details > summary {
+  transition: 0.5s;
+}
 .Section-seven details[open]>summary {
   color: #0074E4;
-  transition: 0.5s;
+}
+details summary::-webkit-details-marker {
+  display:none;
+}
+details {
+  transition: height 0.5s ease-in-out;
+}
+details:not([open]) { 
+  height: 4em; 
+}
+details[open] { 
+  height: 9em; 
 }
 summary {
 	list-style: none;
@@ -1128,8 +1154,7 @@ summary {
 .summary-chevron-up svg {
 	opacity: 0.5;
 }
-.summary-chevron-up,
-.summary-chevron-down {
+.summary-chevron-up, .summary-chevron-down {
 	pointer-events: none;
 	position: absolute;
 	top: 0.75em;
@@ -1275,8 +1300,20 @@ summary::-webkit-details-marker {
   line-height: 150%;
   color: #0074E4;   
 }
+.Section-nine button:after {
+  content: ' ';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
 .Section-nine button a:hover {
   color: #0074E4;
+}
+.Section-nine button:hover:after {
+  opacity: 1;
+  right: 10px;
 }
 .Section-nine button:focus {
   background: linear-gradient(0deg, #D8EBFE, #D8EBFE), #FFFFFF;

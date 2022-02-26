@@ -99,6 +99,9 @@ a:hover {
   font-family: 'inter';
   border-bottom: 2px solid #ffffff;
 }
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: #0074E4;
+}
 .navbar a i, .navbar a:focus i {
   font-size: 16px;
   line-height: 0;
@@ -782,6 +785,7 @@ a:hover>div { display: block; }
   height: 15.5em;
   background: #ffffff00;
   border: none;
+  transition: 0.5s ease;
 }
 .Section-six .card:hover {
   background-color: #0d3d97;

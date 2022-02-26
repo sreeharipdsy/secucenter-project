@@ -96,6 +96,9 @@ a:hover {
   font-family: 'inter';
   border-bottom: 2px solid #ffffff;
 }
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: #0074E4;
+}
 .navbar a i, .navbar a:focus i {
   font-size: 16px;
   line-height: 0;
