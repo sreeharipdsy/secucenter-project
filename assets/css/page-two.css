@@ -657,13 +657,16 @@ a:hover>div { display: block; }
   padding-inline: 2em;
   padding-bottom: 3em;
 }
+.img-changer img {
+  height: 95%;
+  margin-top: 0.5em;
+}
 @media (max-width: 992px) {
   .first {
     margin-top: 3em;
     background: #FFFFFF;
     border-radius: 10px;
     margin-inline: 1em;
-    width: fit-content;
   }
   .first .container {
     margin-block: 2em;
@@ -685,6 +688,14 @@ a:hover>div { display: block; }
   .Section-five .description h2 {
     font-size: 14px;
     padding-inline: 1em;
+  }
+  .img-changer img {
+    margin: auto;
+    display: block;
+    height: 43%;
+  }
+  .container-2 {
+    
   }
 }
 

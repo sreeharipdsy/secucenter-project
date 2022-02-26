@@ -56,11 +56,11 @@
 
 
 //section-three
-function picture() { 
-  var pic = "assets/images/page-1 (Home)/section-3/soc-main.svg"
-  document.getElementById('img-section-3').src = pic.replace('90x90', '225x225');
-  document.getElementById('img-section-3').style.display='block';
-}
+//function picture() { 
+//var pic = "assets/images/page-1 (Home)/section-3/soc-main.svg"
+//document.getElementById('img-section-3').src = pic.replace('90x90', '225x225');
+//document.getElementById('img-section-3').style.display='block';
+//}
 
 
 //section-seven-page-1 & section-five-page-3 
@@ -87,6 +87,9 @@ function ImgChangerTwo(i) {
     document.getElementById("outcomes-img-two").setAttribute("src", `assets/images/page-3 (SOC as a Service)/section-5/desktop/image-${i}.svg`);
 }
 
+
+
+//section-five-page-two
 
 
 //section-five--page-2

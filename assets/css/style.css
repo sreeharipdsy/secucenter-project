@@ -461,13 +461,10 @@ section {
 /*--------------------------------------------------------------
 # Section-three                                                  
 --------------------------------------------------------------*/
-.Section-three img {
-  width: -webkit-fill-available;
-}
 .Section-three button {
   position: absolute;
   top: 50%;
-  left: 51%;
+  left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   font-family: 'Inter';
@@ -487,13 +484,65 @@ section {
   box-shadow: #5989b917 0px 0px 0px 25px, #0076e409 0px 0px 0px 50px;
 }
 .container3 {
+  padding-inline: 5em;
   padding-bottom: 5em;
   position: relative;
   width: 100%;
 }
-
-.container3 img {
-  width: 100%;
+.container3 .middle {
+  padding-inline: 5em;
+}
+.middle .line {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.container3 .img-1 img {
+  display: block;
+  margin-left: auto;
+  margin-top: 3em;
+  height: auto;
+}
+.container3 .img-2 img {
+  display: block;
+  margin: auto;
+  height: auto;
+}
+.container3 .img-3 img {
+  display: block;
+  margin-right: auto;
+  margin-top: 3em;
+  height: auto;
+}
+.container3 .img-4 img {
+  display: block;
+  margin: auto;
+  height: auto;
+}
+.container3 .img-5 {
+  display: block;
+  height: auto;
+}
+.container3 .img-6 img {
+  display: block;
+  margin: auto;
+  height: auto;
+}
+.container3 .img-7 img {
+  display: block;
+  margin-left: auto;
+  height: auto;
+}
+.container3 .img-8 img {
+  margin-top: 4em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+.container3 .img-9 img {
+  display: block;
+  margin-right: auto;
   height: auto;
 }
 @media (max-width: 992px) {
@@ -505,6 +554,36 @@ section {
     padding-inline: 1em;
     border: solid 2px #0074E4;
   }
+  .container3 {
+    padding-inline: 0;
+  }
+  .container3 .middle {
+    padding-inline: 0;
+  }
+  .container3 .img-1 img {
+    height: 40%;
+  }
+  .container3 .img-2 img {
+    height: 40%;
+  }
+  .container3 .img-3 img {
+    height: 40%;
+  }
+  .container3 .img-4 img {
+    height: 40%;
+  }
+  .container3 .img-6 img {
+    height: 40%;
+  } 
+  .container3 .img-7 img {
+    height: 40%;
+  }
+  .container3 .img-8 img {
+    height: 40%;
+  }
+  .container3 .img-9 img {
+    height: 40%;
+  } 
 }
 
 
