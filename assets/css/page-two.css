@@ -612,6 +612,7 @@ a:hover>div { display: block; }
   text-align: left;
   color: #3F3F3F;
   padding-bottom: 0.5em;
+  transition: 1s;
 }
 .carousel-caption span {
   background-color: #FFFFFF;
@@ -620,6 +621,7 @@ a:hover>div { display: block; }
   padding-inline: 0.8em;
   padding-block: 0.5em;
   margin-right: 0.5em;
+  transition: 1s;
 }
 .carousel-caption {
   position: initial;
@@ -633,15 +635,18 @@ a:hover>div { display: block; }
   padding-top: 2.5em;
   padding-right: 2em;
   padding-bottom: 5em;
+  transition: 1s;
 }
 .carousel-control-prev, .carousel-control-next {
   top: inherit;
 }
 .fa-arrow-left {
   margin-left: 4em;
+  transition: 1s;
 }
 .fa-arrow-right {
   margin-right: 4em;
+  transition: 1s;
 }
 .first i {
   background-color: #F5FAFF;
@@ -934,12 +939,18 @@ a:hover>div { display: block; }
   background: #FFFFFF;
   border: none;
   border-radius: 5px; 
-  font-family: Inter;
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-size: 23px;
-  line-height: 150%;
-  color: #0074E4;   
+  line-height: 150%;  
+}
+.Section-eight button a {
+  color: #0074E4; 
+}
+.Section-eight button:focus {
+  background: linear-gradient(0deg, #D8EBFE, #D8EBFE), #FFFFFF;
+  box-shadow: 10px 10px 24px rgba(73, 90, 107, 0.23);
 }
 .Section-eight button div {
   float: right;

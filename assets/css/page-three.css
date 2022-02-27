@@ -785,6 +785,13 @@ a:hover>div { display: block; }
   line-height: 150%;
   color: #0074E4;   
 }
+button a, button a:hover {
+  color: #0074E4; 
+}
+.Section-eight button:focus {
+  background: linear-gradient(0deg, #D8EBFE, #D8EBFE), #FFFFFF;
+  box-shadow: 10px 10px 24px rgba(73, 90, 107, 0.23);
+}
 .Section-eight button div {
   float: right;
 }

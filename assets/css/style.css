@@ -799,24 +799,24 @@ section {
 }
 .card-description-one {
   color: #FFFFFF;
-  margin-top: -5.5em;
+  margin-top: -6.25em;
   width: 31em;
   float: right;
-  margin-right: 2em;
+  margin-right: 5em;
 }
 .card-description-two {
   color: #FFFFFF;
-  margin-top: -5.5em;
+  margin-top: -6.25em;
   width: 31em;
   float: right;
-  margin-right: 6em;
+  margin-right: 9em;
 }
 .card-description-three {
   color: #FFFFFF;
-  margin-top: -5.5em;
+  margin-top: -6.25em;
   width: 31em;
   float: right;
-  margin-right: 10em;
+  margin-right: 13em;
 }
 .box h6 {
   font-weight: 200;
@@ -1088,6 +1088,7 @@ section {
 }
 .box-S7 {
   margin-top: 7em !important;
+  padding-bottom: 3em;
   margin: auto;
   background: #FFFFFF;
   height: auto;
@@ -1179,6 +1180,7 @@ summary::-webkit-details-marker {
 @media (max-width: 992px) {
   .box-S7 {
     margin-top: 1em !important;
+    padding-bottom: 0em;
   }
   .box-inner-S7 {
     padding: 1.2em;

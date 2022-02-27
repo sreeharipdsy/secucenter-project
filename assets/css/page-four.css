@@ -280,6 +280,7 @@ a:hover {
   border: 1.9px solid #D7D7D7;
   box-sizing: border-box;
   border-radius: 5px;
+  transition: 1s;
 }
 .box:hover {
   border: 1.9px solid #19C4A5;
@@ -375,12 +376,21 @@ a:hover {
   line-height: 150%;
   color: #0074E4;   
 }
+.Section-three button a, .Section-three button a:hover {
+  color: #0074E4;
+}
+.Section-three button:focus {
+  background: linear-gradient(0deg, #D8EBFE, #D8EBFE), #FFFFFF;
+  box-shadow: 10px 10px 24px rgba(73, 90, 107, 0.23);
+}
 .Section-three button div {
   float: right;
+  transition: 1s;
 }
 .Section-three button img {
   padding-left: 0.5em;
   height: 1em;
+  transition: 1;
 }
 button>div { display: none; }
 button:hover>div { display: block; }
