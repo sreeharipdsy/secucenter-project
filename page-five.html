@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> 
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/contact-form.css" rel="stylesheet">
@@ -55,7 +56,7 @@
     
     <!-- Section-one -->
     <section id="Section-one" class="Section-one d-flex align-items-center">
-      <div class="container position-relative justify-content-center">
+      <div class="container position-relative justify-content-center" data-aos="fade-up">
         <div class="col-lg-9 container-inner">
           <h1>Let's Collaborate and Elevate your SOC</h1>
           <p>Want to connect with us? Our SOC experts are all set to assist you. All you need to do is fill up this form and we'll get in touch with you.</p>
@@ -71,24 +72,24 @@
       <div class="container position-relative">
         <div class="contact-form">
           <div class="row col-lg-12" style="min-width: -webkit-fill-available;">
-            <div class="col-lg-6 mt-2">
+            <div class="col-lg-6 mt-2" data-aos="fade-right">
               <p>First name<span>*</span></p>
               <input type="text" name="First name" class="form-control" id="name" required>
             </div>
-            <div class="col-lg-6 mt-2">
+            <div class="col-lg-6 mt-2" data-aos="fade-left">
               <p>Last name</p>
               <input type="text" name="Last name" class="form-control" id="Last-name" required>
             </div>
-            <div class="col-lg-6 mt-2">
+            <div class="col-lg-6 mt-2" data-aos="fade-right">
               <p>Company name<span>*</span></p>
               <input type="text" name="Company name" class="form-control" id="Company name" required>
             </div>
-            <div class="col-lg-6 mt-2">
+            <div class="col-lg-6 mt-2" data-aos="fade-left">
               <p>Work mail<span>*</span></p>
               <input type="text" name="Work mail" class="form-control" id="Work mail" required>
             </div>
           </div>
-          <div class="col-lg-12 mt-2">
+          <div class="col-lg-12 mt-2" data-aos="fade-up">
             <p>Country/Region<span>*</span></p>
             <select type="number" class="form-control select-Country/Region" name="Country/Region" id="Country/Region" required>
                       <option value=""></option>
@@ -99,7 +100,7 @@
                       <option></option>
             </select>
           </div>
-          <div class="col-lg-12 mt-2">
+          <div class="col-lg-12 mt-2" data-aos="fade-up">
             <p>Preferred SOC Services<span>*</span></p>
             <select type="number" class="form-control select-Preferred-SOC-Services" name="Preferred SOC Services" id="Preferred SOC Services" required>
                       <option value=""></option>
@@ -110,11 +111,11 @@
                       <option></option>
             </select>
           </div>
-          <div class="col-lg-12 mt-2">
+          <div class="col-lg-12 mt-2" data-aos="fade-up">
             <p>Message</p>
             <textarea class="form-control" name="message" rows="5"></textarea>
           </div>
-          <div class="text-center mt-3">
+          <div class="text-center mt-3" data-aos="fade-up">
             <button>Submit</button>
           </div>
           <style>.contact-form span{color:red;}</style>
@@ -130,25 +131,25 @@
       <div class="container container-footer">
         <div class="row">
           <div class="col-lg-9 order-lg-1 order-2">
-            <div class="logo-footer">
+            <div class="logo-footer" data-aos="fade-up">
               <img src="assets/images/page-1 (Home)/section-10 (footer)/secucenter-logo.svg" alt="">
             </div>
             <div class="description-footer">
               <div>
-                <div class="social-icons">
+                <div class="social-icons" data-aos="fade-up">
                   <img src="assets/icons/page-1/footer/icon-1/location.svg" alt="">
                   <span>345 Faulconer Drive, Suite 4 • Charlottesville, CA, 12345</span>
                 </div>
-                <div class="social-icons social-icons-float">
+                <div class="social-icons social-icons-float" data-aos="fade-up">
                   <img src="assets/icons/page-1/footer/icon-2/phone.svg" alt="">
                   <span>(123) 456-7890</span>
                 </div>
-                <div class="social-icons">
+                <div class="social-icons" data-aos="fade-up">
                   <img src="assets/icons/page-1/footer/icon-3/print-shop.svg" alt="">
                   <span>(123) 456-7890</span>
                 </div>
               </div>
-              <div class="social-icons social">
+              <div class="social-icons social" data-aos="fade-up">
                 <img src="assets/icons/page-1/footer/icon-4/facebook.svg" alt="">
                 <img src="assets/icons/page-1/footer/icon-5/twitter.svg" alt="">
                 <img src="assets/icons/page-1/footer/icon-6/linkedin.svg" alt="">
@@ -157,7 +158,7 @@
             </div>
           </div>
           <div class="col-lg-3 order-lg-2 order-1">
-            <div class="footer-links">
+            <div class="footer-links" data-aos="fade-up">
               <ul>
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Contact us</a></li>
@@ -178,8 +179,13 @@
     </div>
     
   </main>
-    <!-- JavaScript File -->
-    <script src="assets/javascript/script.js"></script>
+    
+  <!-- Vendor js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <!-- JavaScript File -->
+  <script src="assets/javascript/page-five.js"></script>
+  <script src="assets/javascript/aos.js"></script>
 
 </body>
 

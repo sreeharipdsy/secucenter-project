@@ -54,7 +54,6 @@
 
 
 //type-write-animation
-//type-write-animation
 var TxtType = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -107,15 +106,7 @@ window.onload = function() {
   }
 };
 
-
-
-
 //section-three
-//function picture() {   showLineTwo(); showLineThree(); showLineFour(); showLineFive(); showLineSix(); showLineSeven(); showLineEight();
-//var pic = "assets/images/page-1 (Home)/section-3/soc-main.svg"
-//document.getElementById('img-section-3').src = pic.replace('90x90', '225x225');
-//document.getElementById('img-section-3').style.display='block';
-//}
 function showLine() {
   document.getElementById('LineOne').style.opacity = "1";
   document.getElementById('LineTwo').style.opacity = "1";
@@ -137,9 +128,7 @@ function showIcon() {
   document.getElementById('icon-8').style.opacity = "1";
 }
 
-
-
-//section-seven-page-1 & section-five-page-3 
+//section-seven
 document.getElementById("target-me").open = true;
 const details = document.querySelectorAll("details");
 details.forEach((targetDetail) => {
@@ -151,44 +140,9 @@ details.forEach((targetDetail) => {
     });
   });
 });
-
-
 //image-changer
 function ImgChanger(i) {
   document.getElementById("outcomes-img").setAttribute("src", `assets/images/page-1 (Home)/section-7/img-S7/image-${i}/img-${i}.svg`);
-}
-
-
-
-//section-five-page-3-desktop
-function ImgChangerTwo(i) {
-    document.getElementById("outcomes-img-two").setAttribute("src", `assets/images/page-3 (SOC as a Service)/section-5/desktop/image-${i}.svg`);
-}
-
-
-
-//section-five-page-two
-
-
-//section-five--page-2
-
-var slideIndex = 1;
-showSlides(slideIndex);
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("carousel-caption");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  slides[slideIndex-1].style.display = "block";  
 }
 
 
