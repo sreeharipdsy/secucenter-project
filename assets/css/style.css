@@ -515,9 +515,14 @@ section {
   border-radius: 50%;
   border: solid 3px #0074E4;
   z-index: 1;
+  animation: glowing 1s infinite;
 }
-.Section-three button:hover {
-  box-shadow: #5989b917 0px 0px 0px 25px, #0076e409 0px 0px 0px 50px;
+.Section-three button:focus {
+  animation: none;
+}
+@keyframes glowing {
+  100% {box-shadow: #5989b917 0px 0px 0px 25px, #0076e409 0px 0px 0px 50px; }
+  150% {box-shadow: #5989b917 0px 0px 0px 25px }
 }
 .container3 {
   padding-inline: 5em;
@@ -530,6 +535,18 @@ section {
 }
 .line-one, .line-two, .line-three, .line-four, .line-five, .line-six, .line-seven, .line-eight {
   z-index: 2;
+  opacity: 1;
+  -moz-transition: opacity 5.5s ease 0.3s;
+  -webkit-transition: opacity 5.5s ease 0.3s;
+  -o-transition: opacity 5.5s ease 0.3s;
+  transition: opacity 5.5s ease 0.3s;
+}
+.img-1 img, .img-2 img, .img-3 img, .img-4 img, .img-6 img, .img-7 img, .img-8 img, .img-9 img {
+  opacity: 1;
+  -moz-transition: opacity 5.5s ease 0.3s;
+  -webkit-transition: opacity 5.5s ease 0.3s;
+  -o-transition: opacity 5.5s ease 0.3s;
+  transition: opacity 5.5s ease 0.3s;
 }
 .line-one {
   transform: rotate(50deg);
@@ -546,7 +563,8 @@ section {
 }
 .line-four {
   transform: rotate(180deg);
-  transform-origin: 6em 1em;
+  transform-origin: 8em 1em;
+  width: 13em;
 }
 .line-five {
   transform: rotate(180deg);
@@ -559,7 +577,7 @@ section {
 .line-seven {
   transform: rotate(90deg);
   transform-origin: 4em 1em;
-  width: 80%;
+  width: 90%;
 }
 .line-eight {
   transform: rotate(50deg);
@@ -572,7 +590,6 @@ section {
 }
 .container3 .img-1 img {
   display: block;
-  margin-left: auto;
   height: auto;
 }
 .container3 .img-2 img {
@@ -581,13 +598,11 @@ section {
   height: auto;
 }
 .container3 .img-3 img {
-  display: block;
-  margin-right: auto;
   height: auto;
 }
 .container3 .img-4 img {
   display: block;
-  margin: auto;
+  margin-left: auto;
   height: auto;
 }
 .container3 .img-5 {
@@ -596,12 +611,10 @@ section {
 }
 .container3 .img-6 img {
   display: block;
-  margin: auto;
   height: auto;
 }
 .container3 .img-7 img {
   display: block;
-  margin-left: auto;
   height: auto;
 }
 .container3 .img-8 img {
@@ -612,7 +625,7 @@ section {
 }
 .container3 .img-9 img {
   display: block;
-  margin-right: auto;
+  margin-left: auto;
   height: auto;
 }
 @media (max-width: 992px) {
@@ -654,6 +667,9 @@ section {
   .container3 .img-9 img {
     height: 40%;
   } 
+  .row-one {
+    justify-content: space-evenly !important;
+  }
 }
 
 

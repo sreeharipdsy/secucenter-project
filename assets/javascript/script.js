@@ -1,6 +1,4 @@
 
-
-
 //MOBILE-NAVIGATION
 (function() {
   "use strict"; 
@@ -56,6 +54,7 @@
 
 
 //type-write-animation
+//type-write-animation
 var TxtType = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -110,12 +109,34 @@ window.onload = function() {
 
 
 
+
 //section-three
-//function picture() { 
+//function picture() {   showLineTwo(); showLineThree(); showLineFour(); showLineFive(); showLineSix(); showLineSeven(); showLineEight();
 //var pic = "assets/images/page-1 (Home)/section-3/soc-main.svg"
 //document.getElementById('img-section-3').src = pic.replace('90x90', '225x225');
 //document.getElementById('img-section-3').style.display='block';
 //}
+function showLine() {
+  document.getElementById('LineOne').style.opacity = "1";
+  document.getElementById('LineTwo').style.opacity = "1";
+  document.getElementById('LineThree').style.opacity = "1";
+  document.getElementById('LineFour').style.opacity = "1";
+  document.getElementById('LineFive').style.opacity = "1";
+  document.getElementById('LineSix').style.opacity = "1";
+  document.getElementById('LineSeven').style.opacity = "1";
+  document.getElementById('LineEight').style.opacity = "1";
+}
+function showIcon() {
+  document.getElementById('icon-1').style.opacity = "1";
+  document.getElementById('icon-2').style.opacity = "1";
+  document.getElementById('icon-3').style.opacity = "1";
+  document.getElementById('icon-4').style.opacity = "1";
+  document.getElementById('icon-5').style.opacity = "1";
+  document.getElementById('icon-6').style.opacity = "1";
+  document.getElementById('icon-7').style.opacity = "1";
+  document.getElementById('icon-8').style.opacity = "1";
+}
+
 
 
 //section-seven-page-1 & section-five-page-3 

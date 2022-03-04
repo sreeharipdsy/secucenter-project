@@ -20,7 +20,7 @@
   <!-- CSS File -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/vendor/aos/aos.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/vendor/animate.css/animate.css">
   <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -56,7 +56,7 @@
   <section id="hero" class="d-flex align-items-center">
     <div class="container position-relative text-lg-start">
       <div class="row">
-        <div class="col-lg-8 hero-content">
+        <div class="col-lg-8 hero-content" data-aos="fade-up">
           <h1>
             <a href="" class="typewrite" data-period="2000" data-type='[ "Monitor", "Detect", "Respond" ]'>
               <span class="wrap"></span>
@@ -77,14 +77,14 @@
 
   <main id="main">
     <!-- Section-two -->
-    <section id="Section-two" class="Section-two">
+    <section id="Section-two" class="Section-two" data-aos="fade-up">
       <div class="container">        
         <div>
           <div class="col-lg-8 col-12"><br><br>
-            <div class="box">
-              <h5 class="card-title-main">SecuCenter : </h5>
-              <h4 class="card-title-secondary">What is the role of <span style="color: #0074E4;">SecuCenter</span></h4>
-              <p class="card-text-home">Secucenter is a white label partner that is dedicated to providing competent SOC services and expertise in a granular and cost-effective manner. We assist you round-the-clock to monitor, identify and respond to threats unfailingly backed by an adept team of experts and advanced technology innovations.</p>           
+            <div class="box" data-aos="fade-up">
+              <h5 data-aos="fade" class="card-title-main">SecuCenter : </h5>
+              <h4 data-aos="fade-up" class="card-title-secondary">What is the role of <span style="color: #0074E4;">SecuCenter</span></h4>
+              <p data-aos="fade-left" class="card-text-home">Secucenter is a white label partner that is dedicated to providing competent SOC services and expertise in a granular and cost-effective manner. We assist you round-the-clock to monitor, identify and respond to threats unfailingly backed by an adept team of experts and advanced technology innovations.</p>           
             </div>
           </div>
         </div><br> 
@@ -93,44 +93,44 @@
     <!-- End Section-two -->
     
     <!-- Section-three -->
-    <section id="Section-three" class="Section-three">
+    <section id="Section-three" class="Section-three" data-aos="fade-up">
       <div class="container">
         <div class="section-title text-center">
           <p style="margin-top: 1em;"><span>SOC</span> - A Quick Synopsis</p>
         </div> <br><br><br>
         <div class="text-center container3">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-2 col-lg-2 img-1"><img src="assets/icons/page-1/section-two/icon-8.svg" alt=""></div>
-            <div class="col-2 col-lg-2 img-2"><img src="assets/icons/page-1/section-two/icon-1.svg" alt=""></div>
-            <div class="col-2 col-lg-2 img-3"><img src="assets/icons/page-1/section-two/icon-2.svg" alt=""></div>
+          <div class="row row-one justify-content-center align-items-center">
+            <div id="icon-8" style="opacity: 0;" class="col-2 col-lg-2 img-1"><img src="assets/icons/page-1/section-two/icon-8.svg" alt=""></div>
+            <div id="icon-1" style="opacity: 0;" class="col-2 col-lg-2 img-2"><img src="assets/icons/page-1/section-two/icon-1.svg" alt=""></div>
+            <div id="icon-2" style="opacity: 0;" class="col-2 col-lg-2 img-3"><img src="assets/icons/page-1/section-two/icon-2.svg" alt=""></div>
           </div>
           <div class="row justify-content-center align-items-center">
             <div class="col-2 col-lg-2 "></div>
-            <div class="col-2 col-lg-2 line-div"><hr class="line-one"></div>
-            <div class="col-2 col-lg-2 line-div"><hr class="line-two"></div>
-            <div class="col-2 col-lg-2 line-div"><hr class="line-three"></div>
+            <div id="LineOne" style="opacity: 0;" class="col-2 col-lg-2 line-div"><hr class="line-one"></div>
+            <div id="LineTwo" style="opacity: 0;" class="col-2 col-lg-2 line-div"><hr class="line-two"></div>
+            <div id="LineThree" style="opacity: 0;" class="col-2 col-lg-2 line-div"><hr class="line-three"></div>
             <div class="col-2 col-lg-2 "></div>
           </div>
           <div class="row middle justify-content-center align-items-center">
-            <div class="col-2 col-lg-2  img-4"><img src="assets/icons/page-1/section-two/icon-7.svg" alt=""></div> 
-            <div class="col-2 col-lg-2 line-div"><hr class="line-four"></div>                    
+            <div id="icon-7" style="opacity: 0;" class="col-2 col-lg-2  img-4"><img src="assets/icons/page-1/section-two/icon-7.svg" alt=""></div> 
+            <div id="LineFour" style="opacity: 0;" class="col-2 col-lg-2 line-div"><hr class="line-four"></div>                    
             <div class="col-2 col-lg-2  img-5">
-              <button>SOC</button>
+              <button onclick="showLine(); showIcon();">SOC</button>
             </div>
-            <div class="col-2 col-lg-2 line-div"><hr class="line-five"></div>
-            <div class="col-2 col-lg-2  img-6"><img src="assets/icons/page-1/section-two/icon-3.svg" alt=""></div>
+            <div id="LineFive" style="opacity: 0;" class="col-2 col-lg-2 line-div"><hr class="line-five"></div>
+            <div id="icon-3" style="opacity: 0;" class="col-2 col-lg-2  img-6"><img src="assets/icons/page-1/section-two/icon-3.svg" alt=""></div>
           </div>
           <div class="row justify-content-center align-items-center">
             <div class="col-2 col-lg-2 "></div>
-            <div class="col-2 col-lg-2 line-div"><hr class="line-six"></div>
-            <div class="col-2 col-lg-2 line-div"><hr class="line-seven"></div>
-            <div class="col-2 col-lg-2 line-div"><hr class="line-eight"></div>
+            <div id="LineSix" style="opacity: 0;" class="col-2 col-lg-2 line-div"><hr class="line-six"></div>
+            <div id="LineSeven" style="opacity: 0;" class="col-2 col-lg-2 line-div"><hr class="line-seven"></div>
+            <div id="LineEight" style="opacity: 0;" class="col-2 col-lg-2 line-div"><hr class="line-eight"></div>
             <div class="col-2 col-lg-2 "></div>
           </div>
           <div class="row justify-content-center align-items-center">
-            <div class="col-2 col-lg-2  img-7"><img src="assets/icons/page-1/section-two/icon-6.svg" alt=""></div>
-            <div class="col-2 col-lg-2  img-8"><img src="assets/icons/page-1/section-two/icon-5.svg" alt=""></div>
-            <div class="col-2 col-lg-2  img-9"><img src="assets/icons/page-1/section-two/icon-4.svg" alt=""></div>
+            <div id="icon-6" style="opacity: 0;" class="col-2 col-lg-2  img-7"><img src="assets/icons/page-1/section-two/icon-6.svg" alt=""></div>
+            <div id="icon-5" style="opacity: 0;" class="col-2 col-lg-2  img-8"><img src="assets/icons/page-1/section-two/icon-5.svg" alt=""></div>
+            <div id="icon-4" style="opacity: 0;" class="col-2 col-lg-2  img-9"><img src="assets/icons/page-1/section-two/icon-4.svg" alt=""></div>
           </div>
         </div><br>
         <!--<div class="text-center container3">
@@ -142,14 +142,14 @@
     <!-- End Section-three -->
 
     <!-- Section-four -->
-    <section id="Section-four" class="Section-four">
+    <section id="Section-four" class="Section-four" data-aos="fade-up">
       <div class="container">
-        <div class="section-title-P2 text-center">
+        <div class="section-title-P2 text-center" data-aos="fade-up">
           <p><span style="color: white;">Secucenter’s <span style="color: #0074E4;">SOC</span> Philosophy</span></p>
         </div><br><br>        
-        <div class="container-fluid container card-main">
+        <div class="container-fluid container card-main" data-aos="fade-up">
           <div class="row justify-content-center align-items-center mobile-card-container flex-nowrap flex-sm-wrap">
-            <div class="col-lg-4 col-12">
+            <div class="col-lg-4 col-12" data-aos="fade-up">
                 <div class="card card-block">
                   <div class="card-heading">
                     <img src="assets/icons/page-1/section-four/icon-1/technology.svg" alt=""> 
@@ -158,7 +158,7 @@
                   <h6>To protect your digital infrastructure you need to deploy a smarter technology suite that overcomes comprising situations while making the process smoother</h6>
                 </div>
             </div>
-            <div class="col-lg-4 col-12">
+            <div class="col-lg-4 col-12" data-aos="fade-up">
               <div class="card card-block">
                 <div class="card-heading">
                   <img src="assets/icons/page-1/section-four/icon-2/talent.svg" alt=""> 
@@ -167,7 +167,7 @@
                 <h6>A well-equipped and skilled analyst packed with defining technology becomes a formidable force to tackle an unprecedented threat.</h6>
               </div>
             </div>
-            <div class="col-lg-4 col-12">
+            <div class="col-lg-4 col-12" data-aos="fade-up">
               <div class="card card-block">
                 <div class="card-heading">
                   <img src="assets/icons/page-1/section-four/icon-3/process.svg" alt=""> 
@@ -176,7 +176,7 @@
                 <h6>We help facilitate successful SOC operations by synchronously combining a well-defined business process, technology process, operational process, and analytical process.</h6>
               </div>
             </div>
-            <div class="col-lg-4 col-12">
+            <div class="col-lg-4 col-12" data-aos="fade-up">
               <div class="card card-block">
                 <div class="card-heading">
                   <img src="assets/icons/page-1/section-four/icon-4/proactiveness.svg" alt=""> 
@@ -185,7 +185,7 @@
                 <h6>We follow a proactive and continuous approach to monitor multiple touchpoints, detect threats, and analyze them to suggest mitigation plans.</h6>
               </div>
             </div>
-            <div class="col-lg-4 col-12">
+            <div class="col-lg-4 col-12" data-aos="fade-up">
               <div class="card card-block">
                 <div class="card-heading">
                   <img src="assets/icons/page-1/section-four/icon-5/awareness.svg" alt=""> 
@@ -203,7 +203,7 @@
     <!-- Section-four-portion-two -->
     <section class="section-four-P2">
       <div class="container-fluid container">
-        <div class="section-title-P2 text-center">
+        <div class="section-title-P2 text-center" data-aos="fade-up">
           <p><span style="color: white;">The <span style="color: #06114d;">SOC</span> has effectiveness problem</span></p>
           <div>
             <h5>Running an efficient SOC operations comes with its challenges <br> owing to the evolving threat landscape.</h5>
@@ -211,7 +211,7 @@
         </div>
         <div>
           <div class="box-two">
-            <div class="card-one w3-animate-top">
+            <div class="card-one" data-aos="fade-down-left" style="animation-delay: 3s;">
               <div class="card-block-one" >
                 <div class="card card-inner">
                   <div>
@@ -224,7 +224,7 @@
                 <h6>Recruiting the right talents to the right positions can be challenging and can lead to a loss of both time and money.</h6>
               </div>          
             </div>
-            <div class="card-two w3-animate-top">
+            <div class="card-two" data-aos="fade-down-left" style="animation-delay: 2s;">
               <div class="card-block-two" >
                 <div class="card card-inner">
                   <div>
@@ -237,7 +237,7 @@
                 <h6>Building a team for SOC and setting up the required technologies from scratch can lead to an increase in operational costs.</h6>
               </div>          
             </div>
-            <div class="card-three w3-animate-top">
+            <div class="card-three" data-aos="fade-down-left" style="animation-delay: 1s;">
               <div class="card-block-three" >
                 <div class="card card-inner">
                   <div>
@@ -259,11 +259,11 @@
     <!-- Section-five -->
     <section id="Section-five" class="Section-five">
       <div class="container" >
-        <div class="section-title-P2 text-center">
+        <div class="section-title-P2 text-center" data-aos="fade-up">
           <p style="margin-top: 1em;"><span style="color: #0074E4;">Solutions</span><span style="color: black;"> we offer</span></p>
         </div>
         <div class="section-five-parent">
-          <section id="section-five-left">
+          <section id="section-five-left" data-aos="fade-right">
             <div class="card-S5-left">
               <div class="card-block-S5-left">
                 <div class="card-inner-S5-left" >
@@ -276,7 +276,7 @@
               </div>
             </div>
           </section>
-          <section id="section-five-right">
+          <section id="section-five-right" data-aos="fade-left">
             <div class="card-S5-right">
               <div class="card-block-S5-right">
                 <div class="card-inner-S5-right" >
@@ -296,13 +296,13 @@
 
     <!-- Section six -->
     <section id="Section-six" class="Section-six">
-      <div class="section-title-P2 text-center">
+      <div class="section-title-P2 text-center" data-aos="fade-up">
         <p style="margin-top: 1em;"><span style="color:  #3F3F3F;">Clients we</span><span style="color: #0074E4;"> Serve</span></p>
       </div>
-      <div>
+      <div data-aos="fade-up">
         <h5>Secucenter aims to provide industry-leading<br> services  to clients and enhance their growth</h5>
       </div>
-      <section class="section-six-card container-six">
+      <section class="section-six-card container-six" data-aos="fade-up">
         <div class="row justify-content-center mobile-card-container align-items-center flex-nowrap flex-sm-wrap">
           <div class="col-lg-4 col-12 card-s6-parent">
             <div class="card-s6">
@@ -340,12 +340,12 @@
     <section class="Section-seven">
       <div class="container container-S7">
         <div class="box-S7">
-          <div class="section-title-P2 text-center">
+          <div class="section-title-P2 text-center" data-aos="fade-up">
             <p class="title-S7"><span style="color: #0074E4;">Outcomes</span><span style="color:  #3F3F3F;"> we assure to our clients</span></p>
           </div>
-          <div class="row">
+          <div class="row" data-aos="fade-up">
             <div class="col-lg-6">
-              <img id="outcomes-img" src="assets/images/page-1 (Home)/section-7/img-S7/image-1/img-1.svg" alt="">
+              <img  data-aos="fade" id="outcomes-img" src="assets/images/page-1 (Home)/section-7/img-S7/image-1/img-1.svg" alt="">
             </div>
             <div class="box-inner-S7 col-lg-6">
               <details onclick="ImgChanger(1)" id="target-me">
@@ -487,11 +487,17 @@
     </div>
   </main>
 
+  <script>
+   
+  </script>
+
   <!-- Vendor js -->
-  <link rel="stylesheet" href="assets/vendor/aos/aos.js">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
   <!-- JavaScript File -->
   <script src="assets/javascript/script.js"></script>
+  <script src="assets/javascript/aos.js"></script>
 
 </body>
 
