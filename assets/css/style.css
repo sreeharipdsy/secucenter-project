@@ -518,7 +518,7 @@ section {
   animation: glowing 1s infinite;
 }
 .Section-three button:focus {
-  animation: none;
+  box-shadow: #5989b917 0px 0px 0px 25px, #0076e409 0px 0px 0px 50px; 
 }
 @keyframes glowing {
   100% {box-shadow: #5989b917 0px 0px 0px 25px, #0076e409 0px 0px 0px 50px; }
@@ -549,8 +549,8 @@ section {
   transition: opacity 5.5s ease 0.3s;
 }
 .line-one {
-  transform: rotate(50deg);
-  transform-origin: 3em 8em;
+  transform: rotate(45deg);
+  transform-origin: 2em 8em;
 }
 .line-two {
   transform: rotate(90deg);
@@ -558,8 +558,8 @@ section {
   width: 80%;
 }
 .line-three {
-  transform: rotate(130deg);
-  transform-origin: 1em 1em;
+  transform: rotate(135deg);
+  transform-origin: 1em 1.5em;
 }
 .line-four {
   transform: rotate(180deg);
@@ -571,8 +571,8 @@ section {
   transform-origin: 3.5em 1em;
 }
 .line-six {
-  transform: rotate(-50deg);
-  transform-origin: 8em -6em;
+  transform: rotate(-45deg);
+  transform-origin: 6em -7em;
 }
 .line-seven {
   transform: rotate(90deg);
@@ -580,8 +580,8 @@ section {
   width: 90%;
 }
 .line-eight {
-  transform: rotate(50deg);
-  transform-origin: 2em -6em;
+  transform: rotate(45deg);
+  transform-origin: 3em -7em;
 }
 .middle .line {
   display: block;
@@ -591,6 +591,8 @@ section {
 .container3 .img-1 img {
   display: block;
   height: auto;
+  margin-inline: -3em;
+  margin-top: 2em
 }
 .container3 .img-2 img {
   display: block;
@@ -599,6 +601,8 @@ section {
 }
 .container3 .img-3 img {
   height: auto;
+  margin-top: 2em;
+  margin-left: 5em;
 }
 .container3 .img-4 img {
   display: block;
@@ -616,17 +620,21 @@ section {
 .container3 .img-7 img {
   display: block;
   height: auto;
+  margin-inline: -3em;
+  margin-bottom: 2em;
 }
 .container3 .img-8 img {
   display: block;
   margin-left: auto;
+  margin-top: 3em;
   margin-right: auto;
   height: auto;
 }
 .container3 .img-9 img {
   display: block;
-  margin-left: auto;
+  margin-left: 6em;
   height: auto;
+  margin-bottom: 3em;
 }
 @media (max-width: 992px) {
   .Section-three button {
