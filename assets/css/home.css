@@ -1510,9 +1510,6 @@ section {
   width: 50%;
   padding: 0;
 }
-.card-S5-left:hover > .left-heading {
-  color: #FFFFFF ;
-}
 #section-five-left  > .card-S5-left:hover  {
   background: url("../images/page-1 (Home)/section-5/left.svg") ;
   transition: 1s;
@@ -1629,7 +1626,7 @@ section {
   background: url("../images/page-1 (Home)/section-6/background.svg") top center;
   background-size: cover;
   position: relative;
-  height: 100% ;
+  height: 100%;
 }
 #Section-six .section-title {
   margin-bottom: -1.5em;

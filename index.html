@@ -410,9 +410,11 @@
       <div class="section-five-parent">
         <section id="section-five-left" data-aos="fade-right">
           <div class="card-S5-left">
-            <div class="card-block-S5-left">
-              <p class="heading left-heading">Solutions</p>
-              <div class="card-inner-S5-left" data-aos="zoom-in">
+            <div id="wrapper" class="card-block-S5-left">
+              <div id="left-heading">
+                <p class="heading left-heading">Solutions</p>
+              </div>
+              <div id="left-card" class="card-inner-S5-left" data-aos="zoom-in">
                 <div class="card-body" data-aos="fade">
                   <h5 class="card-title">SOC as a Service</h5>
                   <p class="card-text">
@@ -434,8 +436,10 @@
         <section id="section-five-right" data-aos="fade-left">
           <div class="card-S5-right">
             <div class="card-block-S5-right">
-              <p class="heading"><span style="color: black;"> we offer</span></p>
-              <div class="card-inner-S5-right" data-aos="zoom-in">
+              <div id="right-heading">
+                <p class="heading"><span style="color: black;"> we offer</span></p>
+              </div>
+              <div id="right-card" class="card-inner-S5-right" data-aos="zoom-in">
                 <div class="card-body" data-aos="fade">
                   <h5 class="card-title">SOC as a Staffing</h5>
                   <p class="card-text">
@@ -456,6 +460,17 @@
         </section>
       </div>
     </section>
+
+    <!--<script>
+      $('#left-card').hover(
+        function(){
+          $('#left-heading').css({'color':'#fffff'});
+        },
+        function(){
+          $('#left-heading').css({'color':'initial'});
+        }
+      );
+    </script>-->
     <!-- End Section-five -->
 
     <!-- Section six -->
@@ -836,6 +851,8 @@
 
   <!-- Vendor js -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
   <!-- JavaScript File -->
