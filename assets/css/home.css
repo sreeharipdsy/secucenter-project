@@ -522,13 +522,19 @@ section {
 }
 @keyframes glowing {
   100% {box-shadow: #5989b917 0px 0px 0px 25px, #0076e409 0px 0px 0px 50px; }
-  150% {box-shadow: #5989b917 0px 0px 0px 25px }
+}
+@keyframes glowing-mobile {
+  100% {box-shadow: #5989b917 0px 0px 0px 12.5px, #0076e409 0px 0px 0px 25px; }
 }
 .container3 {
   padding-inline: 5em;
   padding-bottom: 5em;
   position: relative;
   width: 100%;
+}
+.Section-three hr {
+  height: 0.5px;
+  color: #747474;
 }
 .line-div {
   height: 8em;
@@ -550,25 +556,25 @@ section {
 }
 .line-one {
   transform: rotate(45deg);
-  transform-origin: 2em 8em;
+  transform-origin: 6em 8em;
 }
 .line-two {
   transform: rotate(90deg);
-  transform-origin: 3em 2em;
+  transform-origin: 4em 1em;
   width: 80%;
 }
 .line-three {
   transform: rotate(135deg);
-  transform-origin: 1em 1.5em;
+  transform-origin: 1.5em -0.25em;
 }
 .line-four {
   transform: rotate(180deg);
-  transform-origin: 8em 1em;
-  width: 13em;
+  transform-origin: 8em 1.35em;
+  width: 12em;
 }
 .line-five {
   transform: rotate(180deg);
-  transform-origin: 3.5em 1em;
+  transform-origin: 3em 1.35em;
 }
 .line-six {
   transform: rotate(-45deg);
@@ -583,25 +589,21 @@ section {
   transform: rotate(45deg);
   transform-origin: 3em -7em;
 }
-.middle .line {
-  display: block;
-  margin-top: auto;
-  margin-bottom: auto;
-}
 .container3 .img-1 img {
   display: block;
   height: auto;
   margin-inline: -3em;
-  margin-top: 2em
+  margin-top: 3em
 }
 .container3 .img-2 img {
   display: block;
   margin: auto;
   height: auto;
+  margin-bottom: 3em;
 }
 .container3 .img-3 img {
   height: auto;
-  margin-top: 2em;
+  margin-top: 3em;
   margin-left: 5em;
 }
 .container3 .img-4 img {
@@ -621,12 +623,12 @@ section {
   display: block;
   height: auto;
   margin-inline: -3em;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 .container3 .img-8 img {
   display: block;
   margin-left: auto;
-  margin-top: 3em;
+  margin-top: 5em;
   margin-right: auto;
   height: auto;
 }
@@ -636,7 +638,7 @@ section {
   height: auto;
   margin-bottom: 3em;
 }
-@media (max-width: 992px) {
+@media (min-width: 1400px) {
   .Section-three button {
     box-shadow: #5989b917 0px 0px 0px 20px, #0076e409 0px 0px 0px 40px;
     font-size: 1em;
@@ -652,33 +654,542 @@ section {
     padding-inline: 0;
   }
   .container3 .img-1 img {
-    height: 40%;
+    height: 8em;
+    display: block;
+    margin-left: 8em;
+    margin-top: 3em;
   }
   .container3 .img-2 img {
-    height: 40%;
+    height: 8em;
   }
   .container3 .img-3 img {
-    height: 40%;
+    height: 8em;
+    margin-top: 3em;
+    margin-left: -14em;
+    margin-right: 3em;
   }
   .container3 .img-4 img {
-    height: 40%;
+    height: 8em;
   }
   .container3 .img-6 img {
-    height: 40%;
+    height: 8em;
   } 
   .container3 .img-7 img {
-    height: 40%;
+    height: 8em;
+    margin-inline: 0;
   }
   .container3 .img-8 img {
-    height: 40%;
+    height: 8em;
   }
   .container3 .img-9 img {
-    height: 40%;
+    height: 8em;
   } 
   .row-one {
     justify-content: space-evenly !important;
+    padding-inline: 6em;
+  }
+  .line-one {
+    transform: rotate(45deg);
+    transform-origin: 7.75em 14.75em;
+    width: 90%;
+  }
+  .line-two {
+    transform: rotate(90deg);
+    transform-origin: 4.75em 1.75em;
+    width: 90%;
+  }
+  .line-three {
+    transform: rotate(135deg);
+    transform-origin: 0em -0.25em;
+    width: 90%;
+  }
+  .line-four {
+    transform: rotate(180deg);
+    transform-origin: 11em 1.75em;
+    width: 90%;
+  }
+  .line-five {
+    transform: rotate(180deg);
+    transform-origin: 1.75em 1.75em;
+    width: 90%;
+  }
+  .line-six {
+    transform: rotate(-45deg);
+    transform-origin: 10.5em -14em;
+    width: 90%;
+  }
+  .line-seven {
+    transform: rotate(90deg);
+    transform-origin: 6.5em 0em;
+    width: 90%;
+  }
+  .line-eight {
+    transform: rotate(45deg);
+    transform-origin: 2em -13em;
+    width: 90%;
   }
 }
+@media (max-width: 1200px) {
+  .Section-three button {
+    box-shadow: #5989b917 0px 0px 0px 20px, #0076e409 0px 0px 0px 40px;
+    font-size: 1em;
+    line-height: 20px;
+    padding-block: 1.5em;
+    padding-inline: 1em;
+    border: solid 2px #0074E4;
+  }
+  .container3 {
+    padding-inline: 0;
+  }
+  .container3 .middle {
+    padding-inline: 0;
+  }
+  .container3 .img-1 img {
+    height: 8em;
+    display: block;
+    margin-left: 3em;
+    margin-top: 3em;
+  }
+  .container3 .img-2 img {
+    height: 8em;
+  }
+  .container3 .img-3 img {
+    height: 8em;
+    margin-top: 3em;
+    margin-left: 0;
+    margin-right: 3em;
+  }
+  .container3 .img-4 img {
+    height: 8em;
+  }
+  .container3 .img-6 img {
+    height: 8em;
+  } 
+  .container3 .img-7 img {
+    height: 8em;
+  }
+  .container3 .img-8 img {
+    height: 8em;
+  }
+  .container3 .img-9 img {
+    height: 8em;
+  } 
+  .row-one {
+    justify-content: space-evenly !important;
+    padding-inline: 6em;
+  }
+  .line-one {
+    transform: rotate(45deg);
+    transform-origin: 3.75em 9.5em;
+    width: 120%;
+  }
+  .line-two {
+    transform: rotate(90deg);
+    transform-origin: 2.75em 1.75em;
+    width: 120%;
+  }
+  .line-three {
+    transform: rotate(135deg);
+    transform-origin: 0.25em 0.5em;
+    width: 90%;
+  }
+  .line-four {
+    transform: rotate(180deg);
+    transform-origin: 7em 1.75em;
+    width: 100%;
+  }
+  .line-five {
+    transform: rotate(180deg);
+    transform-origin: 1.75em 1.75em;
+    width: 100%;
+  }
+  .line-six {
+    transform: rotate(-45deg);
+    transform-origin: 7.5em -8em;
+    width: 100%;
+  }
+  .line-seven {
+    transform: rotate(90deg);
+    transform-origin: 4.5em 0em;
+    width: 100%;
+  }
+  .line-eight {
+    transform: rotate(45deg);
+    transform-origin: 2em -9em;
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .Section-three button:focus {
+    box-shadow: #5989b917 0px 0px 0px 25px, #0076e409 0px 0px 0px 50px; 
+    animation: none;
+  }
+  .container3 {
+    padding-inline: 0;
+  }
+  .container3 .middle {
+    padding-inline: 0;
+  }
+  .container3 .img-1 img {
+    height: 8em;
+  }
+  .container3 .img-2 img {
+    height: 8em;
+  }
+  .container3 .img-3 img {
+    height: 8em;
+  }
+  .container3 .img-4 img {
+    height: 8em;
+    margin-right: 2em;
+  }
+  .container3 .img-6 img {
+    height: 8em;
+    margin-left: 2em;
+  } 
+  .container3 .img-7 img {
+    height: 8em;
+  }
+  .container3 .img-8 img {
+    height: 6em;
+  }
+  .container3 .img-9 img {
+    height: 8em;
+  } 
+  .row-one {
+    justify-content: space-evenly !important;
+    padding-inline: 0em;
+  }
+  .line-one {
+    transform: rotate(45deg);
+    transform-origin: 2em 6em;
+    width: 120%;
+  }
+  .line-two {
+    transform: rotate(90deg);
+    transform-origin: 2.75em 0.75em;
+    width: 120%;
+  }
+  .line-three {
+    transform: rotate(135deg);
+    transform-origin: 1em 0.5em;
+    width: 120%;
+  }
+  .line-four {
+    transform: rotate(180deg);
+    transform-origin: 5em 1.5em;
+    width: 120%;
+  }
+  .line-five {
+    transform: rotate(180deg);
+    transform-origin: 2.25em 1.5em;
+    width: 120%;
+  }
+  .line-six {
+    transform: rotate(-45deg);
+    transform-origin: 4.25em -4.5em;
+    width: 120%;
+  }
+  .line-seven {
+    transform: rotate(90deg);
+    transform-origin: 3.5em 0em;
+    width: 120%;
+  }
+  .line-eight {
+    transform: rotate(45deg);
+    transform-origin: 3em -6em;
+    width: 120%;
+  }
+}
+@media (max-width: 768px) {
+  .Section-three button {
+    box-shadow: #5989b917 0px 0px 0px 10px, #0076e409 0px 0px 0px 20px;
+    font-size: 1em;
+    line-height: 20px;
+    padding-block: 1.5em;
+    padding-inline: 1em;
+    animation: glowing-mobile 1s infinite;
+    border: solid 2px #0074E4;
+  }
+  .Section-three button:focus {
+    box-shadow: #5989b917 0px 0px 0px 10px, #0076e409 0px 0px 0px 20px; 
+    animation: none;
+  }
+  .container3 {
+    padding-inline: 0;
+  }
+  .container3 .middle {
+    padding-inline: 0;
+  }
+  .container3 .img-1 img {
+    height: 6em;
+    margin-left: 0em;
+  }
+  .container3 .img-2 img {
+    height: 6em;
+    margin-bottom: 2em;
+  }
+  .container3 .img-3 img {
+    height: 6em;
+  }
+  .container3 .img-4 img {
+    height: 6em;
+  }
+  .container3 .img-6 img {
+    height: 6em;
+  } 
+  .container3 .img-7 img {
+    height: 6em;
+    margin-inline: -5em;
+  }
+  .container3 .img-8 img {
+    height: 6em;
+    margin-left: -1em;
+  }
+  .container3 .img-9 img {
+    height: 6em;
+  } 
+  .row-one {
+    justify-content: none !important;
+    padding-inline: 0em;
+  }
+  .middle {
+    justify-content: space-around !important;
+  }
+  .line-one {
+    transform: rotate(45deg);
+    transform-origin: -1em 4em;
+    width: 8em;
+  }
+  .line-two {
+    transform: rotate(90deg);
+    transform-origin: 1.25em 1.25em;
+    width: 7em;
+  }
+  .line-three {
+    transform: rotate(135deg);
+    transform-origin: 1em 1.25em;
+    width: 8em;
+  }
+  .line-four {
+    transform: rotate(180deg);
+    transform-origin: 4em 1.75em;
+    width: 7em;
+  }
+  .line-five {
+    transform: rotate(180deg);
+    transform-origin: 2em 1.75em;
+    width: 7em;
+  }
+  .line-six {
+    transform: rotate(-45deg);
+    transform-origin: 3.25em -1.75em;
+    width: 8em;
+  }
+  .line-seven {
+    transform: rotate(90deg);
+    transform-origin: 3em -0.5em;
+    width: 7em;
+  }
+  .line-eight {
+    transform: rotate(45deg);
+    transform-origin: 3.5em -5.5em;
+    width: 7.5em;
+  }
+}
+@media (max-width: 576px) {
+  .Section-three button {
+    box-shadow: #5989b917 0px 0px 0px 10px, #0076e409 0px 0px 0px 20px;
+    font-size: 1em;
+    line-height: 20px;
+    padding-block: 1.5em;
+    padding-inline: 1em;
+    animation: glowing-mobile 1s infinite;
+    border: solid 2px #0074E4;
+  }
+  .Section-three button:focus {
+    box-shadow: #5989b917 0px 0px 0px 10px, #0076e409 0px 0px 0px 20px; 
+    animation: none;
+  }
+  .container3 {
+    padding-inline: 0;
+  }
+  .container3 .middle {
+    padding-inline: 0;
+  }
+  .container3 .img-1 img {
+    height: 6em;
+    margin-top: 8em;
+  }
+  .container3 .img-2 img {
+    height: 6em;
+    margin-left: -1em;
+    margin-bottom: -3em;
+  }
+  .container3 .img-3 img {
+    height: 6em;
+    margin-top: 8em;
+  }
+  .container3 .img-4 img {
+    height: 6em;
+  }
+  .container3 .img-6 img {
+    height: 6em;
+    margin-left: 0;
+  } 
+  .container3 .img-7 img {
+    height: 6em;
+  }
+  .container3 .img-8 img {
+    height: 6em;
+    margin-top: -5em;
+    margin-left: -2em;
+  }
+  .container3 .img-9 img {
+    height: 6em;
+    margin-left: 4em;
+  } 
+  .row-one {
+    justify-content: space-evenly !important;
+    padding-inline: 0em;
+  }
+  .line-one {
+    transform: rotate(45deg);
+    transform-origin: 2em 3em;
+    width: 140%;
+  }
+  .line-two {
+    transform: rotate(90deg);
+    transform-origin: 2em 0em;
+    width: 135%;
+  }
+  .line-three {
+    transform: rotate(135deg);
+    transform-origin: 1em 0em;
+    width: 135%;
+  }
+  .line-four {
+    transform: rotate(180deg);
+    transform-origin: 3em 0em;
+    width: 135%;
+  }
+  .line-five {
+    transform: rotate(180deg);
+    transform-origin: 1.25em 0em;
+    width: 135%;
+  }
+  .line-six {
+    transform: rotate(-45deg);
+    transform-origin: -2.5em -4.25em;
+    width: 140%;
+  }
+  .line-seven {
+    transform: rotate(90deg);
+    transform-origin: 4em -2em;
+    width: 140%;
+  }
+  .line-eight {
+    transform: rotate(45deg);
+    transform-origin: 6.75em -5.5em;
+    width: 140%;
+  }
+}
+@media (max-width: 414px) {
+  .Section-three button {
+    box-shadow: #5989b917 0px 0px 0px 10px, #0076e409 0px 0px 0px 20px;
+    font-size: 1em;
+    line-height: 20px;
+    padding-block: 1.5em;
+    padding-inline: 1em;
+    animation: glowing-mobile 1s infinite;
+    border: solid 2px #0074E4;
+  }
+  .Section-three button:focus {
+    box-shadow: #5989b917 0px 0px 0px 10px, #0076e409 0px 0px 0px 20px; 
+    animation: none;
+  }
+  .container3 {
+    padding-inline: 0;
+  }
+  .container3 .middle {
+    padding-inline: 0;
+  }
+  .container3 .img-1 img {
+    height: 6em;
+  }
+  .container3 .img-2 img {
+    height: 6em;
+    margin-bottom: -5em;
+  }
+  .container3 .img-3 img {
+    height: 6em;
+  }
+  .container3 .img-4 img {
+    height: 6em;
+  }
+  .container3 .img-6 img {
+    height: 6em;
+  } 
+  .container3 .img-7 img {
+    height: 6em;
+    margin-left: -4em;
+    margin-bottom: 8em;
+    margin-inline: none;
+  }
+  .container3 .img-8 img {
+    height: 6em;
+  }
+  .container3 .img-9 img {
+    height: 6em;
+    margin-left: 3em;
+    margin-bottom: 8em;
+  } 
+  .row-one {
+    justify-content: space-around !important;
+    padding-inline: 0em;
+  }
+  .line-one {
+    transform: rotate(45deg);
+    transform-origin: -0.5em 2em;
+    width: 160%;
+  }
+  .line-two {
+    transform: rotate(90deg);
+    transform-origin: 0.75em 0.75em;
+    width: 150%;
+  }
+  .line-three {
+    transform: rotate(135deg);
+    transform-origin: 0.5em 1em;
+    width: 150%;
+  }
+  .line-four {
+    transform: rotate(180deg);
+    transform-origin: 2.5em 1.25em;
+    width: 180%;
+  }
+  .line-five {
+    transform: rotate(180deg);
+    transform-origin: 1.25em 1.25em;
+    width: 150%;
+  }
+  .line-six {
+    transform: rotate(-45deg);
+    transform-origin: -0.75em -2.25em;
+    width: 150%;
+  }
+  .line-seven {
+    transform: rotate(90deg);
+    transform-origin: 2.5em -1em;
+    width: 150%;
+  }
+  .line-eight {
+    transform: rotate(45deg);
+    transform-origin: 4.25em -3.75em;
+    width: 150%;
+  }
+}
+
 
 
 
@@ -691,16 +1202,6 @@ section {
   background-size: cover;
   position: relative;
   height: 100% ;
-}
-.Section-four .section-title-P2 p {
-  margin: 0;
-  margin-top: 1em !important;
-  margin-bottom: 0.5em;
-  font-size: 56px;
-  font-weight: bold;
-  letter-spacing: -0.02em;
-  font-family: 'inter' !important;
-  color: #3F3F3F;
 }
 .Section-four p {
   margin-top: 1.3em;
@@ -813,16 +1314,6 @@ section {
 .section-four-P2 {
   background: #16bb9d;
 }
-.section-four-P2 .section-title-P2 p {
-  margin: 0;
-  margin-top: 1em !important;
-  margin-bottom: 0.5em;
-  font-size: 56px;
-  font-weight: bold;
-  letter-spacing: -0.02em;
-  font-family: 'inter' !important;
-  color: #3F3F3F;
-}
 .box-two {
   padding: 2em;
   width: auto;
@@ -861,7 +1352,7 @@ section {
   font-size: 18px;
 }
 .card-inner:hover {
-  background: rgba(4, 32, 58, 0.295);
+  background: #060B25;
   background-blend-mode: multiply;
   border: 2px solid #0074E4;
 }
@@ -946,7 +1437,7 @@ section {
   height: 100% ;
   padding: 0;
 }
-.Section-five .section-title-P2 p {
+.section-title-P2 p {
   margin: 0;
   margin-top: 1em !important;
   margin-bottom: 0.5em;
@@ -1117,16 +1608,6 @@ section {
 #Section-six .section-title {
   margin-bottom: -1.5em;
 }
-.Section-six .section-title-P2 p {
-  margin: 0;
-  margin-top: 1em !important;
-  margin-bottom: 0.5em;
-  font-size: 56px;
-  font-weight: bold;
-  letter-spacing: -0.02em;
-  font-family: 'inter' !important;
-  color: #3F3F3F;
-}
 .Section-six h5 {
   padding-top: -1em;
   position: static;
@@ -1216,16 +1697,6 @@ section {
 }
 .container-S7 {
   padding-bottom: 3em;
-}
-.Section-seven .section-title-P2 p {
-  margin: 0;
-  margin-top: 1em !important;
-  margin-bottom: 0.5em;
-  font-size: 56px;
-  font-weight: bold;
-  letter-spacing: -0.02em;
-  font-family: 'inter' !important;
-  color: #3F3F3F;
 }
 .Section-seven img {
   display: block;
