@@ -281,6 +281,9 @@ a:hover {
 .contact-form {
   padding: 3em;
 }
+.contact-form span {
+  color: red;
+}
 .contact-form p {
   margin-bottom: 0;
   font-family: 'Inter';
