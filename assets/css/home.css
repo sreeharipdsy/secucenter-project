@@ -124,6 +124,9 @@ a:hover {
   width: 95%;
   margin-left: 3px;
 }
+.contact a {
+  display: none;
+}
 
 /* Mobile Navigation */
 .mobile-nav-toggle {
@@ -142,6 +145,9 @@ a:hover {
   }
   .navbar ul {
     display: none;
+  }
+  .contact a {
+    display: block;
   }
 }
 .navbar-mobile {
