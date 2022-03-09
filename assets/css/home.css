@@ -1212,6 +1212,16 @@ section {
 .Section-four p {
   margin-top: 1.3em;
 }
+.Section-four .section-title-P2 span {
+  margin: 0;
+  margin-top: 1em !important;
+  margin-bottom: 0.5em;
+  font-size: 56px;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  font-family: 'inter' !important;
+  color: #3F3F3F;
+}
 .card-main {
   padding-inline: 4.5em;
 }
@@ -1319,6 +1329,16 @@ section {
 --------------------------------------------------------------*/
 .section-four-P2 {
   background: #16bb9d;
+}
+.section-four-P2 .section-title-P2 span {
+  margin: 0;
+  margin-top: 1em !important;
+  margin-bottom: 0.5em;
+  font-size: 56px;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  font-family: 'inter' !important;
+  color: #3F3F3F;
 }
 .box-two {
   padding: 2em;
@@ -1443,7 +1463,7 @@ section {
   height: 100% ;
   padding: 0;
 }
-.section-title-P2 p {
+#Section-five .section-title-P2 p {
   margin: 0;
   margin-top: 1em !important;
   margin-bottom: 0.5em;
@@ -1614,6 +1634,16 @@ section {
 #Section-six .section-title {
   margin-bottom: -1.5em;
 }
+#Section-six .section-title-P2 span {
+  margin: 0;
+  margin-top: 1em !important;
+  margin-bottom: 0.5em;
+  font-size: 56px;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  font-family: 'inter' !important;
+  color: #3F3F3F;
+}
 .Section-six h5 {
   padding-top: -1em;
   position: static;
@@ -1700,6 +1730,16 @@ section {
   position: relative;
   height: 110%;
   padding: 0;
+}
+.Section-seven .section-title-P2 span {
+  margin: 0;
+  margin-top: 1em !important;
+  margin-bottom: 0.5em;
+  font-size: 56px;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  font-family: 'inter' !important;
+  color: #3F3F3F;
 }
 .container-S7 {
   padding-bottom: 3em;
@@ -1906,6 +1946,16 @@ summary::-webkit-details-marker {
 --------------------------------------------------------------*/
 .Section-nine {
   background: #FCFCFC;
+}
+.Section-nine .title-S7 {
+  margin: 0;
+  margin-top: 1em !important;
+  margin-bottom: 0.5em;
+  font-size: 56px;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  font-family: 'inter' !important;
+  color: #3F3F3F;
 }
 .container-S9 {
   background: url("../images/page-1 (Home)/section-9/background.svg") top center;
