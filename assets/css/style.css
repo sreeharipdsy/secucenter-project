@@ -692,6 +692,16 @@ section {
   position: relative;
   height: 100% ;
 }
+.Section-four .section-title-P2 p {
+  margin: 0;
+  margin-top: 1em !important;
+  margin-bottom: 0.5em;
+  font-size: 56px;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  font-family: 'inter' !important;
+  color: #3F3F3F;
+}
 .Section-four p {
   margin-top: 1.3em;
 }
@@ -803,6 +813,16 @@ section {
 .section-four-P2 {
   background: #16bb9d;
 }
+.section-four-P2 .section-title-P2 p {
+  margin: 0;
+  margin-top: 1em !important;
+  margin-bottom: 0.5em;
+  font-size: 56px;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  font-family: 'inter' !important;
+  color: #3F3F3F;
+}
 .box-two {
   padding: 2em;
   width: auto;
@@ -816,7 +836,7 @@ section {
   background: #060B25;
 }
 .box-two h6 {
-  font-weight: 200;
+  font-weight: 400;
   line-height: 150%;
 }
 .card-inner {
@@ -899,6 +919,9 @@ section {
   .card-inner {
     width: auto;
   }
+  .card-one, .card-two, .card-three {
+    transition-delay: 0ms !important;
+  }
   .card-block-one, .card-block-two, .card-block-three{
     padding-left: 0;
   }
@@ -921,8 +944,9 @@ section {
   background-size: cover;
   position: relative;
   height: 100% ;
+  padding: 0;
 }
-.section-title-P2 p {
+.Section-five .section-title-P2 p {
   margin: 0;
   margin-top: 1em !important;
   margin-bottom: 0.5em;
@@ -930,7 +954,22 @@ section {
   font-weight: bold;
   letter-spacing: -0.02em;
   font-family: 'inter' !important;
-  color: #3F3F3F;;
+  color: #3F3F3F;
+  display: none;
+}
+#Section-five .heading {
+  margin: 0;
+  margin-top: 1em !important;
+  margin-bottom: 1em;
+  font-size: 56px;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  font-family: 'inter' !important;
+}
+.card-block-S5-left .left-heading {
+  color: #0074E4;
+  text-align: end;
+  margin-left: auto !important;
 }
 @media (max-width: 992px) {
   .Section-five {
@@ -952,8 +991,19 @@ section {
 #section-five-left, #section-five-right {
   float: left;
   width: 50%;
-  padding: 1em;
+  padding: 0;
 }
+.card-S5-left:hover > .left-heading {
+  color: #FFFFFF ;
+}
+#section-five-left  > .card-S5-left:hover  {
+  background: url("../images/page-1 (Home)/section-5/left.svg") ;
+  transition: 1s;
+} 
+#section-five-right  > .card-S5-right:hover {
+  background: url("../images/page-1 (Home)/section-5/right.svg") ;
+  transition: 1s;
+} 
 .card-inner-S5-left, .card-inner-S5-right{
   padding: 2em;
   background: #FFFFFF;
@@ -1002,6 +1052,10 @@ section {
   background: none;   
   transition: 0.5s;    
 }
+.card-block-S5-left, .card-block-S5-right {
+  padding-block: 5em;
+  padding-inline: 1em;
+}
 .section-five-parent button:hover {
   background: #DAEDFF;
 }
@@ -1023,10 +1077,26 @@ section {
     margin: auto;
     padding: 1em;
   }
+  .section-title-P2 p {
+    display: block;
+  }
+  #Section-five .heading {
+    display: none;
+  }
   .section-five-parent p {
     font-size: 14px;
     width: auto;
   }
+  .card-block-S5-left, .card-block-S5-right {
+    padding-block: 0em;
+    padding-inline: 1em;
+  }
+  #section-five-left  > .card-S5-left:hover  {
+    background: none ;
+  } 
+  #section-five-right  > .card-S5-right:hover {
+    background: none ;
+  } 
 }
 
 
@@ -1046,6 +1116,16 @@ section {
 }
 #Section-six .section-title {
   margin-bottom: -1.5em;
+}
+.Section-six .section-title-P2 p {
+  margin: 0;
+  margin-top: 1em !important;
+  margin-bottom: 0.5em;
+  font-size: 56px;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  font-family: 'inter' !important;
+  color: #3F3F3F;
 }
 .Section-six h5 {
   padding-top: -1em;
@@ -1136,6 +1216,16 @@ section {
 }
 .container-S7 {
   padding-bottom: 3em;
+}
+.Section-seven .section-title-P2 p {
+  margin: 0;
+  margin-top: 1em !important;
+  margin-bottom: 0.5em;
+  font-size: 56px;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  font-family: 'inter' !important;
+  color: #3F3F3F;
 }
 .Section-seven img {
   display: block;
