@@ -1477,7 +1477,7 @@ section {
 #Section-five .heading {
   margin: 0;
   margin-top: 1em !important;
-  margin-bottom: 1em; 
+  margin-bottom: 1em;
   font-size: 56px;
   font-weight: bold;
   letter-spacing: -0.02em;
@@ -1487,6 +1487,12 @@ section {
   color: #0074E4;
   text-align: end;
   margin-left: auto !important;
+}
+.card-block-S5-right .right-heading {
+  color: #202020;
+} 
+.card-block-S5-left:hover .left-heading, .card-block-S5-right:hover .heading {
+  color: #ffffff;
 }
 @media (max-width: 992px) {
   .Section-five {
@@ -1510,11 +1516,11 @@ section {
   width: 50%;
   padding: 0;
 }
-#section-five-left  > .card-S5-left:hover  {
+#section-five-left > .card-S5-left:hover  {
   background: url("../images/page-1 (Home)/section-5/left.svg") ;
-  transition: 1s;
+  transition: 1s; 
 } 
-#section-five-right  > .card-S5-right:hover {
+#section-five-right > .card-S5-right:hover {
   background: url("../images/page-1 (Home)/section-5/right.svg") ;
   transition: 1s;
 } 
