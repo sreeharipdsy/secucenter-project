@@ -23,10 +23,9 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/vendor/animate.css/animate.css">
   <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
   <!-- Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/home.css" rel="stylesheet">
   <link href="assets/css/navbar-footer.css" rel="stylesheet">
 
 
@@ -38,18 +37,23 @@
   <!-- Header -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
-      <h1 class="logo me-auto mb-lg-1 me-lg-0"><img src="assets/images/page-1 (Home)/section-1 (header)/logo.svg" alt=""></h1>
+      <h1 class="logo me-auto mb-lg-1 me-lg-0">
+        <a href="index.html">
+          <img src="assets/images/page-1 (Home)/section-1 (header)/logo.svg" alt="">
+        </a>
+      </h1>
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul data-aos="fade">
-          <li><a class="nav-link scrollto active" href="#">Home</a></li>
-          <li><a class="nav-link scrollto" href="page-two.html">SOC as a Staffing</a></li>
-          <li><a class="nav-link scrollto" href="page-three.html">SOC as a Service</a></li>
-          <li><a class="nav-link scrollto" href="page-four.html">Technology</a></li>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="soc-as-a-staffing.html">SOC as a Staffing</a></li>
+          <li><a class="nav-link scrollto" href="soc-as-a-service.html">SOC as a Service</a></li>
+          <li><a class="nav-link scrollto" href="technology.html">Technology</a></li>
           <li><a class="nav-link scrollto" href="about-us.html">About us</a></li>
+          <li class="contact"><a class="nav-link scrollto" href="contact-us.html">Contact us</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
-      <a href="page-five.html" class="primaryButton scrollto d-none d-lg-flex">Let's Connect</a>
+      <a href="contact-us.html" class="primaryButton scrollto d-none d-lg-flex">Let's Connect</a>
     </div>
   </header>
   <!-- Header End -->
@@ -72,7 +76,7 @@
             24*7 Whitelabel <br> 
             <span>SOC </span>
             Services
-          </h3>
+          </h3> 
           <h2>
             Shield client data and infrastructure 
             proactively from malicious threats and 
@@ -84,12 +88,11 @@
           </h2>
           <div class="btns">
             <a 
-              href="page-five.html" 
+              href="contact-us.html" 
               class="btn-connect animated fadeInUp scrollto">
               Let's Connect
               <div>
-                <img 
-                src="/assets/icons/page-1/section-one/primary button/button.svg"/>
+                <img src="assets/icons/page-1/section-one/primary button/button.svg"/>
               </div>
             </a>
           </div>
@@ -133,76 +136,78 @@
     <!-- Section-three -->
     <section id="Section-three" class="Section-three" data-aos="fade-up">
       <div class="container">
-        <div class="section-title text-center">
-          <p style="margin-top: 1em;"><span>SOC</span> - A Quick Synopsis</p>
-        </div> <br><br><br>
+        <div class="section-title text-center" data-aos="zoom-in">
+          <p style="margin-top: 1em;">
+            <span>SOC</span> - A Quick Synopsis
+          </p>
+        </div>
         <div class="text-center container3">
           <div class="row row-one justify-content-center align-items-center">
-            <div id="icon-8" style="opacity: 0;" class="col-2 col-lg-2 img-1">
+            <div id="icon-8" style="visibility: hidden;" class="col-2 col-lg-2 img-1">
               <img src="assets/icons/page-1/section-two/icon-8.svg" alt="">
             </div>
-            <div id="icon-1" style="opacity: 0;" class="col-2 col-lg-2 img-2">
+            <div id="icon-1" style="visibility: hidden;" class="col-2 col-lg-2 img-2">
               <img src="assets/icons/page-1/section-two/icon-1.svg" alt="">
             </div>
-            <div id="icon-2" style="opacity: 0;" class="col-2 col-lg-2 img-3">
+            <div id="icon-2" style="visibility: hidden;" class="col-2 col-lg-2 img-3">
               <img src="assets/icons/page-1/section-two/icon-2.svg" alt="">
             </div>
           </div>
-          <div class="row justify-content-center align-items-center">
+          <div class="row justify-content-center align-items-center" style="height: 3em;">
             <div class="col-2 col-lg-2 "></div>
-            <div id="LineOne" style="opacity: 0;" class="col-2 col-lg-2 line-div">
+            <div id="LineOne" style="visibility: hidden;" class="col-2 col-lg-2 line-div">
               <hr class="line-one">
             </div>
-            <div id="LineTwo" style="opacity: 0;" class="col-2 col-lg-2 line-div">
+            <div id="LineTwo" style="visibility: hidden;" class="col-2 col-lg-2 line-div">
               <hr class="line-two">
             </div>
-            <div id="LineThree" style="opacity: 0;" class="col-2 col-lg-2 line-div">
+            <div id="LineThree" style="visibility: hidden;" class="col-2 col-lg-2 line-div">
               <hr class="line-three">
             </div>
             <div class="col-2 col-lg-2 "></div>
           </div>
           <div class="row middle justify-content-center align-items-center">
-            <div id="icon-7" style="opacity: 0;" class="col-2 col-lg-2  img-4">
+            <div id="icon-7" style="visibility: hidden;" class="col-2 col-lg-2  img-4">
               <img src="assets/icons/page-1/section-two/icon-7.svg" alt="">
             </div> 
-            <div id="LineFour" style="opacity: 0;" class="col-2 col-lg-2 line-div">
+            <div id="LineFour" style="visibility: hidden;" class="col-2 col-lg-2 line-div">
               <hr class="line-four">
             </div>                    
             <div class="col-2 col-lg-2 img-5">
               <button onclick="showLine(); showIcon();">SOC</button>
             </div>
-            <div id="LineFive" style="opacity: 0;" class="col-2 col-lg-2 line-div">
+            <div id="LineFive" style="visibility: hidden;" class="col-2 col-lg-2 line-div">
               <hr class="line-five">
             </div>
-            <div id="icon-3" style="opacity: 0;" class="col-2 col-lg-2 img-6">
+            <div id="icon-3" style="visibility: hidden;" class="col-2 col-lg-2 img-6">
               <img src="assets/icons/page-1/section-two/icon-3.svg" alt="">
             </div>
           </div>
-          <div class="row justify-content-center align-items-center">
+          <div class="row justify-content-center align-items-center" style="height: 3em;">
             <div class="col-2 col-lg-2 "></div>
-            <div id="LineSix" style="opacity: 0;" class="col-2 col-lg-2 line-div">
+            <div id="LineSix" style="visibility: hidden;" class="col-2 col-lg-2 line-div">
               <hr class="line-six">
             </div>
-            <div id="LineSeven" style="opacity: 0;" class="col-2 col-lg-2 line-div">
+            <div id="LineSeven" style="visibility: hidden;" class="col-2 col-lg-2 line-div">
               <hr class="line-seven">
             </div>
-            <div id="LineEight" style="opacity: 0;" class="col-2 col-lg-2 line-div">
+            <div id="LineEight" style="visibility: hidden;" class="col-2 col-lg-2 line-div">
               <hr class="line-eight">
             </div>
             <div class="col-2 col-lg-2 "></div>
           </div>
           <div class="row justify-content-center align-items-center">
-            <div id="icon-6" style="opacity: 0;" class="col-2 col-lg-2  img-7">
+            <div id="icon-6" style="visibility: hidden;" class="col-2 col-lg-2  img-7">
               <img src="assets/icons/page-1/section-two/icon-6.svg" alt="">
             </div>
-            <div id="icon-5" style="opacity: 0;" class="col-2 col-lg-2  img-8">
+            <div id="icon-5" style="visibility: hidden;" class="col-2 col-lg-2  img-8">
               <img src="assets/icons/page-1/section-two/icon-5.svg" alt="">
             </div>
-            <div id="icon-4" style="opacity: 0;" class="col-2 col-lg-2  img-9">
+            <div id="icon-4" style="visibility: hidden;" class="col-2 col-lg-2  img-9">
               <img src="assets/icons/page-1/section-two/icon-4.svg" alt="">
             </div>
           </div>
-        </div><br>
+        </div>
         <!--<div class="text-center container3">
           <img id="img-section-3" class="img-section-3" src="img-section-3" alt="">
           <button onclick="picture(); this.style.visibility= 'hidden';">SOC</button>
@@ -215,7 +220,7 @@
     <section id="Section-four" class="Section-four" data-aos="fade-up">
       <div class="container">
         <div class="section-title-P2 text-center" data-aos="fade-up">
-          <p>
+          <p data-aos="zoom-in">
             <span style="color: white;">Secucenter’s 
               <span style="color: #0074E4;">
               SOC</span> Philosophy
@@ -229,12 +234,13 @@
                     align-items-center 
                     mobile-card-container 
                     flex-nowrap 
-                    flex-sm-wrap">
-            <div class="col-lg-4 col-12" data-aos="fade-up">
-                <div class="card card-block" data-aos="zoom-in">
+                    flex-sm-wrap"
+            data-aos="fade-up">
+            <div class="col-lg-4 col-12" data-aos="zoom-in">
+                <div class="card card-block">
                   <div class="card-heading">
                     <img 
-                    src="/assets/icons/page-1/section-four/icon-1/technology.svg" 
+                    src="assets/icons/page-1/section-four/icon-1/technology.svg" 
                     alt=""> 
                     <span>Technology</span>
                   </div>
@@ -246,11 +252,11 @@
                   </h6>
                 </div>
             </div>
-            <div class="col-lg-4 col-12" data-aos="fade-up">
-              <div class="card card-block" data-aos="zoom-in">
+            <div class="col-lg-4 col-12" data-aos="zoom-in">
+              <div class="card card-block">
                 <div class="card-heading">
                   <img 
-                  src="/assets/icons/page-1/section-four/icon-2/talent.svg" 
+                  src="assets/icons/page-1/section-four/icon-2/talent.svg" 
                   alt=""> 
                   <span>Talent</span>
                 </div>
@@ -262,11 +268,11 @@
                 </h6>
               </div>
             </div>
-            <div class="col-lg-4 col-12" data-aos="fade-up">
-              <div class="card card-block" data-aos="zoom-in">
+            <div class="col-lg-4 col-12" data-aos="zoom-in">
+              <div class="card card-block">
                 <div class="card-heading">
                   <img 
-                  src="/assets/icons/page-1/section-four/icon-3/process.svg" 
+                  src="assets/icons/page-1/section-four/icon-3/process.svg" 
                   alt=""> 
                   <span>Process</span>
                 </div>
@@ -279,11 +285,11 @@
                 </h6>
               </div>
             </div>
-            <div class="col-lg-4 col-12" data-aos="fade-up">
-              <div class="card card-block" data-aos="zoom-in">
+            <div class="col-lg-4 col-12" data-aos="zoom-in">
+              <div class="card card-block">
                 <div class="card-heading">
                   <img 
-                  src="/assets/icons/page-1/section-four/icon-4/proactiveness.svg" 
+                  src="assets/icons/page-1/section-four/icon-4/proactiveness.svg" 
                   alt=""> 
                   <span>Proactiveness</span>
                 </div>
@@ -295,11 +301,11 @@
                 </h6>
               </div>
             </div>
-            <div class="col-lg-4 col-12" data-aos="fade-up">
-              <div class="card card-block" data-aos="zoom-in">
+            <div class="col-lg-4 col-12" data-aos="zoom-in">
+              <div class="card card-block">
                 <div class="card-heading">
                   <img 
-                  src="/assets/icons/page-1/section-four/icon-5/awareness.svg" 
+                  src="assets/icons/page-1/section-four/icon-5/awareness.svg" 
                   alt=""> 
                   <span>Awareness</span>
                 </div>
@@ -327,7 +333,7 @@
               has effectiveness problem
             </span>
           </p>
-          <div>
+          <div data-aos="zoom-in">
             <h5>
               Running an efficient SOC operations 
               comes with its challenges <br> 
@@ -342,7 +348,7 @@
                 <div class="card card-inner">
                   <div>
                     <img 
-                    src="/assets/icons/page-1/section-four-portion-two/image-1/talent-shortage.svg" 
+                    src="assets/icons/page-1/section-four-portion-two/image-1/talent-shortage.svg" 
                     alt="">
                     <span>Talent Shortage</span>   
                   </div>       
@@ -361,7 +367,7 @@
                 <div class="card card-inner">
                   <div>
                     <img 
-                    src="/assets/icons/page-1/section-four-portion-two/image-2/cost.svg" 
+                    src="assets/icons/page-1/section-four-portion-two/image-2/cost.svg" 
                     alt="">
                     <span>Cost</span>   
                   </div>       
@@ -380,7 +386,7 @@
                 <div class="card card-inner">
                   <div>
                     <img 
-                    src="/assets/icons/page-1/section-four-portion-two/image-3/support-coverage.svg" 
+                    src="assets/icons/page-1/section-four-portion-two/image-3/support-coverage.svg" 
                     alt="">
                     <span>Support coverage</span>   
                   </div>       
@@ -406,14 +412,16 @@
       <div class="section-title-P2 text-center" data-aos="fade-up">
         <p style="margin-top: 1em;">
           <span style="color: #0074E4;">Solutions</span>
-          <span style="color: black;"> we offer</span>
+          <span style="color: #3F3F3F;"> we offer</span>
         </p>
       </div>
       <div class="section-five-parent">
-        <section id="section-five-left" data-aos="fade-right">
+        <section id="section-five-left" class="section-five-left" data-aos="fade-right">
           <div class="card-S5-left">
             <div class="card-block-S5-left">
-              <p class="heading left-heading">Solutions</p>
+              <div>
+                <p class="heading left-heading">Solutions</p>
+              </div>
               <div class="card-inner-S5-left" data-aos="zoom-in">
                 <div class="card-body" data-aos="fade">
                   <h5 class="card-title">SOC as a Service</h5>
@@ -426,7 +434,7 @@
                     and breaches.
                   </p>
                   <button>
-                    <a href="">Learn more</a>
+                    <a href="soc-as-a-service.html">Learn more</a>
                   </button>
                 </div>
               </div>
@@ -436,7 +444,9 @@
         <section id="section-five-right" data-aos="fade-left">
           <div class="card-S5-right">
             <div class="card-block-S5-right">
-              <p class="heading"><span style="color: black;"> we offer</span></p>
+              <div>
+                <p class="heading right-heading">we offer</p>
+              </div>
               <div class="card-inner-S5-right" data-aos="zoom-in">
                 <div class="card-body" data-aos="fade">
                   <h5 class="card-title">SOC as a Staffing</h5>
@@ -449,7 +459,7 @@
                     cutting down your operational costs by half.
                   </p>
                   <button>
-                    <a href="">Learn more</a>
+                    <a href="soc-as-a-staffing.html">Learn more</a>
                   </button>
                 </div>
               </div>
@@ -458,17 +468,16 @@
         </section>
       </div>
     </section>
-    <!-- End Section-five -->
 
     <!-- Section six -->
     <section id="Section-six" class="Section-six">
-      <div class="section-title-P2 text-center" data-aos="fade-up">
-        <p style="margin-top: 1em;">
+      <div class="section-title-P2 text-center" data-aos="zoom-in">
+        <p style="margin-top: 1em;" data-aos="fade-up">
           <span style="color:  #3F3F3F;">Clients we</span>
           <span style="color: #0074E4;"> Serve</span>
         </p>
       </div>
-      <div data-aos="zoom-in">
+      <div data-aos="fade-up">
         <h5>
           Secucenter aims to provide industry-leading<br> 
           services  to clients and enhance their growth
@@ -486,7 +495,7 @@
             <div class="card-s6">
               <div class="card-heading-s6">
                 <img 
-                src="/assets/icons/page-1/section-six/icon-1/msp.svg" 
+                src="assets/icons/page-1/section-six/icon-1/msp.svg" 
                 alt=""> 
                 <span>MSP</span>
               </div>
@@ -500,7 +509,7 @@
             <div class="card-s6">
               <div class="card-heading-s6">
                 <img 
-                src="/assets/icons/page-1/section-six/icon-2/mssp.svg" 
+                src="assets/icons/page-1/section-six/icon-2/mssp.svg" 
                 alt=""> 
                 <span>MSSP</span>
               </div>
@@ -514,7 +523,7 @@
             <div class="card-s6">
               <div class="card-heading-s6">
                 <img 
-                src="/assets/icons/page-1/section-six/icon-3/it-department.svg" 
+                src="assets/icons/page-1/section-six/icon-3/it-department.svg" 
                 alt=""> 
                 <span>IT Department</span>
               </div>
@@ -536,7 +545,7 @@
           <div class="section-title-P2 text-center" data-aos="fade-up">
             <p class="title-S7">
               <span style="color: #0074E4;">Outcomes</span>
-              <span style="color:  #3F3F3F;"> we assure to our clients</span>
+              <span style="color: #3F3F3F;"> we assure to our clients</span>
             </p>
           </div>
           <div class="row" data-aos="fade-up">
@@ -544,7 +553,7 @@
               <img  
                 data-aos="fade" 
                 id="outcomes-img" 
-                src="/assets/images/page-1 (Home)/section-7/img-S7/image-1/img-1.svg" 
+                src="assets/images/page-1 (Home)/section-7/img-S7/image-1/img-1.svg" 
                 alt="">
             </div>
             <div class="box-inner-S7 col-lg-6" data-aos="zoom-in">
@@ -740,15 +749,15 @@
       <div class="container container-S8">
         <div class="row images-S8" data-aos="fade-up">
           <img 
-            src="/assets/images/page-1 (Home)/section-8/image-1/image-1.svg" 
+            src="assets/images/page-1 (Home)/section-8/image-1/image-1.svg" 
             data-aos="zoom-in" 
             alt="">
           <img 
-            src="/assets/images/page-1 (Home)/section-8/image-2/image-2.svg" 
+            src="assets/images/page-1 (Home)/section-8/image-2/image-2.svg" 
             data-aos="zoom-in" 
             alt="">
           <img 
-            src="/assets/images/page-1 (Home)/section-8/image-3/image-3.svg" 
+            src="assets/images/page-1 (Home)/section-8/image-3/image-3.svg" 
             data-aos="zoom-in" 
             alt="">
         </div>
@@ -760,15 +769,15 @@
     <section class="Section-nine">
       <div class="container" data-aos="zoom-in">
         <div class="container-S9 text-center" data-aos="fade-up">
-          <h2>
+          <h2 data-aos="fade-up">
             Never compromise on security. <br> 
             Settle only for the best SOC services.
           </h2>
           <button data-aos="fade-up">
-            <a href="page-five.html">Let's Talk</a>
+            <a href="contact-us.html">Let's Talk</a>
             <div>
               <img 
-                src="/assets/icons/page-2/section-eight/call-icon/primary button/phone-call.svg" 
+                src="assets/icons/page-2/section-eight/call-icon/primary button/phone-call.svg" 
                 alt="">
             </div>
           </button>
@@ -783,30 +792,32 @@
         <div class="row">
           <div class="col-lg-9 order-lg-1 order-2">
             <div class="logo-footer" data-aos="fade-up">
-              <img 
+              <a href="">
+                <img 
                 src="assets/images/page-1 (Home)/section-10 (footer)/secucenter-logo.svg" 
                 alt="">
+              </a>
             </div>
             <div class="description-footer">
               <div>
                 <div class="social-icons" data-aos="fade-up">
-                  <img src="assets/icons/page-1/footer/icon-1/location.svg" alt="">
-                  <span>345 Faulconer Drive, Suite 4 • Charlottesville, CA, 12345</span>
-                </div>
-                <div class="social-icons social-icons-float" data-aos="fade-up">
-                  <img src="assets/icons/page-1/footer/icon-2/phone.svg" alt="">
-                  <span>(123) 456-7890</span>
-                </div>
-                <div class="social-icons" data-aos="fade-up">
-                  <img src="assets/icons/page-1/footer/icon-3/print-shop.svg" alt="">
-                  <span>(123) 456-7890</span>
+                  <a href="">
+                    <img src="assets/icons/page-1/footer/location.svg" alt="">
+                  </a>
+                  <p>
+                    Level 9, Transasia Cyber Park <br>
+                    Infopark Phase II SEZ, <br>
+                    Kochi - 682303
+                  </p>
                 </div>
               </div>
               <div class="social-icons social" data-aos="fade-up">
-                <img src="assets/icons/page-1/footer/icon-4/facebook.svg" alt="">
-                <img src="assets/icons/page-1/footer/icon-5/twitter.svg" alt="">
-                <img src="assets/icons/page-1/footer/icon-6/linkedin.svg" alt="">
-                <img src="assets/icons/page-1/footer/icon-7/instagram.svg" alt="">
+                <a href="">
+                  <img src="assets/icons/page-1/footer/mail.svg" alt="">
+                </a>
+                <a href="">
+                  <img src="assets/icons/page-1/footer/linkedin.svg" alt="">
+                </a>
               </div>
             </div>
           </div>
@@ -814,10 +825,9 @@
             <div class="footer-links" data-aos="fade-up">
               <ul>
                 <li><a href="about-us.html">About us</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="contact-us.html">Contact us</a></li>
                 <li><a href="#">Help</a></li>
                 <li><a href="privacy-policy.html">Privacy policy</a></li>
-                <li><a href="#">Disclaimer</a></li>
               </ul>
             </div>
           </div>
@@ -828,20 +838,19 @@
     <!-- End Footer -->
 
     <div class="Copyright">
-      <p>Copyright © 2018 • Lift Media Inc.</p>
+      <p>Copyright © 2022 • SecuCenter.com</p>
     </div>
   </main>
 
-  <script>
-   
-  </script>
 
   <!-- Vendor js -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
   <!-- JavaScript File -->
-  <script src="assets/javascript/script.js"></script>
+  <script src="assets/javascript/home.js"></script>
   <script src="assets/javascript/aos.js"></script>
 
 </body>

@@ -1,12 +1,439 @@
 body {
     font-family: 'inter';
-}
-span {
-    font-weight: 900;
+    background: #FCFCFC;
 }
 a {
     text-decoration: none;
-    color: #0074E4;
+}
+section {
+    padding: 60px 0;
+    overflow: hidden;
 }
 
 
+/*--------------------------------------------------------------
+# Section one
+--------------------------------------------------------------*/
+.Section-one {
+    background: url("../images/page-6 (About us)/section-1/bg.svg") top center;
+    background-size: cover;
+    position: relative;
+    height: 75vh;
+    padding: 0;
+    margin-top: 5em;
+}
+.Section-one .container {
+    padding-top: 3em;
+    text-align: center;
+}
+.Section-one h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin-bottom: 0.75em;
+}
+.Section-one a {
+    padding-block: 0.75em;
+    padding-inline: 1.25em;
+    background: #FFFFFF;
+    border-radius: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    color: #0074E4;
+}
+@media (max-width: 992px) {
+    .Section-one {
+        background-position: 95% 0%;
+    }
+    .Section-one h1 {
+        font-size: 40px;
+        text-align: left;
+    }
+    .Section-one .container {
+        text-align: left;
+        margin-left: 0.5em;
+    }
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Section two
+--------------------------------------------------------------*/
+.Section-two {
+    background: linear-gradient(114.75deg, #19C4A5 8.7%, #0DAA8D 83.35%);
+    background-size: cover;
+    position: relative;
+    height: auto;
+    padding: 0;
+    margin-top: 0em;
+}
+.Section-two span {
+    color: #060B25;
+}
+.Section-two .S2-left {
+    margin-block: auto;
+}
+.Section-two .heading p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+.Section-two .description {
+    width: 90%;
+}
+.Section-two .description p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+@media (max-width: 992px) {
+    .S2-left {
+        padding: 2em;
+        padding-top: 5em;
+        padding-bottom: 4em;
+    }
+    .Section-two .heading p {
+        font-size: 32px;
+        margin-bottom: 0.75em;
+    }
+    .Section-two .description p {
+        font-size: 16px;
+        width: auto;
+    }
+    .Section-two .description {
+        width: 100%;
+    }
+    .S2-right img {
+        width: 100%;
+    }
+    .Section-two .container {
+        padding: 0%;
+    }
+}
+
+           
+                      
+                                   
+                                                  
+/*--------------------------------------------------------------
+# Section three                                                               
+--------------------------------------------------------------*/
+.Section-three {
+  padding-top: 7em;
+}
+.Section-three .title h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #3F3F3F;
+}                                       
+.Section-three .title span {
+    color: #0074E4;
+}                                                  
+.Section-three .title p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #747474;     
+    width: 50%;   
+    margin: auto;
+    margin-top: 0.75em;
+}
+.Section-three .inner-heading p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+    color: #071871;    
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+.Section-three .card-heading {
+    margin-bottom: 0.75em;
+}
+.Section-three .card-heading span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    color: #0074E4;
+}
+.Section-three .card h6 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #747474;
+}
+.Section-three .card {
+    border: 1.5px solid #D7D7D7;
+    border-radius: 5px;
+    padding: 1.2em;
+    height: 13em;
+    width: 13em;
+    float: left;
+    margin: 0.25em;
+    margin-bottom: 2em;
+    transition: 0.25s;
+}
+.Section-three .card:hover {
+    background: rgba(199, 224, 220, 0.3);
+    border: 1.5px solid #d7d7d700;
+}
+@media (max-width : 576px)
+{
+  .Section-three .container > .row {
+    overflow-x: auto;
+  }
+  .Section-three .mobile-card-container {
+    justify-content: unset !important;
+    margin-left: 0em;
+  }
+  .Section-three .mobile-card-container .col-12 {
+    width: auto;
+  }
+  .Section-three .card:hover {
+    border: none;
+  }
+}
+@media (max-width: 992px) {
+  .w-20 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33%;
+    flex: 0 0 33%;
+    max-width: 35%;
+  }
+  .Section-three .card {
+    margin-left: -1.25;
+    background: rgba(199, 224, 220, 0.3);
+    border: 1.5px solid #d7d7d700;
+  }
+  .Section-three .title h1 {
+      font-size: 36px;
+  }
+  .Section-three .title p {
+      font-size: 16px;
+      width: 95%;
+  }
+  .Section-three .inner-heading p {
+      font-size: 21px;
+  }
+}
+.w-20 {
+    margin: auto;
+}
+@media (max-width: 768px) {
+  .w-20 {
+    padding-left: 0;
+    margin-right: 0.5em;
+    -webkit-box-flex: 0 !important;
+    max-width: 60% !important;
+  }
+}
+@media (min-width: 993px) {
+  .w-20 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .w-20 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Section four
+--------------------------------------------------------------*/
+.Section-four {
+    background: url("../images/page-6 (About us)/section-3/bg.svg");
+    background-size: cover;
+    position: relative;
+    height: auto;
+    padding: 0;
+    margin-top: 0em;
+    padding-bottom: 5em;
+}
+.Section-four .title {
+    margin-top: 5em;
+    margin-bottom: 3.5em;
+}
+.Section-four .title h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #19C4A5;
+}
+.Section-four .title h1 span {
+    color: white;
+}
+.Section-four .card {
+    height: auto;
+    margin: 1em;
+    margin-right: 0%;
+    padding: 2em;
+    background: #EEFFFC;
+    box-shadow: 0px 4px 17px rgba(215, 215, 215, 0.25);
+    border-radius: 10px;
+}
+.Section-four .card .heading p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 90%;
+    letter-spacing: -0.01em;
+    color: #060B25;
+}
+.Section-four .card .description p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #3F3F3F;
+}
+@media (max-width: 992px) {
+  .Section-four img {
+    width: 100%;
+  }
+  .Section-four .title h1 {
+    font-size: 36px;
+  }
+  .Section-four .card {
+    margin: auto;
+    margin-top: 1em;
+  }
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Section-five
+--------------------------------------------------------------*/
+.Section-five {
+  background: #FCFCFC;
+}
+.Section-five .container-S5 {
+  background: url("../images/page-1 (Home)/section-9/background.svg") top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  position: relative;
+  height: 338px;
+  padding: 0;
+  margin-top: 1em;
+  margin-bottom: -2em;
+}
+.Section-five h2 {
+  padding-top: 1.5em;
+  padding-bottom: 0.25em;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;  
+}
+.Section-five a {
+    color: #0074E4;
+}
+.Section-five button {
+  padding: 0.75em;
+  padding-inline: 1.5em;
+  text-align: center;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 5px; 
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 150%;
+  color: #0074E4;   
+}
+.Section-five button:after {
+  content: ' ';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+.Section-five button a:hover {
+  color: #0074E4;
+}
+.Section-five button:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+.Section-five button:focus {
+  background: linear-gradient(0deg, #D8EBFE, #D8EBFE), #FFFFFF;
+  box-shadow: 10px 10px 24px rgba(73, 90, 107, 0.23);
+}
+.Section-five button div {
+  float: right;
+}
+.Section-five button img {
+  padding-left: 0.5em;
+  height: 1.25em;
+  padding-bottom: 5px;
+}
+button>div { display: none; }
+button:hover>div { display: block; }
+@media (max-width: 992px) {
+  .Section-five h2 {
+    font-size: 32px;
+    padding-inline: 0.25em;
+  }
+  .Section-five button {
+    padding-block: 0.5em;
+    margin-top: 0.5em;
+  }
+}

@@ -1,7 +1,8 @@
   
 body {
-    font-family: 'inter';
-    color: rgb(0, 0, 0);
+  font-family: 'inter';
+  color: rgb(0, 0, 0);
+  background: #FCFCFC;
 }
 a {
   text-decoration: none;
@@ -99,6 +100,9 @@ a:hover {
 .contact-form {
   padding: 3em;
 }
+.contact-form span {
+  color: red;
+}
 .contact-form p {
   margin-bottom: 0;
   font-family: 'Inter';
@@ -169,113 +173,3 @@ a:hover {
 
 
 
-
-
-/*--------------------------------------------------------------
-# footer
---------------------------------------------------------------*/
-.footer {
-  background-color: #FCFCFC;
-  padding-bottom: 0 !important;
-  padding-top: 7em;
-}
-.logo-footer {
-  float: left;
-}
-.description-footer {
-  padding-top: 0.5em;
-  padding-left: 12em;
-}
-.description-footer img {
-  padding-right: 1em;
-}
-.social-icons {
-  padding: 0.75em;
-}
-.social-icons span {
-  color: #3F3F3F;
-}
-.social-icons-float {
-  float: left;
-}
-.footer-links {
-  margin-top: -1em;
-  margin-bottom: 3em;
-}
-.footer-links a {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 160%; 
-  letter-spacing: 0.01em; 
-  color: #3F3F3F;  
-}
-.footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.footer-links li {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-}
-.footer-links a:hover {
-  color: #0074E4;
-}
-.footer hr {
-  border: 1px solid #0074E4;
-}
-@media (max-width: 992px) {
-  .logo-footer {
-    display: block;
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-    width: fit-content;
-  }
-  .social-icons {
-    display: flex;
-    width: 18em;
-    margin: auto;
-    justify-content: center;
-  }
-  .social-icons-float {
-    float: none;
-  }
-  .description-footer {
-    text-align: center;
-    padding: 2em;
-    padding-top: 4em;
-  }
-  .social {
-    text-align: center;
-    padding-block: 3em;
-  }
-  .social img {
-    padding-inline: 1em;
-    width: 62px;
-  }
-  .footer-links {
-    margin-top: -2em;
-    margin-bottom: 5em;
-    justify-content: center;
-    display: flex;
-  }
-  .footer-links a {
-    width: 7em;
-    text-align: center;
-  }
-}
-
-
-
-
-
-/*--------------------------------------------------------------
-# Copyright
---------------------------------------------------------------*/
-.Copyright {
-  text-align: center;
-  font-size: 14px;
-  line-height: 20px;
-}

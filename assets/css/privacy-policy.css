@@ -1,6 +1,26 @@
 body {
     font-family: 'inter';
+    text-align: left;
+    background: #FCFCFC;
 }
 span {
     font-weight: 900;
+}
+ul li {
+    line-height: 1.75em;
+    text-align: left;
+}
+section {
+    margin-top: 8em;
+}
+a {
+    text-decoration: none;
+}
+.Section-one {
+    padding-inline: 10em;
+}
+@media (max-width: 992px) {
+    .Section-one {
+        padding-inline: 2em;
+    }
 }
