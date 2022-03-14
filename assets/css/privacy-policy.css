@@ -25,12 +25,11 @@ p {
     background-size: cover;
     position: relative;
     padding: 6em;
-    margin-top: 6em;
+    margin-top: 5em;
 }
 .Section-one h1 {
     width: 80%;
     margin: auto;
-    margin-bottom: 0.5em;
     font-family: 'Inter';
     font-style: normal;
     font-weight: bold;
