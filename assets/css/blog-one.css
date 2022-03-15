@@ -1,0 +1,16 @@
+.Section-one .container a img {
+    padding-top: 1em;
+    padding-left: 0.2em;
+}
+.Section-one .container {
+    padding-bottom: 2em;
+}
+.Section-one .details {
+    margin-block: 2em;
+}
+.Section-one .bottom img {
+    margin-top: 3em !important;
+    display: block;
+    margin: auto;
+    padding-bottom: 2em;
+}

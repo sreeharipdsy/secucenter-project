@@ -1280,6 +1280,7 @@ section {
 @media (max-width: 992px) {
   .Section-five {
     background-position: 10% 0%;
+    padding-block: 4em !important;
   }
   #Section-five .section-title-P2 p {
     line-height: 0;
