@@ -1,0 +1,208 @@
+body {
+    font-family: 'inter';
+    background: #FCFCFC;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  
+  
+
+
+
+
+/*--------------------------------------------------------------
+# Section-one                                                 
+--------------------------------------------------------------*/  
+.Section-one {
+    width: 100%;
+    height: 100%;
+    padding: 8em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    background: #060B25;
+}
+.Section-one .container {
+    background: white;
+    margin: auto;
+    border-radius: 20px;
+}
+.Section-one .left-section {
+    padding-left: 2.5em;
+    padding-block: 3em;
+}
+.Section-one .small-heading p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    position: static;
+    background: #C5E2FF;
+    border-radius: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #0074E4;
+    width: fit-content;
+}
+.Section-one .heading h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+    color: #3F3F3F;
+}
+.Section-one .details p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #3F3F3F;
+    margin-left: 0.5em;
+    margin-bottom: 0;
+}
+.Section-one .details{
+    margin-block: 1em;
+    display: flex;
+}
+.Section-one .details .left, .Section-one .details .right {
+    display: flex;
+    margin-right: 2em;
+}
+.Section-one .final p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin-right: 0.25em;
+    margin-bottom: 0;
+    color: #0074E4;
+}
+.Section-one .final {
+    display: flex;
+    width: fit-content;
+    padding: 6px 10px;
+    margin-top: 2.5em;
+    border: 1.25px solid #0074E4;
+    box-sizing: border-box;
+    border-radius: 3.5px;
+    transition: 0.5s;
+}
+.Section-one .final:hover {
+    background: #DAEDFF;
+    border: 1.25px solid #0074E4;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.Section-one .right-section img {
+    width: 100%;
+}
+@media (max-width: 992px) {
+    .Section-one {
+        padding-top: 2em;
+        padding-inline: 1em;
+    }
+    .Section-one .left-section {
+        padding-left: 1em;
+        padding-block: 3em;
+    }
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Section-three
+--------------------------------------------------------------*/
+.Section-three {
+    background: #FCFCFC;
+    margin-bottom: 7em;
+}
+.container-S3 {
+  background: url("../images/page-1 (Home)/section-9/background.svg") top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  position: relative;
+  height: 338px;
+  padding: 0;
+  margin-bottom: 1em;
+}
+.Section-three h2 {
+  padding-top: 1.5em;
+  padding-bottom: 0.25em;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;  
+}
+.Section-three button {
+  padding: 0.75em;
+  padding-inline: 1.5em;
+  text-align: center;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 5px; 
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 150%;
+  color: #0074E4;   
+}
+.Section-three button:after {
+  content: ' ';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+.Section-three button a {
+  color: #0074E4;
+}
+.Section-three button a:hover {
+  color: #0074E4;
+}
+.Section-three button:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+.Section-three button:focus {
+  background: linear-gradient(0deg, #D8EBFE, #D8EBFE), #FFFFFF;
+  box-shadow: 10px 10px 24px rgba(73, 90, 107, 0.23);
+}
+.Section-three button div {
+  float: right;
+}
+.Section-three button img {
+  padding-left: 0.5em;
+  height: 1.25em;
+  padding-bottom: 5px;
+}
+button>div { display: none; }
+button:hover>div { display: block; }
+@media (max-width: 992px) {
+  .Section-three h2 {
+    font-size: 32px;
+    padding-inline: 0.25em;
+  }
+  .Section-three button {
+    padding-block: 0.5em;
+    margin-top: 0.5em;
+  }
+}

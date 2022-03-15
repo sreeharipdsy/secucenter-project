@@ -305,12 +305,13 @@ section {
 }
 .Section-three button:focus {
   box-shadow: #5989b917 0px 0px 0px 25px, #0076e409 0px 0px 0px 50px; 
+  animation: unset;
 }
 @keyframes glowing {
-  100% {box-shadow: #5989b917 0px 0px 0px 25px, #0076e409 0px 0px 0px 50px; }
+  100% {box-shadow: rgba(0, 73, 143, 0.1) 0px 0px 0px 25px, rgba(95, 174, 249, 0.15) 0px 0px 0px 50px; }
 }
 @keyframes glowing-mobile {
-  100% {box-shadow: #5989b917 0px 0px 0px 12.5px, #0076e409 0px 0px 0px 25px; }
+  100% {box-shadow: rgba(0, 73, 143, 0.1) 0px 0px 0px 12.5px, rgba(95, 174, 249, 0.15) 0px 0px 0px 25px; }
 }
 .container3 {
   padding-inline: 5em;
@@ -426,7 +427,7 @@ section {
 }
 @media (min-width: 1400px) {
   .Section-three button {
-    box-shadow: #5989b917 0px 0px 0px 20px, #0076e409 0px 0px 0px 40px;
+    box-shadow: rgba(0, 73, 143, 0.1) 0px 0px 0px 20px, rgba(95, 174, 249, 0.15) 0px 0px 0px 40px;
     font-size: 1em;
     line-height: 20px;
     padding-block: 1.5em;
@@ -517,7 +518,7 @@ section {
 }
 @media (max-width: 1200px) {
   .Section-three button {
-    box-shadow: #5989b917 0px 0px 0px 20px, #0076e409 0px 0px 0px 40px;
+    box-shadow: rgba(0, 73, 143, 0.1) 0px 0px 0px 20px, rgba(95, 174, 249, 0.15) 0px 0px 0px 40px;
     font-size: 1em;
     line-height: 20px;
     padding-block: 1.5em;
@@ -607,7 +608,7 @@ section {
 }
 @media (max-width: 992px) {
   .Section-three button:focus {
-    box-shadow: #5989b917 0px 0px 0px 25px, #0076e409 0px 0px 0px 50px; 
+    box-shadow: rgba(0, 73, 143, 0.1) 0px 0px 0px 25px, rgba(95, 174, 249, 0.15) 0px 0px 0px 50px; 
     animation: none;
   }
   .container3 {
@@ -689,7 +690,7 @@ section {
 }
 @media (max-width: 768px) {
   .Section-three button {
-    box-shadow: #5989b917 0px 0px 0px 20px, #0076e409 0px 0px 0px 40px;
+    box-shadow: rgba(0, 73, 143, 0.1) 0px 0px 0px 20px, rgba(95, 174, 249, 0.15) 0px 0px 0px 40px;
     font-size: 1em;
     line-height: 20px;
     padding-block: 1.5em;
@@ -698,7 +699,7 @@ section {
     border: solid 2px #0074E4;
   }
   .Section-three button:focus {
-    box-shadow: #5989b917 0px 0px 0px 15px, #0076e409 0px 0px 0px 30px; 
+    box-shadow: rgba(0, 73, 143, 0.1) 0px 0px 0px 15px, rgba(95, 174, 249, 0.15) 0px 0px 0px 30px; 
     animation: none;
   }
   .container3 {
@@ -785,7 +786,7 @@ section {
 }
 @media (max-width: 576px) {
   .Section-three button {
-    box-shadow: #5989b917 0px 0px 0px 20px, #0076e409 0px 0px 0px 40px;
+    box-shadow: rgba(0, 73, 143, 0.1) 0px 0px 0px 20px, rgba(95, 174, 249, 0.15) 0px 0px 0px 40px;
     font-size: 1em;
     line-height: 20px;
     padding-block: 1.5em;
@@ -794,7 +795,7 @@ section {
     border: solid 2px #0074E4;
   }
   .Section-three button:focus {
-    box-shadow: #5989b917 0px 0px 0px 15px, #0076e409 0px 0px 0px 30px; 
+    box-shadow: rgba(0, 73, 143, 0.1) 0px 0px 0px 15px, rgba(95, 174, 249, 0.15) 0px 0px 0px 30px; 
     animation: none;
   }
   .container3 {
@@ -882,7 +883,7 @@ section {
 }
 @media (max-width: 414px) {
   .Section-three button {
-    box-shadow: #5989b917 0px 0px 0px 20px, #0076e409 0px 0px 0px 40px;
+    box-shadow: rgba(0, 73, 143, 0.1) 0px 0px 0px 20px, rgba(95, 174, 249, 0.15) 0px 0px 0px 40px;
     font-size: 1em;
     line-height: 20px;
     padding-block: 1.5em;
@@ -891,7 +892,7 @@ section {
     border: solid 2px #0074E4;
   }
   .Section-three button:focus {
-    box-shadow: #5989b917 0px 0px 0px 15px, #0076e409 0px 0px 0px 30px; 
+    box-shadow: rgba(0, 73, 143, 0.1) 0px 0px 0px 15px, rgba(95, 174, 249, 0.15) 0px 0px 0px 30px; 
     animation: none;
   }
   .container3 {
