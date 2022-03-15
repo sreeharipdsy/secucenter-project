@@ -608,8 +608,8 @@ section {
 }
 @media (max-width: 992px) {
   .Section-three button:focus {
-    box-shadow: rgba(0, 73, 143, 0.1) 0px 0px 0px 25px, rgba(95, 174, 249, 0.15) 0px 0px 0px 50px; 
-    animation: none;
+    box-shadow: #5989b917 0px 0px 0px 25px, #0076e409 0px 0px 0px 50px; 
+    animation: unset;
   }
   .container3 {
     padding-inline: 0;

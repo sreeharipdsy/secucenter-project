@@ -20,7 +20,8 @@ body {
 .Section-one {
     width: 100%;
     height: 100%;
-    padding: 8em;
+    padding-block: 8em;
+    padding-inline: 4em;
     margin-top: 5em;
     margin-bottom: 5em;
     background: #060B25;
@@ -55,10 +56,14 @@ body {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 42px;
+    font-size: 43px;
     line-height: 130%;
     letter-spacing: -0.01em;
     color: #3F3F3F;
+    transition: 0.35s;
+}
+.Section-one .container:hover .heading h1 {
+  color: #0074E4;
 }
 .Section-one .details p {
     font-family: 'Inter';
@@ -81,7 +86,7 @@ body {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     margin-right: 0.25em;
     margin-bottom: 0;
     color: #0074E4;
@@ -104,16 +109,130 @@ body {
 }
 .Section-one .right-section img {
     width: 100%;
+    margin-left: 1em;
+    border-radius: 20px;
 }
 @media (max-width: 992px) {
-    .Section-one {
-        padding-top: 2em;
-        padding-inline: 1em;
-    }
-    .Section-one .left-section {
-        padding-left: 1em;
-        padding-block: 3em;
-    }
+  .Section-one .container {
+    padding-bottom: 1.5em;
+  }
+  .Section-one {
+    padding-top: 8em;
+    padding-inline: 1em;
+  }
+  .Section-one .left-section {
+    padding-block: 2em;
+    padding-inline: 0;
+  }
+  .Section-one .heading h1 {
+    font-size: 24px;
+  }
+  .Section-one .details p {
+    font-size: 11px;
+    margin-top: 4px;
+  }
+  .Section-one .final p {
+    font-size: 14px;
+  }
+  .Section-one .right-section {
+    padding: 0;
+  }
+  .Section-one .right-section img {
+    margin-left: 0;
+  }
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Section-two
+--------------------------------------------------------------*/
+.Section-two .title h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  margin-bottom: 1em;
+  color: #3F3F3F;  
+}
+.Section-two .card {
+  border-radius: 20px;
+  border: none;
+  margin-block: 1em;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.Section-two .card img {
+  border-radius: 20px 20px 0 0;
+}
+.Section-two .card .date {
+  display: flex;
+  margin-bottom: 0.5em;
+}
+.Section-two .card .date p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 0.5em;
+  margin-bottom: 0;
+  color: #A9A9A9;  
+}
+.Section-two .card h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  margin-block: 0.5em;
+  letter-spacing: -0.01em;
+  color: #3F3F3F;
+}
+.Section-two h2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  margin-top: 1em;
+  letter-spacing: 0.01em;
+  color: #3F3F3F;
+}
+.Section-two .inner-card {
+  padding: 1.5em;
+}
+.Section-two .final p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  margin-right: 0.25em;
+  margin-bottom: 0;
+  color: #0074E4;
+}
+.Section-two .final {
+  display: flex;
+  width: fit-content;
+  padding: 5px 8px;
+  margin-top: 1em;
+  border: 1.25px solid #0074E4;
+  box-sizing: border-box;
+  border-radius: 3.5px;
+  transition: 0.5s;
+}
+.Section-two .final:hover {
+  background: #DAEDFF;
+  border: 1.25px solid #0074E4;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.Section-two .right-section img {
+  width: 100%;
+  margin-left: 1em;
+  border-radius: 20px;
 }
 
 
@@ -136,6 +255,7 @@ body {
   position: relative;
   height: 338px;
   padding: 0;
+  margin-top: 4em;
   margin-bottom: 1em;
 }
 .Section-three h2 {
