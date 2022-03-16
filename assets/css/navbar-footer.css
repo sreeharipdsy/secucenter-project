@@ -211,7 +211,7 @@
   padding: 0.75em;
 }
 .social-icons p {
-  color: #3F3F3F;
+  color: #242552;
   margin-bottom: 0;
   text-align: left;
 }
@@ -293,5 +293,6 @@
 .Copyright {
   text-align: center;
   font-size: 14px;
+  color: #3F3F3F;
   line-height: 20px;
 }

@@ -20,6 +20,7 @@ a:hover {
 .Section-one {
     width: 100%;
     height: 100%;
+    background: #060B25;
     padding-block: 8em;
     padding-inline: 4em;
     margin-top: 2em;
@@ -74,7 +75,7 @@ a:hover {
     margin-left: 0.5em;
     margin-bottom: 0;
 }
-.Section-one .details{
+.Section-one .details {
     margin-block: 1em;
     display: flex;
 }
@@ -122,14 +123,24 @@ a:hover {
   }
   .Section-one .left-section {
     padding-block: 2em;
+    padding-bottom: 0.5em;
     padding-inline: 0;
   }
   .Section-one .heading h1 {
     font-size: 24px;
   }
+  .Section-one .details .left, .Section-one .details .right {
+    margin-right: 1em;
+  }
+  .Section-one .details {
+    justify-content: space-between;
+  }
   .Section-one .details p {
-    font-size: 11px;
+    font-size: 15px;
     margin-top: 4px;
+  }
+  .Section-one .final {
+    margin-top: 2em;
   }
   .Section-one .final p {
     font-size: 14px;
@@ -139,6 +150,7 @@ a:hover {
   }
   .Section-one .right-section img {
     margin-left: 0;
+    margin-top: 1.25em;
   }
 }
 
@@ -190,6 +202,10 @@ a:hover {
   margin-block: 0.5em;
   letter-spacing: -0.01em;
   color: #3F3F3F;
+  transition: 0.35s;
+}
+.Section-two .card:hover h1 {
+  color: #0074E4;
 }
 .Section-two h2 {
   font-family: 'Inter';
@@ -233,6 +249,21 @@ a:hover {
   width: 100%;
   margin-left: 1em;
   border-radius: 20px;
+}
+@media (max-width: 992px) {
+  .Section-two .container {
+    margin-inline: 0.5em;
+  }  
+  .Section-two .container > .row {
+    overflow-x: auto;
+  }
+  .Section-two .mobile-card-container {
+    justify-content: unset !important;
+    margin-bottom: 1em;
+  }
+  .Section-two .row>* {
+    width: 80%;
+  }
 }
 
 
