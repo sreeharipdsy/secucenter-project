@@ -175,24 +175,36 @@ a:hover {
   border-radius: 20px;
   border: none;
   margin-block: 1em;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: 0px 4px 17px rgba(215, 215, 215, 0.014);
+}
+.Section-two .card:hover {
+  box-shadow: 0px 4px 17px rgba(196, 195, 195, 0.25);
 }
 .Section-two .card img {
   border-radius: 20px 20px 0 0;
 }
-.Section-two .card .date {
+.Section-two .card .date, 
+.Section-two .card .inner-card .date .left, 
+.Section-two .card .inner-card .date .right{
   display: flex;
   margin-bottom: 0.5em;
+  margin-right: 1.25em;
 }
 .Section-two .card .date p {
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 16px;
   margin-left: 0.5em;
   margin-bottom: 0;
   color: #A9A9A9;  
 }
+.Section-two .card .inner-card .date {
+  justify-content: space-between;
+}
+.Section-two .card .inner-card .date p {
+  margin-left: 0.25em;
+} 
 .Section-two .card h1 {
   font-family: 'Inter';
   font-style: normal;
@@ -251,6 +263,16 @@ a:hover {
   border-radius: 20px;
 }
 @media (max-width: 992px) {
+  .Section-two .card .date p {
+    font-size: 12px;
+  }
+  .Section-two .card .date, 
+  .Section-two .card .inner-card .date .left, 
+  .Section-two .card .inner-card .date .right{
+    display: flex;
+    margin-bottom: 0.5em;
+    margin-right: 0em;
+  }  
   .Section-two .container > .row {
     overflow-x: auto;
   }
